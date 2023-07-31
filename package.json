@@ -1,0 +1,46 @@
+{
+  "name": "eleventy-decap-tailwind-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf _site",
+    "serve:webpack": "webpack --mode development --watch",
+    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "serve": "npm-run-all clean --parallel serve:*",
+    "dev:webpack": "webpack --mode development",
+    "dev:eleventy": "ELEVENTY_ENV=development eleventy",
+    "build:dev": "NODE_ENV=development run-s clean dev:webpack dev:eleventy",
+    "build:webpack": "webpack --mode production",
+    "build:eleventy": "ELEVENTY_ENV=production eleventy",
+    "build:prod": "NODE_ENV=production run-s clean build:webpack build:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kindsys/eleventy-decap-tailwind-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kindsys/eleventy-decap-tailwind-template/issues"
+  },
+  "homepage": "https://github.com/kindsys/eleventy-decap-tailwind-template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
+    "autoprefixer": "^10.4.7",
+    "css-loader": "^6.7.1",
+    "html-minifier": "^4.0.0",
+    "mini-css-extract-plugin": "^0.11.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^4.3.0",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^3.0.24",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {}
+}
