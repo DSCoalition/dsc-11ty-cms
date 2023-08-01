@@ -1,0 +1,66 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" type="text/css" href="/assets/main.css"></head><body><nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b"><a href="/" class="font-semibold text-xl tracking-tight">11ty | DecapCMS | TailwindCSS</a><ul><li class="inline"><a href="/" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block text-gray-700 hover:text-gray-900">Home</a></li><li class="inline"><a href="/quickstart/" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block text-gray-700 hover:text-gray-900">Quick Start</a></li><li class="inline"><a href="/documentation/" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block text-gray-700 hover:text-gray-900">Documentation</a></li><li class="inline"><a href="/blog/" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block text-gray-700 hover:text-gray-900">Blog</a></li><li class="inline"><a href="/contact/" class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block text-gray-700 hover:text-gray-900">Contact</a></li></ul></nav><main><div class="relative bg-gray-900 py-24 sm:py-32"><div class="mx-auto w-3/4 px-6 lg:px-8"><div class="mx-auto max-w-2xl lg:mx-0"><h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl">Deployment with GitHub Actions &amp; GitHub Pages</h2><p class="mt-6 text-lg leading-8 text-gray-300">Set up a CICD pipeline for your 11ty, DecapCMS, and TailwindCSS template</p></div></div></div><section class="flex"><aside id="sidebar-multi-level-sidebar" class="top-0 left-0 z-40 w-64 h-screen sticky transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar"><div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800"><ul class="space-y-2 font-medium"><li><a href="/documentation" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"><span class="ml-3">Documentation</span></a></li><li><a href="/decapCMS/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"><span class="ml-3">DecapCMS</span></a></li><li><a href="/deployment/" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"><span class="ml-3">Deployment</span></a></li></ul></div></aside><div class="w-3/4 mx-auto py-6 px-4 sm:py-10 sm:px-6 lg:px-8"><h2>Setting up GitHub Pages</h2><hr><ol><li><p>Now that your repository is created, we can enable GitHub Pages. Go to the page of the repository you've just created and click on the <strong>Settings</strong> button on the top right.<br><br></p></li><li><p>Click on the <strong>Pages</strong> button on the sidebar menu and select your default branch in the dropdown, this is probably <code>main</code> or <code>master</code>, leave <code>/(root)</code> as the selected folder. Click on <strong>save</strong> .<br><br></p></li></ol><h2>Build your website with GitHub Actions</h2><hr><ol><li><p>By default, GitHub pages uses Jekyll to generate websites. In our case, we're using 11ty, so we want to inform GitHub Pages. To do so, create an empty file called <code>.nojekyll</code> and put it in the root directory.<br><br></p></li><li><p>Create <code>.github</code> folder in the <code>root</code> directory, and inside that folder, create another folder called <code>workflows</code> . In this folder, we put the workflows which GitHub Actions execute.<br><br></p></li><li><p>We're going to create two workflows:<br><br>Create a file with the name  <code>build.yml</code><br><br>This workflow performs a build when a pull request is created. If your default branch is something other than <code>main</code> make sure to change this in the <code>branches</code> array.<br>This workflow only performs a build and doesn't deploy your changes.<br><br></p></li></ol><pre><code>build.yml
+
+name: Build on PR
+
+on:
+  pull_request:
+    branches: [ &quot;main&quot; ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['14.17.6']
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install packages
+      run: npm ci
+
+    - name: Run development build
+      run: npm run build:dev
+</code></pre><br><p>Next create <code>build-and-deploy.yml</code>.<br><br>This workflow builds and deploys our website to GitHub Pages when a push is done on the <code>main</code> branch, for example merging a pull request.<br><br></p><pre><code>name: Build &amp; Deploy
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: ['14.17.6']
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+
+      - name: Install packages
+        run: npm ci
+
+      - name: Run production build
+        run: npm run build:prod
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: _site
+
+</code></pre><ol start="4"><li>Before we can use this workflow we'll need to create an <strong>ACTIONS_DEPLOY_KEY</strong>. This key is needed to be able to deploy our generated code to GitHub Pages. Follow the steps in these docs to create an <em><strong><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">ACTIONS_DEPLOY_KEY</a></strong></em> .<br></li></ol><p>Once that is done we can push all the changes to our repository<br><br></p><ol start="5"><li><p>Now head over to your repository on GitHub and click on the <strong>Actions</strong> tab. You should see the <code>Build &amp; Deploy</code> workflow being executed, once that is done another workflow called <code>pages-build-deployment</code> is triggered and deploys the generated website to GitHub Pages.<br><br></p></li><li><p>After the <code>Build &amp; Deploy</code> workflow is executed a new branch called <code>gh-pages</code> is auto-created. In this branch the generated output of your 11ty site will be stored. To be able to host the website properly we need to inform GitHub Pages about this.<br>Navigate to the <strong>Settings</strong> tab and select <strong>Pages</strong> in the list on the left. Change the branch from which your GitHub Pages site is currently being built to <code>gh-pages</code> and <code>root</code> and hit <strong>save</strong>.<br><br></p></li><li><p>The <code>pages-build-deployment</code> workflow will be automatically triggered again and after it has finished you can navigate to the URL where your website is published to see the final result.<br><br></p></li></ol><h2>Additional Resources:</h2><hr><p><em><strong><a href="https://maarten.be/blog/20220730/how-to-deploy-your-eleventy-website-to-github-pages-with-github-actions/">How to Deploy your Eleventy Website to GitHub Pages with GitHub Actions</a></strong></em><br><br></p><p><em><strong><a href="https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key">Actions with GitHub Pages</a></strong></em></p></div></section></main><script src="/assets/main.js"></script></body></html>
