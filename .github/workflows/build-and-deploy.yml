@@ -7,6 +7,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: dsc-staging.kind.systems
 
     strategy:
       matrix:
@@ -30,5 +33,5 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.PRODUCTION_ACTION_DEPLOY_KEY }}
           publish_dir: _site
