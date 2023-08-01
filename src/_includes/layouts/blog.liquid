@@ -1,0 +1,7 @@
+---
+layout: layouts/base.liquid
+---
+{% render "components/header.liquid" %}
+{% assign postslist = collections.posts %}
+
+{% render "components/postslist.njk" %}

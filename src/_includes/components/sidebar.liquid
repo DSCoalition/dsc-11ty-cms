@@ -1,0 +1,20 @@
+{% set navPages = collections.all | eleventyNavigation("Documentation") %}
+
+<aside id="sidebar-multi-level-sidebar" class="top-0 left-0 z-40 w-64 h-screen sticky transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+   <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <a href="/documentation" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <span class="ml-3">Documentation</span>
+            </a>
+         </li>
+         {% for entry in navPages %}
+         <li>
+            <a href="{{ entry.url | url }}" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <span class="ml-3">{{ entry.title }}</span>
+            </a>
+         </li>
+         {% endfor %}
+      </ul>
+   </div>
+</aside>
