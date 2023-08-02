@@ -1,7 +1,7 @@
 <nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
   <a href="{{ '/' | url }}" class="font-semibold text-xl tracking-tight">11ty | DecapCMS | TailwindCSS</a>
 
-  {% set navPages = collections.all | eleventyNavigation %}
+  {% assign navPages = collections.all | eleventyNavigation %}
   <ul>
     {% for entry in navPages %}
       <li class="inline">
