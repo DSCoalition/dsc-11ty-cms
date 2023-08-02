@@ -53,14 +53,13 @@ module.exports = function (eleventyConfig) {
     });
 
   return {
-    templateFormats: ["md", "liquid"],
+    templateFormats: ["md", "njk", "liquid"],
 
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid",
-    dataTemplateEngine: "liquid",
-    passthroughFileCopy: true,
+    markdownTemplateEngine: false,
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     dir: {
       input: 'src', output: '_site'
      }

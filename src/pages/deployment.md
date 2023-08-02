@@ -1,5 +1,5 @@
 ---
-layout: layouts/documentation.liquid
+layout: layouts/documentation.njk
 permalink: /deployment/
 eleventyNavigation:
   key: Deployment
