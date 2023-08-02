@@ -3,47 +3,178 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
-    /* h2 styles */
+    body {
+        margin: 0;
+        padding: 0;
+        color: theme(colors.gray);
+        font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
+        font-size: 0.69rem; /* Equivalent to 11pt */
+    }
+
+    @media (max-width: 992px) {
+        .container.py-5 {
+            padding-top: 1.00rem !important;
+            padding-bottom: 1.00rem !important;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        .container {
+            max-width: 40.00rem; /* Equivalent to 640px */
+        }
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Merriweather', serif;
+        margin-bottom: 1.00rem;
+    }
+
+    h1 {
+        font-size: 3.00rem;
+    }
+
     h2 {
-        @apply font-semibold text-xl;
-        padding-bottom: 0.3em;
+        font-size: 1.80rem;
     }
 
-    /* h3 styles */
     h3 {
-        @apply font-semibold text-lg;
+        font-size: 1.60rem;
     }
 
-    /* h4 styles */
-    h4 {
-        @apply font-semibold text-base;
-    }
-
-    /* h5 styles */
-    h5 {
-        @apply font-semibold text-sm;
-    }
-
-    /* h6 styles */
     h6 {
-        @apply font-semibold text-xs text-gray-500;
-        margin-top: 24px;
-        margin-bottom: 16px;
-        line-height: 1.25;
+        font-weight: bold;
     }
 
-    code {
-        background-color: #efefef;
-        border-radius: 0.15em;
+    p {
+        font-size: 1.00rem;
+
+        &.text-sm {
+            font-size: 0.80rem;
+        }
     }
 
-    hr {
-        margin-top: 16px;
-        margin-bottom: 16px;
+    p.list-items::before {
+        content: "";
+        display: inline-block;
+        width: 0.38rem; /* Equivalent to 6px */
+        height: 0.38rem; /* Equivalent to 6px */
+        margin-right: 0.50rem; /* Equivalent to 8px */
+        margin-bottom: 0.13rem; /* Equivalent to 2px */
+        border: 1px solid theme(colors.gray);
+        border-radius: 50%;
     }
 
-    ol {
-        @apply list-decimal;
+    a, a:visited {
+        color: theme(colors.red);
+
+        &:hover, &:focus {
+            color: theme(colors.magenta);
+            text-decoration: none;
+        }
     }
 
+    .btn, a.btn {
+        background-color: theme(colors.red);
+        color: white;
+        border-radius: 0;
+        border: none;
+
+        &:hover, &:focus {
+            background-color: theme(colors.magenta);
+            color: white;
+        }
+    }
+
+    /* Backgrounds & Illustrations */
+    .bg-illustration {
+        background-image: url('../assets/img/illustration-gov.png');
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+    }
+
+    @media (max-width: 768px) {
+        .container.bg-illustration {
+            padding-bottom: 15.63rem !important; /* Equivalent to 250px */
+            padding-top: 0 !important;
+            background-position: bottom center;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .container.bg-illustration {
+            background-size: 10.00rem; /* Equivalent to 40% */
+        }
+    }
+
+    /* Parallax */
+    /* TODO: add parallax styling */
+
+    /* Navbar */
+    .navbar {
+        margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
+        padding: 0;
+
+        .navbar-brand .logo {
+            height: 3.13rem; /* Equivalent to 50px */
+        }
+
+        .navbar-toggler {
+            &:focus {
+                outline: none;
+            }
+
+            .navbar-toggler-icon {
+                position: relative;
+                width: 1.88rem; /* Equivalent to 30px */
+                height: 1.88rem; /* Equivalent to 30px */
+                cursor: pointer;
+
+                .line-1, .line-2, .line-3 {
+                    position: absolute;
+                    right: 0;
+                    width: 1.25rem; /* Equivalent to 20px */
+                    height: 0.13rem; /* Equivalent to 2px */
+                    border-radius: 1px;
+                    background: theme(colors.red);
+                    transition: opacity .2s ease, background .2s ease, top .2s ease .2s, transform .2s ease;
+                }
+
+                .line-1 {
+                    top: 0.50rem; /* Equivalent to 8px */
+                }
+                .line-2 {
+                    top: 0.88rem; /* Equivalent to 14px */
+                }
+                .line-3 {
+                    top: 1.25rem; /* Equivalent to 20px */
+                }
+
+                &:hover {
+                    .line-1, .line-2, .line-3 {
+                        background: theme(colors.magenta);
+                    }
+                }
+            }
+        }
+
+        .navbar-nav {
+            border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
+            padding: 1.56rem 3.13rem 1.56rem 0; /* Equivalent to 25px 50px 25px 0 */
+
+            .nav-item .nav-link {
+                color: theme(colors.red);
+                font-family: 'Merriweather';
+                padding: 0 1.56rem; /* Equivalent to 0 25px */
+                font-size: 0.90rem;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        .navbar {
+            margin: 0.94rem; /* Equivalent to 15px */
+        }
+    }
 }
