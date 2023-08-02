@@ -6,7 +6,7 @@ const htmlmin = require("html-minifier");
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPassthroughCopy('src/img')
+  eleventyConfig.addPassthroughCopy('src/assets/**')
   eleventyConfig.addPassthroughCopy("src/admin")
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("404.html");
