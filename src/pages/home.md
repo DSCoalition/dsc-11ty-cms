@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: layouts/home.njk
+layout: layouts/home.liquid
 permalink: /
 eleventyNavigation:
     key: Home

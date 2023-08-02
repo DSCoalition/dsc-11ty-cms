@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-layout: layouts/quickstart.njk
+layout: layouts/quickstart.liquid
 permalink: /quickstart/
 eleventyNavigation:
     key: Quick Start
