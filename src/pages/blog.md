@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.njk
+layout: layouts/blog.liquid
 permalink: /blog/index.html
 eleventyNavigation:
   key: Blog

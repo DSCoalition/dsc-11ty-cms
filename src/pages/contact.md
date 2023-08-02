@@ -1,5 +1,5 @@
 ---
-layout: layouts/contact.njk
+layout: layouts/contact.liquid
 permalink: /contact/index.html
 eleventyNavigation:
   key: Contact
