@@ -8,43 +8,38 @@
         padding: 0;
         color: theme(colors.gray);
         font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
-        font-size: 11pt;
+        font-size: 0.69rem; /* Equivalent to 11pt */
     }
 
     @media (max-width: 992px) {
         .container.py-5 {
-           padding-top: 1rem !important;
-           padding-bottom: 1rem !important;
+            padding-top: 1.00rem !important;
+            padding-bottom: 1.00rem !important;
         }
     }
 
     @media (min-width: 576px) and (max-width: 768px) {
         .container {
-            max-width: 640px;
+            max-width: 40.00rem; /* Equivalent to 640px */
         }
     }
 
-    /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                TYPOGRAPHY
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
-
+    /* Typography */
     h1, h2, h3, h4, h5, h6 {
         font-family: 'Merriweather', serif;
-        margin-bottom: 1em;
+        margin-bottom: 1.00rem;
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 3.00rem;
     }
 
     h2 {
-        font-size: 1.8em;
+        font-size: 1.80rem;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 1.60rem;
     }
 
     h6 {
@@ -52,31 +47,31 @@
     }
 
     p {
-        font-size: 1em;
+        font-size: 1.00rem;
 
         &.text-sm {
-            font-size: .8em;
+            font-size: 0.80rem;
         }
     }
 
     p.list-items::before {
         content: "";
         display: inline-block;
-        width: 6px;
-        height: 6px;
-        margin-right: 8px;
-        margin-bottom: 2px;
+        width: 0.38rem; /* Equivalent to 6px */
+        height: 0.38rem; /* Equivalent to 6px */
+        margin-right: 0.50rem; /* Equivalent to 8px */
+        margin-bottom: 0.13rem; /* Equivalent to 2px */
         border: 1px solid theme(colors.gray);
         border-radius: 50%;
     }
 
-     a, a:visited {
+    a, a:visited {
         color: theme(colors.red);
 
         &:hover, &:focus {
             color: theme(colors.magenta);
             text-decoration: none;
-            }
+        }
     }
 
     .btn, a.btn {
@@ -91,12 +86,7 @@
         }
     }
 
-    /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        BACKGROUNDS & ILLUSTRATIONS
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
-
+    /* Backgrounds & Illustrations */
     .bg-illustration {
         background-image: url('../assets/img/illustration-gov.png');
         background-repeat: no-repeat;
@@ -106,7 +96,7 @@
 
     @media (max-width: 768px) {
         .container.bg-illustration {
-            padding-bottom: 250px !important;
+            padding-bottom: 15.63rem !important; /* Equivalent to 250px */
             padding-top: 0 !important;
             background-position: bottom center;
         }
@@ -114,131 +104,20 @@
 
     @media (max-width: 992px) {
         .container.bg-illustration {
-            background-size: 40%;
+            background-size: 10.00rem; /* Equivalent to 40% */
         }
     }
 
-    /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                PARALLAX
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+    /* Parallax */
+    /* TODO: add parallax styling */
 
-    /* TODO: Figure out parallax */
-
-    /* .bg-parallax, .bg-parallax-photo {
-        position: relative;
-
-        .parallax-outside {
-            position: absolute;
-            top: 0;
-            left: 0;
-            min-height: 21.875rem;
-            width: 100%;
-            max-width: 100%;
-            scroll-behavior: smooth;
-            overflow: visible;
-            z-index: -1;
-
-            .parallax-inside {
-                height: auto;
-                width: 100%;
-                overflow: visible;
-
-                &.is-parallax {
-                    left: 0;
-                    position: absolute;
-                    will-change: transform;
-                    right: 0;
-                    top: 0;
-                }
-
-                > img {
-                    height: auto;
-                    width: auto;
-                    max-width: 100%;
-                }
-            }
-        }
-
-        /* .parallax-outside-cover {
-            position: relative;
-            width: 100%;
-            height: 250px !important;
-            scroll-behavior: smooth;
-            overflow: hidden;
-            z-index: -1;
-
-            .parallax-inside {
-                width: 100%;
-                overflow: hidden;
-
-                &.is-parallax {
-                    left: 0;
-                    position: absolute;
-                    will-change: transform;
-                    right: 0;
-                    top: 0;
-                }
-
-                > img {
-                    height: 100%;
-                    width: 100%;
-                    -o-object-fit: cover;
-                    object-fit: cover;
-                    -o-object-position: top;
-                    object-position: top;
-                    font-family: "object-fit: cover; object-position: top";
-                }
-            }
-        }
-    }
-
-    @media (max-width: 1360px) {
-        .bg-parallax-photo .parallax-outside .parallax-inside img {
-            max-width: 600px;
-        }
-    }
-
-    @media (max-width: 1160px) {
-        .bg-parallax-photo .parallax-outside .parallax-inside img {
-            max-width: 500px;
-        }
-    }
-
-    @media (max-width: 860px) {
-        .bg-parallax-photo .parallax-outside .parallax-inside img {
-            max-width: 400px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .bg-parallax-photo {
-            .parallax-outside {
-                position: relative;
-                top: auto;
-                left: auto;
-                height: 400px !important;
-
-                img {
-                    max-height: 400px;
-                }
-            }
-        }
-    } */
-
-    /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                    NAV
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
-
-     .navbar {
-        margin: 30px 0 30px 50px;
+    /* Navbar */
+    .navbar {
+        margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
         padding: 0;
 
         .navbar-brand .logo {
-            height: 50px;
+            height: 3.13rem; /* Equivalent to 50px */
         }
 
         .navbar-toggler {
@@ -248,23 +127,29 @@
 
             .navbar-toggler-icon {
                 position: relative;
-                width: 30px;
-                height: 30px;
+                width: 1.88rem; /* Equivalent to 30px */
+                height: 1.88rem; /* Equivalent to 30px */
                 cursor: pointer;
 
                 .line-1, .line-2, .line-3 {
                     position: absolute;
                     right: 0;
-                    width: 20px;
-                    height: 2px;
+                    width: 1.25rem; /* Equivalent to 20px */
+                    height: 0.13rem; /* Equivalent to 2px */
                     border-radius: 1px;
                     background: theme(colors.red);
-                    transition: opacity .2s ease,background .2s ease,top .2s ease .2s,transform .2s ease;
+                    transition: opacity .2s ease, background .2s ease, top .2s ease .2s, transform .2s ease;
                 }
 
-                .line-1 { top: 8px; }
-                .line-2 { top: 14px; }
-                .line-3 { top: 20px; }
+                .line-1 {
+                    top: 0.50rem; /* Equivalent to 8px */
+                }
+                .line-2 {
+                    top: 0.88rem; /* Equivalent to 14px */
+                }
+                .line-3 {
+                    top: 1.25rem; /* Equivalent to 20px */
+                }
 
                 &:hover {
                     .line-1, .line-2, .line-3 {
@@ -275,22 +160,21 @@
         }
 
         .navbar-nav {
-            border-bottom: 5px solid theme(colors.grayLightest);
-            padding: 25px 50px 25px 0;
+            border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
+            padding: 1.56rem 3.13rem 1.56rem 0; /* Equivalent to 25px 50px 25px 0 */
 
             .nav-item .nav-link {
                 color: theme(colors.red);
                 font-family: 'Merriweather';
-                padding: 0 25px;
-                font-size: .9rem;
+                padding: 0 1.56rem; /* Equivalent to 0 25px */
+                font-size: 0.90rem;
             }
-
         }
     }
 
     @media (max-width: 992px) {
         .navbar {
-            margin: 15px;
+            margin: 0.94rem; /* Equivalent to 15px */
         }
     }
 }
