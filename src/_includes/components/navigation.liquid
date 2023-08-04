@@ -1,17 +1,38 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
-  <a href="{{ '/' | url }}" class="font-semibold text-xl tracking-tight">11ty | DecapCMS | TailwindCSS</a>
+<nav class="flex flex-wrap lg:my-4 lg:flex lg:flex-wrap lg:items-center ">
+<!-- Brand/Logo -->
+    <a href="/" >
+        <img class= "navbar-logo" alt="Digital Services Coalition" src="/assets/img/dsc-logo.png" class="logo">
+    </a>
 
-  {% assign navPages = collections.all | eleventyNavigation %}
-  <ul>
-    {% for entry in navPages %}
-      <li class="inline">
-        <a
-         href="{{ entry.url | url }}"
-         class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'text-gray-700 hover:text-gray-900'}}">
-         {{ entry.title }}
-       </a>
-      </li>
-    {% endfor %}
- </ul>
+    <!-- Mobile Menu (Hamburger Icon) -->
+    <button class="nav-toggler inline-flex p-5 lg:hidden ml-auto" type="button">
+        <i class="material-icons text-red hover:text-magenta ">menu</i>
+    </button>
+
+<!-- Navigation Links -->
+    <div class="invisible flex flex-col lg:inline-flex lg:flex-grow lg:w-auto lg:mr-5" id="navigation-container">
+        <div class="navbar-nav w-full flex flex-1 flex-col duration-500 ease-out transition-all lg:inline-flex lg:flex-row lg:ml-auto" id="navigation-links">
+            <a href="/" class=" ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Home</span></a>
+            <a href="/mission" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Mission</span></a>
+            <a href="/story" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Story</span></a>
+            <a href="/membership" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Membership</span></a>
+            <a href="https://medium.com/@DigitalServicesCoalition" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2" target="_blank"><span class="nav-item">News</span></a>
+            <a href="https://shop.digitalservicescoalition.org/" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2" target="_blank"><span class="nav-item">Shop</span></a>
+            <a href="/contact" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Contact</span></a>
+        </div>
+    </div>
 </nav>
+
+
+<script>
+  // Add an event listener to the hamburger icon button
+  const navToggler = document.querySelector('.nav-toggler');
+  const navigationContainer = document.getElementById('navigation-container');
+  const navigationLinks = document.getElementById('navigation-links');
+
+  navToggler.addEventListener('click', () => {
+    // Toggle the 'hidden' class on the navigation links container
+    navigationContainer.classList.toggle('invisible');
+    navigationLinks.classList.toggle('translate-y-full');
+  });
+</script>

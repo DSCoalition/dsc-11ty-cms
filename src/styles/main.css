@@ -112,68 +112,28 @@
     /* TODO: add parallax styling */
 
     /* Navbar */
-    .navbar {
+    .navbar-logo {
         margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
         padding: 0;
-
-        .navbar-brand .logo {
-            height: 3.13rem; /* Equivalent to 50px */
-        }
-
-        .navbar-toggler {
-            &:focus {
-                outline: none;
-            }
-
-            .navbar-toggler-icon {
-                position: relative;
-                width: 1.88rem; /* Equivalent to 30px */
-                height: 1.88rem; /* Equivalent to 30px */
-                cursor: pointer;
-
-                .line-1, .line-2, .line-3 {
-                    position: absolute;
-                    right: 0;
-                    width: 1.25rem; /* Equivalent to 20px */
-                    height: 0.13rem; /* Equivalent to 2px */
-                    border-radius: 1px;
-                    background: theme(colors.red);
-                    transition: opacity .2s ease, background .2s ease, top .2s ease .2s, transform .2s ease;
-                }
-
-                .line-1 {
-                    top: 0.50rem; /* Equivalent to 8px */
-                }
-                .line-2 {
-                    top: 0.88rem; /* Equivalent to 14px */
-                }
-                .line-3 {
-                    top: 1.25rem; /* Equivalent to 20px */
-                }
-
-                &:hover {
-                    .line-1, .line-2, .line-3 {
-                        background: theme(colors.magenta);
-                    }
-                }
-            }
-        }
-
-        .navbar-nav {
-            border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
-            padding: 1.56rem 3.13rem 1.56rem 0; /* Equivalent to 25px 50px 25px 0 */
-
-            .nav-item .nav-link {
-                color: theme(colors.red);
-                font-family: 'Merriweather';
-                padding: 0 1.56rem; /* Equivalent to 0 25px */
-                font-size: 0.90rem;
-            }
-        }
+        height: 3.13rem;
     }
 
+    .nav-item {
+        color: theme(colors.red);
+        font-family: 'Merriweather';
+        font-size: 1.075rem;
+    }
+
+
+    .navbar-nav {
+        border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
+        padding: 1.56rem 3.13rem 1.46rem 0;
+ /* Equivalent to 25px 50px 25px 0 */
+    }
+
+
     @media (max-width: 992px) {
-        .navbar {
+        .navbar-logo {
             margin: 0.94rem; /* Equivalent to 15px */
         }
     }
