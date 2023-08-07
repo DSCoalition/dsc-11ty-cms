@@ -1,25 +1,39 @@
-<nav class="flex flex-wrap lg:my-4 lg:flex lg:flex-wrap lg:items-center ">
+<nav class="flex items-center justify-between flex-wrap p-6">
 <!-- Brand/Logo -->
-    <a href="/" >
+    <a class="flex items-center flex-shrink-0 mr-6" href="/" >
         <img class= "navbar-logo" alt="Digital Services Coalition" src="/assets/img/dsc-logo.png" class="logo">
     </a>
 
     <!-- Mobile Menu (Hamburger Icon) -->
-    <button class="nav-toggler inline-flex p-5 lg:hidden ml-auto" type="button">
+    <button class="nav-toggler block desktop:hidden" type="button">
         <i class="material-icons text-red hover:text-magenta ">menu</i>
     </button>
 
-<!-- Navigation Links -->
-    <div class="invisible flex flex-col lg:inline-flex lg:flex-grow lg:w-auto lg:mr-5" id="navigation-container">
-        <div class="navbar-nav w-full flex flex-1 flex-col duration-500 ease-out transition-all lg:inline-flex lg:flex-row lg:ml-auto" id="navigation-links">
-            <a href="/" class=" ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Home</span></a>
-            <a href="/mission" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Mission</span></a>
-            <a href="/story" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Story</span></a>
-            <a href="/membership" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Membership</span></a>
-            <a href="https://medium.com/@DigitalServicesCoalition" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2" target="_blank"><span class="nav-item">News</span></a>
-            <a href="https://shop.digitalservicescoalition.org/" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2" target="_blank"><span class="nav-item">Shop</span></a>
-            <a href="/contact" class="ml-4 lg:inline-flex lg:w-auto lg:px-6 lg:py-2"><span class="nav-item">Contact</span></a>
-        </div>
+    <!-- Navigation Links -->
+    <div class="invisible desktop:visible navbar-links w-full block desktop:flex desktop:items-center desktop:w-auto" id="navigation-container">
+        <ul class="navbar-nav desktop:flex-grow duration-500 ease-out transition-all delay-150" id="navigation-links">
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/" class=""><span class="nav-item">Home</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/mission" class=""><span class="nav-item">Mission</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/story" class=""><span class="nav-item">Story</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/membership" class=""><span class="nav-item">Membership</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="https://medium.com/@DigitalServicesCoalition" class="" target="_blank"><span class="nav-item">News</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="https://shop.digitalservicescoalition.org/" class="" target="_blank"><span class="nav-item">Shop</span></a>
+            </li>
+            <li class="navbar-item block mt-4 desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/contact" class=""><span class="nav-item">Contact</span></a>
+            </li>
+        </ul>
     </div>
 </nav>
 
@@ -33,6 +47,10 @@
   navToggler.addEventListener('click', () => {
     // Toggle the 'hidden' class on the navigation links container
     navigationContainer.classList.toggle('invisible');
-    navigationLinks.classList.toggle('translate-y-full');
+    navigationLinks.classList.toggle('translate-y-2');
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth < 992) navigationContainer.classList.add("invisible");
+    });
   });
 </script>

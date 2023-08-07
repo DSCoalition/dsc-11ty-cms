@@ -15,5 +15,8 @@ module.exports = {
       grayLight: "#777777",
       grayLightest: "#f9f7f6"
     },
+    screens: {
+      desktop: '992px'
+    }
   }
 }
