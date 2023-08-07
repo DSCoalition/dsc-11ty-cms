@@ -1,3 +1,0 @@
-## Test announcment content
-
-Test

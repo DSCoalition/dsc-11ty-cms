@@ -5,6 +5,21 @@ eleventyNavigation:
   key: Membership
   order: 4
 membershipHeader: Join our coalition
+membershipAnnouncement: >-
+  **M﻿ain text**
+
+
+  ### T﻿est text
+
+
+
+
+  O﻿ther text
+
+
+
+
+  [Membership policy](https://digitalservicescoalition.org/pdfs/Membership-Policy-2023.pdf)
 ---
 ## Who can join
 
