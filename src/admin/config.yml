@@ -1,21 +1,42 @@
-backend:
-  name: github
-  repo: kindsys/eleventy-decap-tailwind-template
-  branch: main
-  site_domain: 11ty-decap-starter.kind.systems
+local_backend:
+  url: http://localhost:8082/api/v1
 
-publish_mode: editorial_workflow
+backend:
+  name: git-gateway
+
+# backend:
+#   name: github
+#   repo: kindsys/digital-services-coalition
+#   branch: main
+
 media_folder: "img/"
 public_folder: "img/"
 
 collections:
-    - name: "posts"
-      label: "Posts"
-      folder: "src/posts"
-      create: true
-      fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Description", name: "description", widget: "text" }
-        - { label: "Date", name: "date", widget: "datetime" }
-
-
+    - name: "pages"
+      label: "Pages"
+      files:
+        - name: "home"
+          label: "Home page"
+          file: "src/pages/home.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Banner text", name: "bannerText", widget: "string" }
+        - name: "mission"
+          label: "Mission"
+          file: "src/pages/mission.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - label: "Mission header"
+              name: "missionHeader"
+              widget: "object"
+              fields:
+                - { label: "Date text", name: "dateText", widget: "string" }
+                - { label: "Link text", name: "linkText", widget: "string" }
+        - name: "membership"
+          label: "Membership"
+          file: "src/pages/membership.md"
+          fields:
+            - { label: "Membership header", name: "membershipHeader", widget: "string" }
+            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown"}
+            - { label: "Membership content", name: "body", widget: "markdown" }
