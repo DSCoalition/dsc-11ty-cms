@@ -1,6 +1,6 @@
 ---
 layout: layouts/contact.liquid
-permalink: /contact/index.html
+permalink: /contact/
 eleventyNavigation:
   key: Contact
   order: 5

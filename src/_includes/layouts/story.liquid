@@ -193,84 +193,16 @@ layout: layouts/base.liquid
       <div class="container py-5">
           <h3 class="text-gray py-3">Who We Are</h3>
           <div class="row align-items-start text-center">
-              <div class="col-lg col-md col-4 mx-auto">
+              {% for item in collections.boardMemberItem %}
+                <div class="col-lg col-md col-4 mx-auto">
                   <img src="/assets/img/board-member-traci.jpg" alt="Traci Walker" class="img-fluid pb-4" />
                   <h6 class="text-blue">
-                      Traci Walker<br/>
-                      <small class="text-gray">Digital Services Coalition</small><br/>
+                      {% item.boardMemberItem.memberName | readableDate %}<br/>
+                      <small class="text-gray"></small><br/>
                       <small class="text-blue">Executive Director</small>
                   </h6>
               </div>
-
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-ivy.jpg" alt="Ivy Teng Lei" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Ivy Teng Lei<br/>
-                      <small class="text-gray">Exygy</small><br/>
-                      <small class="text-blue">President, Board Member</small>
-                  </h6>
-              </div>
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-greg-godbout.jpg" alt="Greg Godbout" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Greg Godbout<br/>
-                      <small class="text-gray">Fearless</small><br/>
-                      <small class="text-blue">Board Member</small>
-                  </h6>
-              </div>
-          </div>
-
-          <div class="row align-items-center text-center">
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-lapedra.jpg" alt="Lapedra Tolson" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Lapedra Tolson<br/>
-                      <small class="text-gray">Friends From The City</small><br/>
-                      <small class="text-blue">Board Member</small>
-                  </h6>
-              </div>
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-jason.jpg" alt="Jason Stoner" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Jason Stoner<br/>
-                      <small class="text-gray">MetroStar</small><br/>
-                      <small class="text-blue">Board Member</small>
-                  </h6>
-              </div>
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-stephanie.jpg" alt="Stephanie Chin" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Stephanie Chin<br/>
-                      <small class="text-gray">Fearless</small><br/>
-                      <small class="text-blue">Board Member</small>
-                  </h6>
-              </div>
-          </div>
-          <div class="row align-items-end text-center">
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-mike.jpg" alt="Mike Gifford" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Mike Gifford<br/>
-                      <small class="text-gray">CivicActions</small><br/>
-                      <small class="text-blue">Board Member</small>
-                  </h6>
-              </div>
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-carl.jpg" alt="Carl Bunche" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Carl Bunche<br/>
-                      <small class="text-gray">Flexion</small><br/>
-                      <small class="text-blue">Treasurer</small>
-                  </h6>
-              </div>
-              <div class="col-lg col-md col-4 mx-auto">
-                  <img src="/assets/img/board-member-tabby.jpg" alt="Tabby Farrar" class="img-fluid pb-4" />
-                  <h6 class="text-blue">
-                      Tabby Farrar<br/>
-                      <small class="text-gray">MediaBarn</small><br/>
-                      <small class="text-blue">Secretary</small>
-                  </h6>
-              </div>
+            {% endfor %}
           </div>
       </div>
   </div>
