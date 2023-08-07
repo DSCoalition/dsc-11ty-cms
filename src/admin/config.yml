@@ -38,5 +38,5 @@ collections:
           file: "src/pages/membership.md"
           fields:
             - { label: "Membership header", name: "membershipHeader", widget: "string" }
-            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown"}
+            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
             - { label: "Membership content", name: "body", widget: "markdown" }
