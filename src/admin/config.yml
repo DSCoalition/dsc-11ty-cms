@@ -1,5 +1,5 @@
-# local_backend:
-#   url: http://localhost:8082/api/v1
+# For Development with DecapCMS
+# local_backend: true
 
 # backend:
 #   name: git-gateway
@@ -9,16 +9,15 @@ backend:
   repo: kindsys/digital-services-coalition
   branch: main
 
-publish_mode: editorial_workflow
-media_folder: "img/"
-public_folder: "img/"
+media_folder: "src/assets/img/"
+public_folder: "/assets/img/"
 
 collections:
     - name: "pages"
       label: "Pages"
       files:
         - name: "home"
-          label: "Home page"
+          label: "Home"
           file: "src/pages/home.md"
           fields:
             - { label: "Title", name: "title", widget: "string" }
@@ -41,3 +40,41 @@ collections:
             - { label: "Membership header", name: "membershipHeader", widget: "string" }
             - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
             - { label: "Membership content", name: "body", widget: "markdown" }
+        - name: "story"
+          label: "Story"
+          file: "src/pages/story.md"
+          fields:
+            - { label: "Hero Title", name: "heroTitle", widget: "string" }
+            - { label: "Hero Content", name: "body", widget: "markdown" }
+
+    - label: "Board Members"
+      name: "boardMemberItem"
+      folder: "src/pages/board-members"
+      slug: "{{memberName}}-{{year}}-{{month}}-{{day}}"
+      create: true
+      fields:
+        - { label: "Member Name", name: "memberName", widget: "string" }
+        - { label: "Member Organization Name", name: "memberOrganization", widget: "string" }
+        - { label: "Member Role", name: "memberRole", widget: "string" }
+        - { label: "Member Image", name: "memberImage", widget: "image" }
+        - { label: "Member Image Alt", name: "memberImageAlt", widget: "string" }
+        - { label: "Order", name: "order", widget: "number" }
+
+    - label: "Organizations"
+      name: "orgItem"
+      folder: "src/pages/organizations"
+      slug: "{{organizationName}}-{{year}}-{{month}}-{{day}}"
+      create: true
+      fields:
+        - { label: "Organization Name", name: "organizationName", widget: "string" }
+        - { label: "Organization Description", name: "organizationDescription", widget: "text" }
+        - { label: "Organization Link", name: "linkURL", widget: "string" }
+        - { label: "Organization Image", name: "organizationImage", widget: "image" }
+        - { label: "Organization Alt", name: "organizationAlt", widget: "string" }
+        - { label: "Founding Member", name: "foundingMember", widget: "boolean", default: false }
+
+
+
+
+
+

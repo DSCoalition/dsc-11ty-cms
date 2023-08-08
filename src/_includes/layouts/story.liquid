@@ -1,3 +1,43 @@
 ---
 layout: layouts/base.liquid
 ---
+<section>
+  <div class="bg-parallax-photo">
+    <div>
+      <img src="/assets/img/bg-triangle-pink2.png" class="float-right float-md-none" />
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      <div class="">
+        <h1 class="text-blue">{{ heroTitle }}</h1>
+        {{ content | markdownify }}
+      </div>
+    </div>
+  </div>
+  <div class="bg-parallax">
+    <div>
+      <img src="/assets/img/bg-triangle-gray.png" />
+    </div>
+  </div>
+  <div class="">
+    <div class="">
+      <div class="">
+        <h2 class="text-gray">Our community</h2>
+        <p>The Coalition formed from the shared ideals of 16 companies and continues to grow as other firms join the call.</p>
+        <p>
+          <i>* = Founding member</i>
+        </p>
+      </div>
+    </div>
+    <div class="">
+      {% include "components/organization-item.liquid" %}
+    </div>
+  </div>
+  <div class="bg-grayLightest">
+    <div class="">
+      <h3 class="text-gray">Who We Are</h3>
+      {% include "components/board-member-item.liquid" %}
+    </div>
+  </div>
+</section>
