@@ -40,6 +40,12 @@ collections:
             - { label: "Membership header", name: "membershipHeader", widget: "string" }
             - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
             - { label: "Membership content", name: "body", widget: "markdown" }
+        - name: "story"
+          label: "Story"
+          file: "src/pages/story.md"
+          fields:
+            - { label: "Hero Title", name: "heroTitle", widget: "string" }
+            - { label: "Hero Content", name: "body", widget: "markdown" }
 
     - label: "Board Members"
       name: "boardMemberItem"
