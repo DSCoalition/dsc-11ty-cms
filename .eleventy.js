@@ -18,6 +18,11 @@ module.exports = function (eleventyConfig) {
       });
     return boardMembers;
   });
+  const md = require("markdown-it")({
+    html: true,
+    linkify: true,
+    typographer: true,
+  });
 
   eleventyConfig.addCollection("orgItem", function (collection) {
     return collection
@@ -30,6 +35,11 @@ module.exports = function (eleventyConfig) {
         else return 0;
       });
   });
+
+  eleventyConfig.addFilter("markdownify", (markdownString) =>
+    md.render(markdownString)
+  );
+
 
   const { DateTime } = require("luxon");
 

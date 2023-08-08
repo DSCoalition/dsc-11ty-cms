@@ -13,6 +13,34 @@ media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
 
 collections:
+    - name: "pages"
+      label: "Pages"
+      files:
+        - name: "home"
+          label: "Home"
+          file: "src/pages/home.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Banner text", name: "bannerText", widget: "string" }
+        - name: "mission"
+          label: "Mission"
+          file: "src/pages/mission.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - label: "Mission header"
+              name: "missionHeader"
+              widget: "object"
+              fields:
+                - { label: "Date text", name: "dateText", widget: "string" }
+                - { label: "Link text", name: "linkText", widget: "string" }
+        - name: "membership"
+          label: "Membership"
+          file: "src/pages/membership.md"
+          fields:
+            - { label: "Membership header", name: "membershipHeader", widget: "string" }
+            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
+            - { label: "Membership content", name: "body", widget: "markdown" }
+
     - label: "Board Members"
       name: "boardMemberItem"
       folder: "src/pages/board-members"
@@ -40,42 +68,6 @@ collections:
         - { label: "Founding Member", name: "foundingMember", widget: "boolean", default: false }
 
 
-
-
-
-    - name: "pages"
-      label: "Pages"
-      files:
-        - name: "home"
-          label: "Home"
-          file: "src/pages/home.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Banner text", name: "bannerText", widget: "string" }
-        - name: "mission"
-          label: "Mission"
-          file: "src/pages/mission.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Mission header"
-              name: "missionHeader"
-              widget: "object"
-              fields:
-                - { label: "Date text", name: "dateText", widget: "string" }
-                - { label: "Link text", name: "linkText", widget: "string" }
-        - name: "membership"
-          label: "Membership"
-          file: "src/pages/membership.md"
-          fields:
-            - { label: "Membership header", name: "membershipHeader", widget: "string" }
-            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown"}
-            - { label: "Membership content", name: "body", widget: "markdown" }
-        - name: "story"
-          label: "Story"
-          file: "src/pages/story.md"
-          fields:
-            - { label: "Hero Title", name: "heroTitle", widget: "string"}
-            - { label: "Hero Content", name: "body", widget: "markdown"}
 
 
 
