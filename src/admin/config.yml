@@ -1,13 +1,13 @@
-local_backend:
-  url: http://localhost:8082/api/v1
-
-backend:
-  name: git-gateway
+# For Development with DecapCMS
+# local_backend: true
 
 # backend:
-#   name: github
-#   repo: kindsys/digital-services-coalition
-#   branch: main
+#   name: git-gateway
+
+backend:
+  name: github
+  repo: kindsys/digital-services-coalition
+  branch: main
 
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
