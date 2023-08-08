@@ -18,11 +18,6 @@ module.exports = function (eleventyConfig) {
       });
     return boardMembers;
   });
-  const md = require("markdown-it")({
-    html: true,
-    linkify: true,
-    typographer: true,
-  });
 
   eleventyConfig.addCollection("orgItem", function (collection) {
     return collection
@@ -34,6 +29,12 @@ module.exports = function (eleventyConfig) {
         else if (nameA > nameB) return 1;
         else return 0;
       });
+  });
+
+  const md = require("markdown-it")({
+    html: true,
+    linkify: true,
+    typographer: true,
   });
 
   eleventyConfig.addFilter("markdownify", (markdownString) =>
