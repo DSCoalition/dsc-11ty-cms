@@ -3,6 +3,9 @@ title: Mission
 layout: layouts/mission.liquid
 permalink: /mission/
 eleventyNavigation:
-    key: Mission
-    order: 2
+  key: Mission
+  order: 2
+missionHeader:
+  dateText: Mar 12
+  linkText: Read our 2022-2025 strategic plan
 ---

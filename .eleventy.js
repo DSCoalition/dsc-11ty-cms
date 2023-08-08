@@ -12,6 +12,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("404.html");
 
+  const md = require("markdown-it")({
+    html: true,
+    linkify: true,
+    typographer: true,
+  });
+
+  eleventyConfig.addFilter("markdownify", (markdownString) =>
+    md.render(markdownString)
+  );
 
   const {
     DateTime
