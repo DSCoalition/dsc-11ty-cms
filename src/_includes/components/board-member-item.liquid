@@ -1,8 +1,12 @@
-<div class="col-lg col-md col-4 mx-auto">
-  <img src="/assets/img/board-member-traci.jpg" alt="Traci Walker" class="img-fluid pb-4" />
-  <h6 class="text-blue">
-      Traci Walker<br/>
-      <small class="text-gray">Digital Services Coalition</small><br/>
-      <small class="text-blue">Executive Director</small>
-  </h6>
-</div>
+{% assign members = collections.boardMemberItem %}
+
+{% for member in members %}
+  <div class="">
+    <img src="{{ member.data.memberImage }}" alt="{{ member.data.memberAlt }}" class="" />
+    <h6 class="text-blue">
+        {{ member.data.memberName }}<br/>
+        <small class="text-gray">{{ member.data.memberRole }}</small><br/>
+        <small class="text-blue">{{ member.data.memberOrganization }}</small>
+    </h6>
+  </div>
+{% endfor %}

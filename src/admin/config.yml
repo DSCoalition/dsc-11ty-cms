@@ -9,15 +9,45 @@ backend:
 #   repo: kindsys/digital-services-coalition
 #   branch: main
 
-media_folder: "assets/img/"
-public_folder: "assets/img/"
+media_folder: "src/assets/img/"
+public_folder: "/assets/img/"
 
 collections:
+    - label: "Board Members"
+      name: "boardMemberItem"
+      folder: "src/pages/board-members"
+      slug: "{{memberName}}-{{year}}-{{month}}-{{day}}"
+      create: true
+      fields:
+        - { label: "Member Name", name: "memberName", widget: "string" }
+        - { label: "Member Organization Name", name: "memberOrganization", widget: "string" }
+        - { label: "Member Role", name: "memberRole", widget: "string" }
+        - { label: "Member Image", name: "memberImage", widget: "image" }
+        - { label: "Member Image Alt", name: "memberImageAlt", widget: "string" }
+        - { label: "Order", name: "order", widget: "number" }
+
+    - label: "Organizations"
+      name: "orgItem"
+      folder: "src/pages/organizations"
+      slug: "{{organizationName}}-{{year}}-{{month}}-{{day}}"
+      create: true
+      fields:
+        - { label: "Organization Name", name: "organizationName", widget: "string" }
+        - { label: "Organization Description", name: "organizationDescription", widget: "text" }
+        - { label: "Organization Link", name: "linkURL", widget: "string" }
+        - { label: "Organization Image", name: "organizationImage", widget: "image" }
+        - { label: "Organization Alt", name: "organizationAlt", widget: "string" }
+        - { label: "Founding Member", name: "foundingMember", widget: "boolean", default: false }
+
+
+
+
+
     - name: "pages"
       label: "Pages"
       files:
         - name: "home"
-          label: "Home page"
+          label: "Home"
           file: "src/pages/home.md"
           fields:
             - { label: "Title", name: "title", widget: "string" }
@@ -44,16 +74,9 @@ collections:
           label: "Story"
           file: "src/pages/story.md"
           fields:
-            - label: "Board Member Item"
-              name: "boardMemberItem"
-              widget: "object"
-              collapsed: true
-              create: true
-              fields:
-                - { label: "Member Name", name: "memberName", widget: "string" }
-                - { label: "Member Organization Name", name: "memberOrganization", widget: "string" }
-                - { label: "Member Role", name: "memberRole", widget: "string" }
-                - { label: "Member Image", name: "memberImage", widget: "image" }
+            - { label: "Hero Title", name: "heroTitle", widget: "string"}
+            - { label: "Hero Content", name: "body", widget: "markdown"}
+
 
 
 
