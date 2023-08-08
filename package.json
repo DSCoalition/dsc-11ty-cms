@@ -1,5 +1,5 @@
 {
-  "name": "eleventy-decap-tailwind-template",
+  "name": "digital-services-coalition",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kindsys/eleventy-decap-tailwind-template.git"
+    "url": "git+https://github.com/kindsys/digital-services-coalition.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kindsys/eleventy-decap-tailwind-template/issues"
+    "url": "https://github.com/kindsys/digital-services-coalition/issues"
   },
-  "homepage": "https://github.com/kindsys/eleventy-decap-tailwind-template#readme",
+  "homepage": "https://github.com/kindsys/digital-services-coalition",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
