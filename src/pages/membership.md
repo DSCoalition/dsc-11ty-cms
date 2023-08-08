@@ -5,19 +5,21 @@ eleventyNavigation:
   key: Membership
   order: 4
 membershipHeader: Join our coalition
-membershipAnnouncement: "**We are now accepting applications for membership in
-  the DSC from April 10th through May 7th, 2023.**\r
+membershipAnnouncement: >-
+  **We are now accepting applications for membership in the DSC from April 10th
+  through May 7th, 2023.**
 
-  \r
 
-  Prior to filling out an application, please review the [2023 DSC Membership
-  Policy](/pdfs/Membership-Policy-2023.pdf) to ensure your company is eligible
-  and to see the cost of membership.\r
+  Prior to filling out an application, please review the 2023 DSC Membership Policy to ensure your company is eligible and to see the cost of membership: 
 
-  \r
 
-  **Fill out your application here:** [DSC 2023 Membership
-  Application](https://www.surveymonkey.com/r/WQ5JRKR)"
+  [DSC 2023 Membership Policy](/assets/membership-policy-2023.pdf "File")
+
+
+  to ensure your company is eligible and to see the cost of membership.
+
+
+  **Fill out your application here:** [DSC 2023 Membership Application](https://www.surveymonkey.com/r/WQ5JRKR)
 ---
 ## Who can join
 
@@ -90,9 +92,9 @@ Each existing charter member firm can evaluate and agree to sponsor one prospect
 
 ## Criteria for membership
 
-* Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/pdfs/Appendix-A-Case-Study-Instructions-2023.pdf)
+* Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/assets/pdf/Appendix-A-Case-Study-Instructions-2023.pdf)
 * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.
 * Sponsorship from a current DSC member.
 * Commitment to attendance at regular meetings with DSC members.
 
-For more information on the full membership criteria and qualifications, please review [2023 DSC Membership Policy](/pdfs/Membership-Policy-2023.pdf).
+For more information on the full membership criteria and qualifications, please review [2023 DSC Membership Policy](/assets/pdf/Membership-Policy-2023.pdf).

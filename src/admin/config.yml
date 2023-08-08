@@ -1,17 +1,16 @@
-# local_backend:
-#   url: http://localhost:8082/api/v1
-
-# backend:
-#   name: git-gateway
+local_backend: true
 
 backend:
-  name: github
-  repo: kindsys/digital-services-coalition
-  branch: main
+  name: git-gateway
 
-publish_mode: editorial_workflow
-media_folder: "img/"
-public_folder: "img/"
+# backend:
+#   name: github
+#   repo: kindsys/digital-services-coalition
+#   branch: main
+
+# publish_mode: editorial_workflow
+media_folder: "/assets/"
+public_folder: "/assets/"
 
 collections:
     - name: "pages"
@@ -39,5 +38,5 @@ collections:
           file: "src/pages/membership.md"
           fields:
             - { label: "Membership header", name: "membershipHeader", widget: "string" }
-            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
+            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", editor-blocks: ["file"]}
             - { label: "Membership content", name: "body", widget: "markdown" }
