@@ -1,15 +1,15 @@
-# local_backend:
-#   url: http://localhost:8082/api/v1
-
-# backend:
-#   name: git-gateway
+local_backend:
+  url: http://localhost:8082/api/v1
 
 backend:
-  name: github
-  repo: kindsys/digital-services-coalition
-  branch: main
+  name: git-gateway
 
-publish_mode: editorial_workflow
+# backend:
+#   name: github
+#   repo: kindsys/digital-services-coalition
+#   branch: main
+
+# publish_mode: editorial_workflow
 media_folder: "img/"
 public_folder: "img/"
 

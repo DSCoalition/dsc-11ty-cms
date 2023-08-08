@@ -5,7 +5,19 @@ eleventyNavigation:
   key: Membership
   order: 4
 membershipHeader: Join our coalition
-membershipAnnouncement: ""
+membershipAnnouncement: "**We are now accepting applications for membership in
+  the DSC from April 10th through May 7th, 2023.**\r
+
+  \r
+
+  Prior to filling out an application, please review the [2023 DSC Membership
+  Policy](/pdfs/Membership-Policy-2023.pdf) to ensure your company is eligible
+  and to see the cost of membership.\r
+
+  \r
+
+  **Fill out your application here:** [DSC 2023 Membership
+  Application](https://www.surveymonkey.com/r/WQ5JRKR)"
 ---
 ## Who can join
 
