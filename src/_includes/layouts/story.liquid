@@ -11,7 +11,7 @@ layout: layouts/base.liquid
     <div class="">
       <div class="">
         <h1 class="text-blue">{{ heroTitle }}</h1>
-        {{ content }}
+        {{ content | markdownify }}
       </div>
     </div>
   </div>
