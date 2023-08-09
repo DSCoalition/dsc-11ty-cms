@@ -13,7 +13,12 @@ module.exports = {
       magenta: "#92268e",
       gray: "#444444",
       grayLight: "#777777",
+      grayLightest: "#f9f7f6",
+      white: "#ffffff",
       grayLightest: "#f9f7f6"
+    },
+    screens: {
+      desktop: '992px'
     }
   }
 }

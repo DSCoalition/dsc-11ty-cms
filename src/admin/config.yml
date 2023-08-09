@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 # For Development with DecapCMS
 local_backend: true
+=======
+
+# local_backend: true
+
+# backend:
+#   name: git-gateway
+>>>>>>> main
 
 backend:
   name: git-gateway
@@ -20,8 +28,27 @@ collections:
           label: "Home"
           file: "src/pages/home.md"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Banner text", name: "bannerText", widget: "string" }
+            - label: "Home Hero Right"
+              name: "homeHeroRight"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "heroTitle", widget: "string" }
+                - { label: "Subtitle", name: "heroSubTitle", widget: "string" }
+                - { label: "Content", name: "heroContent", widget: "markdown" }
+            - { label: "Banner text", name: "bannerText", widget: "markdown" }
+            - label: "Home Hero Left"
+              name: "homeHeroLeft"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "heroTitle", widget: "string" }
+                - { label: "Content", name: "heroContent", widget: "markdown" }
+            - label: "Home Section Header"
+              name: "homeSectionHeader"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "sectionHeaderTitle", widget: "string" }
+                - { label: "SubText", name: "sectionHeaderSubText", widget: "text" }
+                - { label: "SubTitle", name: "sectionHeaderSubTitle", widget: "string" }
         - name: "mission"
           label: "Mission"
           file: "src/pages/mission.md"
@@ -38,9 +65,15 @@ collections:
           label: "Membership"
           file: "src/pages/membership.md"
           fields:
-            - { label: "Membership header", name: "membershipHeader", widget: "string" }
-            - { label: "Membership announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
-            - { label: "Membership content", name: "body", widget: "markdown" }
+            - { label: "Membership Header", name: "membershipHeader", widget: "string" }
+            - { label: "Membership Announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
+            - { label: "Membership Content", name: "body", widget: "markdown" }
+        - name: "contact"
+          label: "Contact"
+          file: "src/pages/contact.md"
+          fields:
+            - { label: "Contact Header", name: "contactHeader", widget: "string" }
+            - { label: "Contact Content", name: "body", widget: "markdown" }
         - name: "story"
           label: "Story"
           file: "src/pages/story.md"
