@@ -1,21 +1,86 @@
+# For Development with DecapCMS
+# local_backend: true
+
+# backend:
+#   name: git-gateway
+
 backend:
   name: github
-  repo: kindsys/eleventy-decap-tailwind-template
+  repo: kindsys/digital-services-coalition
   branch: main
-  site_domain: 11ty-decap-starter.kind.systems
 
-publish_mode: editorial_workflow
-media_folder: "img/"
-public_folder: "img/"
+media_folder: "src/assets/img/"
+public_folder: "/assets/img/"
 
 collections:
-    - name: "posts"
-      label: "Posts"
-      folder: "src/posts"
+    - name: "pages"
+      label: "Pages"
+      files:
+        - name: "home"
+          label: "Home"
+          file: "src/pages/home.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Banner Text", name: "bannerText", widget: "string" }
+        - name: "mission"
+          label: "Mission"
+          file: "src/pages/mission.md"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - label: "Mission header"
+              name: "missionHeader"
+              widget: "object"
+              fields:
+                - { label: "Date Text", name: "dateText", widget: "string" }
+                - { label: "Link Text", name: "linkText", widget: "string" }
+        - name: "membership"
+          label: "Membership"
+          file: "src/pages/membership.md"
+          fields:
+            - { label: "Membership Header", name: "membershipHeader", widget: "string" }
+            - { label: "Membership Announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
+            - { label: "Membership Content", name: "body", widget: "markdown" }
+        - name: "contact"
+          label: "Contact"
+          file: "src/pages/contact.md"
+          fields:
+            - { label: "Contact Header", name: "contactHeader", widget: "string" }
+            - { label: "Contact Content", name: "body", widget: "markdown" }
+        - name: "story"
+          label: "Story"
+          file: "src/pages/story.md"
+          fields:
+            - { label: "Hero Title", name: "heroTitle", widget: "string" }
+            - { label: "Hero Content", name: "body", widget: "markdown" }
+
+    - label: "Board Members"
+      name: "boardMemberItem"
+      folder: "src/pages/board-members"
+      slug: "{{memberName}}-{{year}}-{{month}}-{{day}}"
       create: true
       fields:
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Description", name: "description", widget: "text" }
-        - { label: "Date", name: "date", widget: "datetime" }
+        - { label: "Member Name", name: "memberName", widget: "string" }
+        - { label: "Member Organization Name", name: "memberOrganization", widget: "string" }
+        - { label: "Member Role", name: "memberRole", widget: "string" }
+        - { label: "Member Image", name: "memberImage", widget: "image" }
+        - { label: "Member Image Alt", name: "memberImageAlt", widget: "string" }
+        - { label: "Order", name: "order", widget: "number" }
+
+    - label: "Organizations"
+      name: "orgItem"
+      folder: "src/pages/organizations"
+      slug: "{{organizationName}}-{{year}}-{{month}}-{{day}}"
+      create: true
+      fields:
+        - { label: "Organization Name", name: "organizationName", widget: "string" }
+        - { label: "Organization Description", name: "organizationDescription", widget: "text" }
+        - { label: "Organization Link", name: "linkURL", widget: "string" }
+        - { label: "Organization Image", name: "organizationImage", widget: "image" }
+        - { label: "Organization Alt", name: "organizationAlt", widget: "string" }
+        - { label: "Founding Member", name: "foundingMember", widget: "boolean", default: false }
+
+
+
+
 
 

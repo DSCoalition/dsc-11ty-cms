@@ -1,0 +1,11 @@
+{% assign orgs = collections.orgItem %}
+
+{% for org in orgs %}
+  <div class="">
+    <a href="{{ org.data.linkURL }}"><img src="{{ org.data.organizationImage }}" alt="{{ org.data.organizationAlt }}"></a>
+    <p>{{ org.data.organizationDescription }}</p>
+    {% if org.data.foundingMember %}
+      <i>*</i>
+    {% endif %}
+  </div>
+{% endfor %}

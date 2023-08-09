@@ -86,14 +86,6 @@
         }
     }
 
-    /* Backgrounds & Illustrations */
-    .bg-illustration {
-        background-image: url('../assets/img/illustration-gov.png');
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        background-size: contain;
-    }
-
     @media (max-width: 768px) {
         .container.bg-illustration {
             padding-bottom: 15.63rem !important; /* Equivalent to 250px */
