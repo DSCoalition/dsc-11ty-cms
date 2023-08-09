@@ -1,13 +1,13 @@
 # For Development with DecapCMS
-# local_backend: true
-
-# backend:
-#   name: git-gateway
+local_backend: true
 
 backend:
-  name: github
-  repo: kindsys/digital-services-coalition
-  branch: main
+  name: git-gateway
+
+# backend:
+#   name: github
+#   repo: kindsys/digital-services-coalition
+#   branch: main
 
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
@@ -26,11 +26,12 @@ collections:
           label: "Mission"
           file: "src/pages/mission.md"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Mission header"
-              name: "missionHeader"
+            - label: "Mission Hero"
+              name: "missionHero"
               widget: "object"
               fields:
+                - { label: "Hero Title", name: "heroTitle", widget: "string" }
+                - { label: "Hero Content", name: "heroContent", widget: "markdown" }
                 - { label: "Date text", name: "dateText", widget: "string" }
                 - { label: "Link text", name: "linkText", widget: "string" }
         - name: "membership"
