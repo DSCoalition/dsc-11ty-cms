@@ -1,4 +1,4 @@
-# For Development with DecapCMS
+
 # local_backend: true
 
 # backend:
@@ -20,8 +20,27 @@ collections:
           label: "Home"
           file: "src/pages/home.md"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Banner text", name: "bannerText", widget: "string" }
+            - label: "Home Hero Right"
+              name: "homeHeroRight"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "heroTitle", widget: "string" }
+                - { label: "Subtitle", name: "heroSubTitle", widget: "string" }
+                - { label: "Content", name: "heroContent", widget: "markdown" }
+            - { label: "Banner text", name: "bannerText", widget: "markdown" }
+            - label: "Home Hero Left"
+              name: "homeHeroLeft"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "heroTitle", widget: "string" }
+                - { label: "Content", name: "heroContent", widget: "markdown" }
+            - label: "Home Section Header"
+              name: "homeSectionHeader"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "sectionHeaderTitle", widget: "string" }
+                - { label: "SubText", name: "sectionHeaderSubText", widget: "text" }
+                - { label: "SubTitle", name: "sectionHeaderSubTitle", widget: "string" }
         - name: "mission"
           label: "Mission"
           file: "src/pages/mission.md"
