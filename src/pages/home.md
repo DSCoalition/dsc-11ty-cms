@@ -5,7 +5,7 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 1
-homeHero:
+homeHeroRight:
   heroTitle: Redefining how the government does digital.
   heroSubTitle: We’re a collection of agile technology and design firms that
     serve—or aspire to serve—the government.
