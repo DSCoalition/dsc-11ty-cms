@@ -19,7 +19,7 @@ missionHero:
     Nimble, forward-thinking firms are the ones who can make this a reality.
 
 
-    By working together, we can accelerate the government’s ability to implement services that focus on good usability, reliable technology, and accessibility for all—while also benefiting the individuals and firms that are part of the community.
+    By working together, we can accelerate the government’s ability to implement services that focus on good usability, reliable technology, and accessibility for all—while also benefiting the individuals and firms that are part of the community
   dateText: Mar 12
   linkText: Read our 2022-2025 Strategic Plan (PDF, 2.5 MB, 22 pages)
 ---
