@@ -1,17 +1,56 @@
-<nav class="flex items-center justify-between flex-wrap px-5 py-3 border-b">
-  <a href="{{ '/' | url }}" class="font-semibold text-xl tracking-tight">11ty | DecapCMS | TailwindCSS</a>
+<nav class="flex items-center justify-between flex-wrap m-3">
+<!-- Brand/Logo -->
+    <a class="flex items-center flex-shrink-0 mr-6" href="/" >
+        <img class= "navbar-logo" alt="Digital Services Coalition" src="/assets/img/dsc-logo.png" class="logo">
+    </a>
 
-  {% assign navPages = collections.all | eleventyNavigation %}
-  <ul>
-    {% for entry in navPages %}
-      <li class="inline">
-        <a
-         href="{{ entry.url | url }}"
-         class="uppercase text-sm py-1 px-2 rounded mr-4 inline-block
-         {{'text-gray-700 hover:text-gray-900'}}">
-         {{ entry.title }}
-       </a>
-      </li>
-    {% endfor %}
- </ul>
+    <!-- Mobile Menu (Hamburger Icon) -->
+    <button class="nav-toggler pr-2 block desktop:hidden" type="button">
+        <i class="material-icons text-red hover:text-magenta">menu</i>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="invisible desktop:visible navbar-links w-full block desktop:flex desktop:items-center desktop:w-auto" id="navigation-container">
+        <ul class="navbar-nav desktop:flex-grow duration-500 ease-out transition-all delay-150" id="navigation-links">
+            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/" class=""><span class="nav-item">Home</span></a>
+            </li>
+            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/mission" class=""><span class="nav-item">Mission</span></a>
+            </li>
+            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/story" class=""><span class="nav-item">Story</span></a>
+            </li>
+            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/membership" class=""><span class="nav-item">Membership</span></a>
+            </li>
+            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
+                <a href="https://medium.com/@DigitalServicesCoalition" class="" target="_blank"><span class="nav-item">News</span></a>
+            </li>
+            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
+                <a href="https://shop.digitalservicescoalition.org/" class="" target="_blank"><span class="nav-item">Shop</span></a>
+            </li>
+            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
+                <a href="/contact" class=""><span class="nav-item">Contact</span></a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
+
+<script>
+  // Add an event listener to the hamburger icon button
+  const navToggler = document.querySelector('.nav-toggler');
+  const navigationContainer = document.getElementById('navigation-container');
+  const navigationLinks = document.getElementById('navigation-links');
+
+  navToggler.addEventListener('click', () => {
+    // Toggle the 'hidden' class on the navigation links container
+    navigationContainer.classList.toggle('invisible');
+    navigationLinks.classList.toggle('translate-y-2');
+
+    window.addEventListener("resize", function() {
+        if (window.innerWidth < 992) navigationContainer.classList.add("invisible");
+    });
+  });
+</script>
