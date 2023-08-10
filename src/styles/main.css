@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import "tailwindcss/screens";
 
 @layer components {
     body {
@@ -40,6 +41,10 @@
 
     h3 {
         font-size: 1.60rem;
+    }
+
+    h5 {
+        font-size: 1.25rem; 
     }
 
     h6 {

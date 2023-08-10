@@ -18,7 +18,11 @@ module.exports = {
       grayLightest: "#f9f7f6"
     },
     screens: {
-      desktop: '992px'
+      sm: "640px",
+      md: "768px",
+      desktop: '992px',
+      lg: "1024px",
+      xl: "1280px",
     }
   }
 }
