@@ -8,7 +8,7 @@
         padding: 0;
         color: theme(colors.gray);
         font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
-        font-size: 0.69rem; /* Equivalent to 11pt */
+        font-size: 11pt; /* Equivalent to 11pt */
     }
 
     @media (max-width: 992px) {
@@ -26,7 +26,7 @@
 
     /* Typography */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Merriweather', serif;
+        font-family: 'Merriweather', 'serif';
         margin-bottom: 1.00rem;
     }
 
@@ -35,7 +35,7 @@
     }
 
     h2 {
-        font-size: 1.80rem;
+        font-size: 1.90rem;
     }
 
     h3 {
@@ -43,14 +43,15 @@
     }
 
     h6 {
-        font-weight: bold;
+
+        font-size: 16px
     }
 
     p {
-        font-size: 1.00rem;
+        font-size: 1em;
 
         &.text-sm {
-            font-size: 0.80rem;
+            font-size: .8em;
         }
     }
 
@@ -86,6 +87,12 @@
         }
     }
 
+    .bg-illustration {
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+    }
+
     @media (max-width: 768px) {
         .container.bg-illustration {
             padding-bottom: 15.63rem !important; /* Equivalent to 250px */
@@ -102,6 +109,7 @@
 
     /* Parallax */
     /* TODO: add parallax styling */
+    
 
     /* Navbar */
     .navbar-logo {
