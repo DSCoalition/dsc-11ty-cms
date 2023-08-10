@@ -1,4 +1,4 @@
-
+# For Development with DecapCMS
 # local_backend: true
 
 # backend:
@@ -45,13 +45,14 @@ collections:
           label: "Mission"
           file: "src/pages/mission.md"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Mission header"
-              name: "missionHeader"
+            - label: "Mission Hero"
+              name: "missionHero"
               widget: "object"
               fields:
-                - { label: "Date Text", name: "dateText", widget: "string" }
-                - { label: "Link Text", name: "linkText", widget: "string" }
+                - { label: "Hero Title", name: "heroTitle", widget: "string" }
+                - { label: "Hero Content", name: "heroContent", widget: "markdown" }
+                - { label: "Date text", name: "dateText", widget: "string" }
+                - { label: "Link text", name: "linkText", widget: "string" }
         - name: "membership"
           label: "Membership"
           file: "src/pages/membership.md"
