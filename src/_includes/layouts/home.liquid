@@ -3,41 +3,47 @@ layout: layouts/base.liquid
 ---
 <section>
 
-  <div class="flex flex-col">
-    <div class="absolute z-10 top-0 left-0  bg-no-repeat w-screen h-screen" style="background-image: url('/assets/img/illustration-gov.png');"></div>
-    <img class="z-0 w-screen h-screen" src="/assets/img/bg-triangle-gray.png" />
-    <div class="flex flex-col p-4">
-      <h1 class="text-blue mb-8 leading-0 text-5xl">{{ homeHeroRight.heroTitle }}</h1>
-      <h3 class="text-grayLight text-2xl mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
-      {{ homeHeroRight.heroContent | markdownify }}
-    </div>
-  </div>
+   <div class="relative overflow-clip">
+    <div class="absolute z-[-1]">
+          <img src="/assets/img/bg-triangle-gray.png" />
+      </div>
+
+      <div class="z-1 py-5 mx-8 desktop:mx-[8rem] bg-illustration bg-no-repeat h-[85vh]" style="background-image: url('/assets/img/illustration-gov.png'); background-size: contain;">
+          <div class="grid items-center desktop:grid-cols-2">
+              <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[8rem] bg-white bg-opacity-90">
+                  <h1 class="text-blue mb-8 leading-0 text-5xl">{{ homeHeroRight.heroTitle }}</h1>
+                  <h3 class="text-grayLight text-2xl mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
+                  {{ homeHeroRight.heroContent | markdownify }}
+              </div>
+          </div>
+      </div>
+   </div>
 
   <div class="flex items-center justify-center h-64 p-10 bg-blue text-white text-lg text-center">
     {{ bannerText | markdownify }}
   </div>
 
-
-  <div class="relative bg-parallax">
-    <div class="relative top-0 left-0 min-h-[21.875rem] w-full max-w-full scroll-smooth overflow-visible z-[-1]">
-      <div class="relative w-full overflow-visible">
-        <div class="origin-top-right absolute top-0 left-0 right-0"></div>
-        <img class="h-auto w-auto max-w-full float-right" src="/assets/img/bg-triangle-pink.png" alt="Image">
+  <div class="text-left xl:px-32">
+    <div class="grid items-center desktop:grid-cols-2">
+      <div class="relative w-full h-[70vh] overflow-visible">
+        <div class="absolute top-[-10rem] right-0 z-[-1]">
+          <img src="/assets/img/bg-triangle-pink.png" alt="Image">
+        </div>
+      </div>
+      <div class="col-start-1 row-start-1 mb-12 desktop:mb-0">
+        <div class="relative z-[1] px-6 py-12 md:px-12 desktop:-mr-14">
+          <h3 class="text-red text-3xl mb-6">{{ homeHeroLeft.heroTitle }}</h3>
+          <div class="text-gray mb-2">
+            {{ homeHeroLeft.heroContent | markdownify }}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
 
-    <div class="p-4 m-2 z-10">
-        <h3 class="text-red text-3xl mb-6">{{ homeHeroLeft.heroTitle }}</h3>
-        <div class="text-gray mb-2">
-          {{ homeHeroLeft.heroContent | markdownify }}
-        </div>
-    </div>
-
-
-  <div class="bg-grayLightest p-4 m-2 ">
-    <div class=" tablet:mx-10 desktop:px-20 desktop:py-10">
+  <div class="bg-grayLightest opacity-90 p-4 my-2">
+    <div class="tablet:mx-10 desktop:px-20 desktop:py-10">
       <div class="flex flex-col tablet:mx-2 ">
         <h1 class="text-blue mb-8 pt-6 text-5xl">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
         <p class="text-gray">{{ homeSectionHeader.sectionHeaderSubText }}</p>
