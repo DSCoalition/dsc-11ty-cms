@@ -26,27 +26,20 @@
 
     /* Typography */
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Merriweather', 'serif';
-        margin-bottom: 1.00rem;
+        font-family: Merriweather, serif;
     }
-
     h1 {
-        font-size: 3.00rem;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 1.90rem;
+        font-size: 1.8em;
     }
 
     h3 {
-        font-size: 1.60rem;
+        font-size: 1.6em;
     }
-
-    h6 {
-
-        font-size: 16px
-    }
-
+    
     p {
         font-size: 1em;
 
@@ -109,7 +102,7 @@
 
     /* Parallax */
     /* TODO: add parallax styling */
-    
+
 
     /* Navbar */
     .navbar-logo {

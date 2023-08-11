@@ -17,6 +17,7 @@ module.exports = {
       white: "#ffffff",
     },
     screens: {
+      tablet: "768px",
       desktop: "992px",
     },
   },
