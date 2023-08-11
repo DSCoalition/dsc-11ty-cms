@@ -4,7 +4,7 @@ permalink: /membership/
 eleventyNavigation:
   key: Membership
   order: 4
-membershipHeader: Join our coalition
+membershipHeader: Join the coalition
 membershipAnnouncement: "**We are now accepting applications for membership in
   the DSC from April 10th through May 7th, 2023.**\r
 
@@ -21,14 +21,14 @@ membershipAnnouncement: "**We are now accepting applications for membership in
 ---
 ## Who can join
 
-Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.
+- Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.</br></br>
 
-1. Small businesses: revenue less than $30M (3-year running average)
-2. Mid-tier firms: revenue less than $55M (3-year running average)
-3. Large firms: revenue greater than $55M (3-year running average)
-4. Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.
+  1. Small businesses: revenue less than $30M (3-year running average)
+  2. Mid-tier firms: revenue less than $55M (3-year running average)
+  3. Large firms: revenue greater than $55M (3-year running average)
+  4. Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.
 
-Digital service work is defined as services supporting the development, implementation, or maintenance of:
+- Digital service work is defined as services supporting the development, implementation, or maintenance of:
 
 1. A service that is delivered via the internet or electronic network
 2. Automated and requires little to no human intervention

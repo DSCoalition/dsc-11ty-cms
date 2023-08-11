@@ -15,6 +15,8 @@ module.exports = {
       grayLight: "#777777",
       grayLightest: "#f9f7f6",
       white: "#ffffff",
+      greenLight: "#D4EDDA",
+      greenDark: "#155724"
     },
     screens: {
       tablet: "768px",

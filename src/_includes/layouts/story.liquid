@@ -9,8 +9,8 @@ layout: layouts/base.liquid
   </div>
   <div class="">
     <div class="">
-      <div class="">
-        <h1 class="text-blue">{{ heroTitle }}</h1>
+      <div class="p-2 m-2">
+        <h1 class="text-blue ">{{ heroTitle }}</h1>
         {{ content | markdownify }}
       </div>
     </div>
@@ -22,7 +22,7 @@ layout: layouts/base.liquid
   </div>
   <div class="">
     <div class="">
-      <div class="">
+      <div class="p-2 m-2">
         <h2 class="text-gray">Our community</h2>
         <p>The Coalition formed from the shared ideals of 16 companies and continues to grow as other firms join the call.</p>
         <p>
@@ -30,13 +30,13 @@ layout: layouts/base.liquid
         </p>
       </div>
     </div>
-    <div class="">
+    <div class="mt-10 p-2 m-2">
       {% include "components/organization-item.liquid" %}
     </div>
   </div>
-  <div class="bg-grayLightest">
-    <div class="">
-      <h3 class="text-gray">Who We Are</h3>
+  <div class="bg-grayLightest mt-10">
+    <h3 class="text-grayLight text-3xl pl-4 pb-5 pt-10">Who We Are</h3>
+    <div class="grid grid-cols-3">
       {% include "components/board-member-item.liquid" %}
     </div>
   </div>

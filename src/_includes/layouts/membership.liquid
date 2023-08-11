@@ -2,27 +2,24 @@
 layout: layouts/base.liquid
 ---
 <div class="bg-parallax-photo">
-  <div
-    :speed-factor="0.8"
-    sectionClass="parallax-outside"
-    containerClass="parallax-inside">
+  <div>
     <img src="/assets/img/bg-triangle-pink3.png" class="float-right" />
   </div>
 </div>
-<div class="container py-5">
-  <div class="row justify-content-md-between">
-    <div class="col-md-6 py-md-5">
-      <h1 class="text-magenta my-md-5">{{ membershipHeader }}</h1>
-      {{ membershipAnnouncement | markdownify }}
-      {{ content }}
+<div class="">
+  <div class="">
+    <div class="p-2 m-6">
+      <h1 class="text-magenta">{{ membershipHeader }}</h1>
+      <div class="bg-greenLight text-greenDark p-6 my-4">
+        <h2 class="">Announcement</h2>
+        {{ membershipAnnouncement | markdownify }}
+      </div>
+      {{ content | markdownify }}
     </div>
   </div>
 </div>
-<div class="bg-parallax">
-  <div
-    :speed-factor=".15"
-    sectionClass="parallax-outside-cover"
-    containerClass="parallax-inside">
+<div class="">
+  <div>
     <img src="/assets/img/bg-rectangle-purple.png" />
   </div>
 </div>

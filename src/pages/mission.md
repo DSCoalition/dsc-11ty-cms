@@ -16,7 +16,7 @@ missionHero:
     Innovation Fellows) that are already spearheading efforts to improve how
     government delivers services to the American public. But they need support
     from commercial tech firms to make sweeping changes to how things are done.
-    Nimble, forward-thinking firms are the ones who can make this a reality.
+    Nimble, forward-thinking firms are the ones who can make this a reality.</br></br>
 
 
     By working together, we can accelerate the government’s ability to implement services that focus on good usability, reliable technology, and accessibility for all—while also benefiting the individuals and firms that are part of the community

@@ -39,13 +39,21 @@
     h3 {
         font-size: 1.6em;
     }
-    
+
     p {
         font-size: 1em;
 
         &.text-sm {
             font-size: .8em;
         }
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type:lower-roman;
     }
 
     p.list-items::before {
@@ -130,4 +138,40 @@
             margin: 0.94rem; /* Equivalent to 15px */
         }
     }
+
+    .date-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 60ch;
+      }
+
+      .date-link:hover .link {
+        text-decoration: underline;
+      }
+
+      .date-box {
+        text-align: center;
+        word-break: break-word;
+        line-height: 1.1em;
+        background-color: #dedede;
+      }
+
+      .date-box-inner {
+        width: 4ch;
+        margin: 4px 8px;
+      }
+
+      .date {
+        font-weight: 700;
+        color: #444444;
+      }
+
+      .link-box {
+        margin-left: 1rem;
+      }
+
+      .link {
+        color: #444444;
+      }
 }
