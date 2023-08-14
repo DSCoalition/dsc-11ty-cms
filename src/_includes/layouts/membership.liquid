@@ -1,25 +1,23 @@
 ---
 layout: layouts/base.liquid
 ---
-<div class="bg-parallax-photo">
-  <div>
-    <img src="/assets/img/bg-triangle-pink3.png" class="float-right" />
-  </div>
-</div>
-<div class="">
-  <div class="">
-    <div class="p-2 m-6">
-      <h1 class="text-magenta">{{ membershipHeader }}</h1>
-      <div class="bg-greenLight text-greenDark p-6 my-4">
-        <h2 class="">Announcement</h2>
-        {{ membershipAnnouncement | markdownify }}
+
+<section class="p-4 tablet:p-6 desktop:p-0">
+  <div class="grid max-w-screen-xl py-8 mx-auto desktop:gap-8 desktop:py-16 desktop:grid-cols-2">
+    <div class=" mt-10 row-start-2 place-self-center desktop:pl-10 desktop:ml-20 desktop:row-start-1">
+      <div>
+        <h1 class="text-magenta">{{ membershipHeader }}</h1>
+        <div class="bg-greenLight text-greenDark p-4 my-4">
+          <h2 class="text-greenDark">Announcement</h2>
+          {{ membershipAnnouncement | markdownify }}
+        </div>
+        {{ content | markdownify }}
       </div>
-      {{ content | markdownify }}
+    </div>
+    <div class="tablet:ml-auto desktop:ml-auto desktop:mt-6">
+      <img src="/assets/img/bg-triangle-pink3.png" alt="Pink Triangle">
     </div>
   </div>
-</div>
-<div class="">
-  <div>
-    <img src="/assets/img/bg-rectangle-purple.png" />
-  </div>
-</div>
+</section>
+
+<div class="w-full h-64 object-cover bg-cover bg-fixed bg-no-repeat shadow-lg" style="background-image: url('/assets/img/bg-rectangle-purple.png');"></div>

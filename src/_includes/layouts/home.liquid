@@ -1,81 +1,75 @@
 ---
 layout: layouts/base.liquid
 ---
-<section>
-
-   <div class="relative overflow-clip">
-    <div class="absolute z-[-1]">
-          <img src="/assets/img/bg-triangle-gray.png" />
-      </div>
-
-      <div class="z-1 py-5 mx-8 desktop:mx-[8rem] bg-illustration bg-no-repeat h-[85vh]" style="background-image: url('/assets/img/illustration-gov.png'); background-size: contain;">
-          <div class="grid items-center desktop:grid-cols-2">
-              <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[8rem] bg-white bg-opacity-90">
-                  <h1 class="text-blue mb-8 leading-0 text-5xl">{{ homeHeroRight.heroTitle }}</h1>
-                  <h3 class="text-grayLight text-2xl mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
-                  {{ homeHeroRight.heroContent | markdownify }}
-              </div>
-          </div>
-      </div>
-   </div>
-
-  <div class="flex items-center justify-center h-64 p-10 bg-blue text-white text-lg text-center">
-    {{ bannerText | markdownify }}
+<div class="relative overflow-clip">
+  <div class="absolute z-[-1]">
+    <img src="/assets/img/bg-triangle-gray.png" />
   </div>
-
-  <div class="text-left xl:px-32">
+  <div class="z-1 py-5 mx-8 desktop:mx-[8rem] bg-illustration bg-no-repeat h-[85vh]" style="background-image: url('/assets/img/illustration-gov.png'); background-size: contain;">
     <div class="grid items-center desktop:grid-cols-2">
-      <div class="relative w-full h-[70vh] overflow-visible">
-        <div class="absolute top-[-10rem] right-0 z-[-1]">
-          <img src="/assets/img/bg-triangle-pink.png" alt="Image">
-        </div>
+      <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[8rem] bg-white bg-opacity-90">
+        <h1 class="text-blue mb-8 leading-0 text-5xl">{{ homeHeroRight.heroTitle }}</h1>
+        <h3 class="text-grayLight text-2xl mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
+        {{ homeHeroRight.heroContent | markdownify }}
       </div>
-      <div class="col-start-1 row-start-1 mb-12 desktop:mb-0">
-        <div class="relative z-[1] px-6 py-12 md:px-12 desktop:-mr-14">
-          <h3 class="text-red text-3xl mb-6">{{ homeHeroLeft.heroTitle }}</h3>
-          <div class="text-gray mb-2">
-            {{ homeHeroLeft.heroContent | markdownify }}
-          </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex items-center justify-center h-64 p-10 bg-blue text-white text-lg text-center">
+  {{ bannerText | markdownify }}
+</div>
+
+<div class="text-left xl:px-32">
+  <div class="grid items-center desktop:grid-cols-2">
+    <div class="relative w-full h-[70vh] overflow-visible">
+      <div class="absolute top-[-10rem] right-0 z-[-1]">
+        <img src="/assets/img/bg-triangle-pink.png" alt="Pink Triangle">
+      </div>
+    </div>
+    <div class="col-start-1 row-start-1 mb-12 desktop:mb-0 desktop:px-20">
+      <div class="relative z-[1] px-6 py-12 md:px-12 desktop:-mr-14">
+        <h3 class="text-red text-3xl mb-6">{{ homeHeroLeft.heroTitle }}</h3>
+        <div class="text-gray mb-2">
+          {{ homeHeroLeft.heroContent | markdownify }}
         </div>
       </div>
     </div>
   </div>
+</div>
 
+<div class="bg-grayLightest opacity-90 p-4 ">
+  <div class="tablet:mx-10 desktop:px-20 desktop:py-8">
+    <div class="flex flex-col tablet:mx-2 ">
+      <h1 class="text-blue mb-8 pt-6 text-5xl">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
+      <p class="text-gray">{{ homeSectionHeader.sectionHeaderSubText }}</p>
+      <h3 class="text-grayLight my-12 text-3xl">{{ homeSectionHeader.sectionHeaderSubTitle }}</h3>
+    </div>
+    <div class="grid tablet:grid-cols-3 gap-5">
+      <div class="tablet:mx-2">
+        <h6 class="text-blue text-xl">Community over credit</h6>
+        <p class="mb-10">Each win moves us all closer to digital transformation</p>
 
-  <div class="bg-grayLightest opacity-90 p-4 my-2">
-    <div class="tablet:mx-10 desktop:px-20 desktop:py-10">
-      <div class="flex flex-col tablet:mx-2 ">
-        <h1 class="text-blue mb-8 pt-6 text-5xl">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
-        <p class="text-gray">{{ homeSectionHeader.sectionHeaderSubText }}</p>
-        <h3 class="text-grayLight my-12 text-3xl">{{ homeSectionHeader.sectionHeaderSubTitle }}</h3>
+        <h6 class="text-blue text-xl">Purpose over profit</h6>
+        <p class="mb-8">We’re mission-driven, not money-driven</pc>
       </div>
-      <div class="grid tablet:grid-cols-3 gap-5">
-        <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Community over credit</h6>
-          <p class="mb-10">Each win moves us all closer to digital transformation</p>
+      <div class="tablet:mx-2">
+        <h6 class="text-blue text-xl">Users over stakeholders</h6>
+        <p class="mb-10">If we don’t meet user needs, business goals will never truly be met
+        </p>
 
-          <h6 class="text-blue text-xl">Purpose over profit</h6>
-          <p class="mb-8">We’re mission-driven, not money-driven</pc>
-        </div>
-        <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Users over stakeholders</h6>
-          <p class="mb-10">If we don’t meet user needs, business goals will never truly be met
-          </p>
+        <h6 class="text-blue text-xl">Innovation over risk management</h6>
+        <p class="mb-8">Change comes from taking chances</p>
+      </div>
+      <div class="tablet:mx-2">
+        <h6 class="text-blue text-xl">Outcomes over activities</h6>
+        <p class="mb-8">Success is what you accomplish, not how much you did to get there</p>
 
-          <h6 class="text-blue text-xl">Innovation over risk management</h6>
-          <p class="mb-8">Change comes from taking chances</p>
-        </div>
-        <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Outcomes over activities</h6>
-          <p class="mb-8">Success is what you accomplish, not how much you did to get there</p>
-
-          <h6 class="text-blue text-xl">Delivery over deliberation</h6>
-          <p class="mb-10">Perfection only exists once users tell you it’s perfect</p>
-        </div>
+        <h6 class="text-blue text-xl">Delivery over deliberation</h6>
+        <p class="mb-10">Perfection only exists once users tell you it’s perfect</p>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="w-full h-64 object-cover bg-cover bg-fixed bg-no-repeat shadow-lg" style="background-image: url('/assets/img/bg-rectangle-blue.png');"></div>
-
-</section>
+<div class="w-full h-64 object-cover bg-cover bg-fixed bg-no-repeat shadow-lg" style="background-image: url('/assets/img/bg-rectangle-blue.png');"></div>

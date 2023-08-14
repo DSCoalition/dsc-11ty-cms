@@ -49,11 +49,17 @@
     }
 
     ul {
-        list-style-type: disc;
+        list-style-type: circle;
+        padding-left: 1rem;
     }
 
     ol {
         list-style-type:lower-roman;
+        padding-left: 1rem;
+    }
+
+    li {
+        padding-left: 1rem;
     }
 
     p.list-items::before {
@@ -108,10 +114,6 @@
         }
     }
 
-    /* Parallax */
-    /* TODO: add parallax styling */
-
-
     /* Navbar */
     .navbar-logo {
         margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
@@ -155,6 +157,7 @@
         word-break: break-word;
         line-height: 1.1em;
         background-color: #dedede;
+        padding: 0.4rem;
       }
 
       .date-box-inner {
@@ -169,6 +172,7 @@
 
       .link-box {
         margin-left: 1rem;
+        padding: 0.4rem
       }
 
       .link {

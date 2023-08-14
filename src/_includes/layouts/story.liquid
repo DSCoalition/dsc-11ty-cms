@@ -1,43 +1,40 @@
 ---
 layout: layouts/base.liquid
 ---
+
 <section>
-  <div class="bg-parallax-photo">
-    <div>
-      <img src="/assets/img/bg-triangle-pink2.png" class="float-right float-md-none" />
+  <div class="grid px-4 py-6 mx-auto tablet:px-10 desktop:gap-8 desktop:py-16 desktop:grid-cols-2">
+    <div class="mr-auto place-self-center mb-4">
+      <img src="/assets/img/bg-triangle-pink2.png" alt="Pink Triangle">
     </div>
-  </div>
-  <div class="">
-    <div class="">
-      <div class="p-2 m-2">
-        <h1 class="text-blue ">{{ heroTitle }}</h1>
+    <div class="desktop:px-20 desktop:mt-20 desktop:mx-10 dekstop:col-span-2">
+      <h1 class="text-blue leading-none mb-4 desktop:mb-8">{{ heroTitle }}</h1>
+      <div class="text-gray mb-2">
         {{ content | markdownify }}
       </div>
     </div>
   </div>
-  <div class="bg-parallax">
-    <div>
-      <img src="/assets/img/bg-triangle-gray.png" />
-    </div>
-  </div>
-  <div class="">
-    <div class="">
-      <div class="p-2 m-2">
-        <h2 class="text-gray">Our community</h2>
-        <p>The Coalition formed from the shared ideals of 16 companies and continues to grow as other firms join the call.</p>
-        <p>
-          <i>* = Founding member</i>
-        </p>
-      </div>
-    </div>
-    <div class="mt-10 p-2 m-2">
-      {% include "components/organization-item.liquid" %}
-    </div>
-  </div>
-  <div class="bg-grayLightest mt-10">
-    <h3 class="text-grayLight text-3xl pl-4 pb-5 pt-10">Who We Are</h3>
-    <div class="grid grid-cols-3">
-      {% include "components/board-member-item.liquid" %}
-    </div>
-  </div>
 </section>
+
+<div class="relative overflow-clip">
+  <div class="absolute z-[-1]">
+    <img src="/assets/img/bg-triangle-gray.png" alt="Gray Triangle" />
+  </div>
+  <div class="z-1 p-2">
+    <div class="tablet:px-10 desktop:px-20">
+      <h2 class="text-grayLight mb-2">Our community</h2>
+      <p class="mb-2">The Coalition formed from the shared ideals of 16 companies and continues to grow as other firms join the call.</p>
+      <p>
+        <i>* = Founding member</i>
+      </p>
+    </div>
+    {% include "components/organization-item.liquid" %}
+  </div>
+</div>
+
+<div class="bg-grayLightest mt-10">
+  <h3 class="text-grayLight text-3xl pl-4 pb-5 pt-10">Who We Are</h3>
+  <div class="grid grid-cols-3">
+    {% include "components/board-member-item.liquid" %}
+  </div>
+</div>
