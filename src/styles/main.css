@@ -8,7 +8,7 @@
         padding: 0;
         color: theme(colors.gray);
         font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
-        font-size: 11pt; /* Equivalent to 11pt */
+        font-size: 11pt;
     }
 
     @media (max-width: 992px) {
@@ -20,7 +20,7 @@
 
     @media (min-width: 576px) and (max-width: 768px) {
         .container {
-            max-width: 40.00rem; /* Equivalent to 640px */
+            max-width: 40.00rem;
         }
     }
 
@@ -38,14 +38,11 @@
 
     h3 {
         font-size: 1.6em;
+        color: theme(colors.grayLight);
     }
 
     p {
         font-size: 1em;
-
-        &.text-sm {
-            font-size: .8em;
-        }
     }
 
     ul {
@@ -65,10 +62,10 @@
     p.list-items::before {
         content: "";
         display: inline-block;
-        width: 0.38rem; /* Equivalent to 6px */
-        height: 0.38rem; /* Equivalent to 6px */
-        margin-right: 0.50rem; /* Equivalent to 8px */
-        margin-bottom: 0.13rem; /* Equivalent to 2px */
+        width: 0.38rem;
+        height: 0.38rem;
+        margin-right: 0.50rem;
+        margin-bottom: 0.13rem;
         border: 1px solid theme(colors.gray);
         border-radius: 50%;
     }
@@ -102,7 +99,7 @@
 
     @media (max-width: 768px) {
         .container.bg-illustration {
-            padding-bottom: 15.63rem !important; /* Equivalent to 250px */
+            padding-bottom: 15.63rem !important;
             padding-top: 0 !important;
             background-position: bottom center;
         }
@@ -110,13 +107,13 @@
 
     @media (max-width: 992px) {
         .container.bg-illustration {
-            background-size: 10.00rem; /* Equivalent to 40% */
+            background-size: 10.00rem;
         }
     }
 
     /* Navbar */
     .navbar-logo {
-        margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
+        margin: 1.88rem 0 1.88rem 3.13rem;
         padding: 0;
         height: 3.13rem;
     }
@@ -127,17 +124,14 @@
         font-size: 1.075rem;
     }
 
-
     .navbar-nav {
-        border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
+        border-bottom: 0.31rem solid theme(colors.grayLightest);
         padding: 1.56rem 3.13rem 1.46rem 0;
- /* Equivalent to 25px 50px 25px 0 */
     }
-
 
     @media (max-width: 992px) {
         .navbar-logo {
-            margin: 0.94rem; /* Equivalent to 15px */
+            margin: 0.94rem;
         }
     }
 
@@ -167,7 +161,7 @@
 
       .date {
         font-weight: 700;
-        color: #444444;
+        color: theme(colors.gray);
       }
 
       .link-box {
@@ -176,6 +170,6 @@
       }
 
       .link {
-        color: #444444;
+        color: theme(colors.gray);
       }
 }

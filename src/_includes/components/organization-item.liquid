@@ -4,7 +4,7 @@
   {% for org in orgs %}
     <div class="flex desktop:justify-between">
       <div class="flex-none mx-10 w-16 h-1/2 tablet:w-20 desktop:w-24">
-        <a href="{{ org.data.linkURL }}" class=""
+        <a href="{{ org.data.linkURL }}"
           ><img
             src="{{ org.data.organizationImage }}"
             alt="{{ org.data.organizationAlt }}"
@@ -12,7 +12,7 @@
         /></a>
       </div>
       <div class="grow">
-        <p class="">
+        <p>
           {{ org.data.organizationDescription }}{% if org.data.foundingMember %}
           <i>*</i>{% endif %}
         </p>

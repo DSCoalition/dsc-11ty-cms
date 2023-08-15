@@ -9,7 +9,7 @@ membershipAnnouncement: "**We are now accepting applications for membership in t
   and to see the cost of membership.</br></br> Fill out your application here: [DSC 2023 Membership
   Application](https://www.surveymonkey.com/r/WQ5JRKR)**"
 ---
-## Who can join
+### Who can join
 
 - Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.</br></br>
 
@@ -29,7 +29,7 @@ membershipAnnouncement: "**We are now accepting applications for membership in t
 
 - Firms who are committed to following the DSC’s documented Community Standards and Organizational Bylaws.</br></br>
 
-## Membership benefits</br>
+### Membership benefits</br>
 
 This organization is committed to the growth and development of the digital service industry. Members in the DSC have access to business resources, mentorship from companies and individuals with similar experiences, exclusive and impactful networking, education, and advocacy opportunities, and business development resources.</br></br>
 
@@ -74,11 +74,11 @@ Through business relationships with other groups and organizations:
 * Gets group discounts for DSC member companies, such as for G2Exchange subscriptions, Rosenfeld CivicDesign Conferences, and others.
 * Builds in discounts or no charges for any DSC-led activity.</br></br>
 
-## How to join
+### How to join
 
 Each existing charter member firm can evaluate and agree to sponsor one prospective new member firm per year. The charter member firm is responsible for mentoring and guiding the sponsored firm in the mission and values of the coalition. Sponsored firms must provide at least two references and pass a review by the coalition onboarding panel.</br></br>
 
-## Criteria for membership
+### Criteria for membership
 
 * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/pdfs/Appendix-A-Case-Study-Instructions-2023.pdf)
 * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.

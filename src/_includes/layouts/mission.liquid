@@ -4,10 +4,10 @@ layout: layouts/base.liquid
 
 <section>
   <div class="grid px-4 py-8 mx-auto desktop:gap-8 desktop:grid-cols-2">
-    <div class="p-2 row-start-2 place-self-center tablet:p-4 desktop:mt-10  desktop:ml-14 desktop:p-10 desktop:row-start-1">
+    <div class="p-2 row-start-2 tablet:p-4 desktop:mt-10 desktop:ml-14 desktop:p-10 desktop:row-start-1">
       <h1 class="text-magenta leading-none mb-8 text-4xl">{{ missionHero.heroTitle }}</h1>
       {{ missionHero.heroContent | markdownify }}
-      <a download href="/assets/pdf/DSCStrategicPlan.pdf">
+      <a href="/assets/pdf/DSCStrategicPlan.pdf" download>
         <div class="my-10 date-link bg-grayLightest">
           <div
             class="date-box"
@@ -24,17 +24,17 @@ layout: layouts/base.liquid
       </a>
     </div>
     <div>
-      <img src="/assets/img/bg-triangle-blue.png" alt="Blue Triangle">
+      <img src="/assets/img/bg-triangle-blue.png" alt="Blue triangle">
     </div>
   </div>
 </section>
 
 <div class="relative w-full desktop:h-[70vh] overflow-visible ">
   <div class="absolute top-[-20rem] right-0 z-[-1]">
-    <img src="/assets/img/bg-triangle-lightblue.png" alt="Blue Triangle"/>
+    <img src="/assets/img/bg-triangle-lightblue.png" alt="Blue Triangle" />
   </div>
 
-  <div class="z-1 bg-grayLightest p-4 ">
+  <div class=" bg-grayLightest p-4 ">
     <div class="tablet:mx-10 desktop:px-20 desktop:py-10">
       <div class="flex flex-col tablet:mx-2">
         <h3 class="text-grayLight leading-none my-10 font-medium text-2xl ">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
