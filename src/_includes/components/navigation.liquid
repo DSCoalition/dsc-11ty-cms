@@ -25,10 +25,10 @@
                 <a href="/membership" class=""><span class="nav-item">Membership</span></a>
             </li>
             <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="https://medium.com/@DigitalServicesCoalition" class="" target="_blank"><span class="nav-item">News</span></a>
+                <a href="https://medium.com/@DigitalServicesCoalition" target="_blank" rel="noopener"><span class="nav-item">News</span></a>
             </li>
             <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="https://shop.digitalservicescoalition.org/" class="" target="_blank"><span class="nav-item">Shop</span></a>
+                <a href="https://shop.digitalservicescoalition.org/" target="_blank" rel="noopener"><span class="nav-item">Shop</span></a>
             </li>
             <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
                 <a href="/contact" class=""><span class="nav-item">Contact</span></a>
@@ -36,17 +36,3 @@
         </ul>
     </div>
 </nav>
-
-
-<script>
-  // Add an event listener to the hamburger icon button
-  const navToggler = document.querySelector('.nav-toggler');
-  const navigationContainer = document.getElementById('navigation-container');
-  const navigationLinks = document.getElementById('navigation-links');
-
-  navToggler.addEventListener('click', () => {
-    // Toggle the 'hidden' class on the navigation links container
-    navigationContainer.classList.toggle('hidden');
-    navigationLinks.classList.toggle('translate-y-2');
-  });
-</script>

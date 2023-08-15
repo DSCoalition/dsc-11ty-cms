@@ -13,8 +13,8 @@
 
     @media (max-width: 992px) {
         .container.py-5 {
-            padding-top: 1.00rem !important;
-            padding-bottom: 1.00rem !important;
+            padding-top: 1.00rem;
+            padding-bottom: 1.00rem;
         }
     }
 
@@ -100,7 +100,7 @@
 
     @media (max-width: 768px) {
         .container.bg-illustration {
-            padding-bottom: 15.63rem !important;
+            padding-bottom: 15.63rem;
             padding-top: 0 !important;
             background-position: bottom center;
         }
@@ -174,4 +174,8 @@
       .link {
         color: theme(colors.gray);
       }
+
+      /* .membership-banner {
+        background-image: url('../assets/img/540-Logo-Primary-Black.png');
+      } */
 }

@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("404.html");
+  eleventyConfig.addPassthroughCopy("bundle.js");
 
   eleventyConfig.addCollection("boardMemberItem", (collection) => {
     const boardMembers = collection
