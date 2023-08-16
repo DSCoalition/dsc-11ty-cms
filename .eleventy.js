@@ -1,6 +1,8 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
+const path = require('path');
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -31,6 +33,43 @@ module.exports = function (eleventyConfig) {
         else return 0;
       });
   });
+
+
+
+  // function generateImages(src, widths){
+  //   let source = path.join(__dirname, "assets/img");
+  //   let options = {
+  //     widths: widths,
+  //     formats: ['jpeg',],
+  //     outputDir: "./_site/assets/img",
+  //     urlPath: "assets/img/",
+  //     useCache: true,
+  //     sharpJpegOptions: {
+  //       quality: 99,
+  //       progressive: true
+  //     }
+  //   };
+  //   // genrate images, ! dont wait
+  //   Image(source, options);
+  //   // get metadata even the image are not fully generated
+  //   return Image.statsSync(source, options);
+  // }
+
+  // function imageCssBackground (src, selector, widths){
+  //   const metadata = generateImages(src, widths);
+  //   let markup = [`${selector} { background-image: url(${metadata.jpeg[0].url});} `];
+  //   // i use always jpeg for backgrounds
+  //   metadata.jpeg.slice(1).forEach((image, idx) => {
+  //     markup.push(`@media (min-width: ${metadata.jpeg[idx].width}px) { ${selector} {background-image: url(${image.url});}}`);
+  //   });
+  //   return markup.join("");
+  // }
+  // module.exports = function(eleventyConfig) {
+  //   eleventyConfig.addLiquidShortcode("cssBackground", imageCssBackground);
+  // }
+
+
+
 
   const md = require("markdown-it")({
     html: true,
@@ -82,12 +121,12 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["md", "liquid"],
+    templateFormats: ["md", "liquid", "njk"],
 
     pathPrefix: "/",
 
     markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: "liquid",
+    htmlTemplateEngine: ["liquid", "njk"],
     dataTemplateEngine: "liquid",
     passthroughFileCopy: true,
     dir: {

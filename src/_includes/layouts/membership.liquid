@@ -2,19 +2,21 @@
 layout: layouts/base.liquid
 ---
 
-<section class="p-4 m-2 tablet:p-6 desktop:p-0">
-  <div class="grid py-8 mx-auto desktop:gap-8 desktop:py-16 desktop:grid-cols-2">
-    <div class=" mt-10 row-start-2 place-self-center desktop:pl-10 desktop:ml-20 desktop:row-start-1">
+<section class="tablet:p-6 desktop:p-0">
+  <div class="grid mx-auto desktop:gap-8  desktop:grid-cols-2">
+    <div class="row-start-2 items-center desktop:mb-20 desktop:mt-28 desktop:ml-20 desktop:row-start-1">
       <div>
-        <h1 class="text-magenta">{{ membershipHeader }}</h1>
-        <div class="bg-greenLight text-greenDark p-4 my-4">
+        <h1 class="text-magenta leading-none">{{ membershipHeader }}</h1>
+        <div class="bg-greenLight text-greenDark p-6 my-6">
           <h2 class="text-greenDark">Announcement</h2>
           {{ membershipAnnouncement | markdownify }}
         </div>
-        {{ content | markdownify }}
+        <div class="membership-content">
+          {{ content | markdownify }}
+        </div>
       </div>
     </div>
-    <div class="ml-auto desktop:mt-6">
+    <div class="ml-auto desktop:mt-6 ">
       <img src="/assets/img/bg-triangle-pink3.png" alt="">
     </div>
   </div>

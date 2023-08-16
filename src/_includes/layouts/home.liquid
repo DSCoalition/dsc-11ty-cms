@@ -9,16 +9,18 @@ layout: layouts/base.liquid
   <div class="z-1 py-5 mx-8 desktop:mx-[8rem] bg-illustration bg-no-repeat h-[85vh]" style="background-image: url('/assets/img/illustration-gov.png'); background-size: contain;">
     <div class="grid items-center desktop:grid-cols-2">
       <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[8rem] bg-white bg-opacity-90">
-        <h1 class="text-blue mb-8 leading-0 text-5xl">{{ homeHeroRight.heroTitle }}</h1>
-        <h2 class="text-grayLight text-2xl mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h2>
+        <h1 class="text-blue mb-8 leading-tight">{{ homeHeroRight.heroTitle }}</h1>
+        <h3 class="text-grayLight mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
         {{ homeHeroRight.heroContent | markdownify }}
       </div>
     </div>
   </div>
 </div>
 
-<div class="flex items-center justify-center h-64 p-10 bg-blue text-white text-lg text-center">
-  {{ bannerText | markdownify }}
+<div class=" flex items-center text-center  bg-blue text-white  leading-tight">
+  <div class="py-10 p-10 desktop:px-60">
+    {{ bannerText | markdownify }}
+  </div>
 </div>
 
 <div class="text-left xl:px-32">
@@ -30,7 +32,7 @@ layout: layouts/base.liquid
     </div>
     <div class="col-start-1 row-start-1 mb-12 desktop:mb-0 desktop:px-20">
       <div class="relative z-[1] px-6 py-12 md:px-12 desktop:-mr-14">
-        <h3 class="text-red text-3xl mb-6">{{ homeHeroLeft.heroTitle }}</h3>
+        <h3 class="text-red mb-6">{{ homeHeroLeft.heroTitle }}</h3>
         <div class="text-gray mb-2">
           {{ homeHeroLeft.heroContent | markdownify }}
         </div>
@@ -39,35 +41,34 @@ layout: layouts/base.liquid
   </div>
 </div>
 
-<div class="bg-grayLightest opacity-90 p-4 ">
+<div class="bg-grayLightest">
   <div class="tablet:mx-10 desktop:px-20 desktop:py-8">
-    <div class="flex flex-col tablet:mx-2 ">
-      <h1 class="text-blue mb-8 pt-6 text-5xl">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
+    <div class="flex flex-col px-2 tablet:mx-2 desktop:w-[730px]">
+      <h1 class="text-blue leading-tight mb-8">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
       <p class="text-gray">{{ homeSectionHeader.sectionHeaderSubText }}</p>
-      <h2 class="text-grayLight my-12 text-3xl">{{ homeSectionHeader.sectionHeaderSubTitle }}</h2>
+      <h3 class="text-grayLight my-10">{{ homeSectionHeader.sectionHeaderSubTitle }}</h3>
     </div>
-    <div class="grid tablet:grid-cols-3 gap-5">
+    <div class="grid tablet:grid-cols-3 gap-5 p-4">
       <div class="tablet:mx-2">
-        <h6 class="text-blue text-xl">Community over credit</h6>
+        <h6 class="text-blue text-base mb-1">Community over credit</h6>
         <p class="mb-10">Each win moves us all closer to digital transformation</p>
 
-        <h6 class="text-blue text-xl">Purpose over profit</h6>
-        <p class="mb-8">We’re mission-driven, not money-driven</pc>
+        <h6 class="text-blue text-base mb-1">Purpose over profit</h6>
+        <p class="mb-10">We’re mission-driven, not money-driven</p>
       </div>
       <div class="tablet:mx-2">
-        <h6 class="text-blue text-xl">Users over stakeholders</h6>
-        <p class="mb-10">If we don’t meet user needs, business goals will never truly be met
-        </p>
+        <h6 class="text-blue text-base mb-1">Users over stakeholders</h6>
+        <p class="mb-10">If we don’t meet user needs, business goals will never truly be met</p>
 
-        <h6 class="text-blue text-xl">Innovation over risk management</h6>
-        <p class="mb-8">Change comes from taking chances</p>
+        <h6 class="text-blue text-base mb-1">Innovation over risk management</h6>
+        <p class="mb-10">Change comes from taking chances</p>
       </div>
       <div class="tablet:mx-2">
-        <h6 class="text-blue text-xl">Outcomes over activities</h6>
-        <p class="mb-8">Success is what you accomplish, not how much you did to get there</p>
+        <h6 class="text-blue text-base mb-1">Outcomes over activities</h6>
+        <p class="mb-10">Success is what you accomplish, not how much you did to get there</p>
 
-        <h6 class="text-blue text-xl">Delivery over deliberation</h6>
-        <p class="mb-10">Perfection only exists once users tell you it’s perfect</p>
+        <h6 class="text-blue text-base mb-1">Delivery over deliberation</h6>
+        <p class="mb-4">Perfection only exists once users tell you it’s perfect</p>
       </div>
     </div>
   </div>

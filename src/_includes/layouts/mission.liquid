@@ -3,12 +3,16 @@ layout: layouts/base.liquid
 ---
 
 <section>
-  <div class="grid px-4 py-8 mx-auto desktop:gap-8 desktop:grid-cols-2">
-    <div class="p-2 row-start-2 tablet:p-4 desktop:mt-10 desktop:ml-14 desktop:p-10 desktop:row-start-1">
-      <h1 class="text-magenta leading-none mb-8 text-4xl">{{ missionHero.heroTitle }}</h1>
-      {{ missionHero.heroContent | markdownify }}
+  <div class="grid desktop:mb-10 desktop:ml-10 desktop:gap-8 desktop:grid-cols-2">
+    <div class="px-2 mb-10 row-start-2 desktop:mt-24 desktop:ml-14 desktop:row-start-1 ">
+      <h1 class="text-magenta text-[44px] leading-tight px-2 my-6 pb-4 desktop:pr-4 ">{{ missionHero.heroTitle }}</h1>
+      <div class="flex flex-col justify-start">
+        <div class="px-2">
+          {{ missionHero.heroContent | markdownify }}
+        </div>
+      </div>
       <a href="/assets/pdf/DSCStrategicPlan.pdf" download>
-        <div class="my-10 date-link bg-grayLightest">
+        <div class="my-5 date-link bg-grayLightest">
           <div
             class="date-box"
             aria-label="March 12"
@@ -34,30 +38,29 @@ layout: layouts/base.liquid
     <img src="/assets/img/bg-triangle-lightblue.png" alt="" />
   </div>
 
-  <div class=" bg-grayLightest p-4 ">
+  <div class=" bg-grayLightest">
     <div class="tablet:mx-10 desktop:px-20 desktop:py-10">
-      <div class="flex flex-col tablet:mx-2">
-        <h3 class="text-grayLight leading-none my-10 font-medium text-2xl ">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
+      <div class="flex flex-col px-2 tablet:mx-2 desktop:w-[730px]">
+        <h3 class="text-grayLight leading-tight text-center desktop:text-start my-10">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
       </div>
-      <div class="grid tablet:grid-cols-3 gap-5">
+      <div class="grid tablet:grid-cols-3 gap-5 p-4">
         <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Community</h6>
-          <p class="mb-10">
-            Establish a collaborative community of innovative vendors to influence digital services in the government</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Community</h6>
+          <p class="mb-4">Establish a collaborative community of innovative vendors to influence digital services in the government</p>
 
-          <h6 class="text-blue text-xl">Education</h6>
-          <p class="mb-8">Educate the civic tech ecosystem, including government agencies, other vendors, and users, on best practices in digital services</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Education</h6>
+          <p>Educate the civic tech ecosystem, including government agencies, other vendors, and users, on best practices in digital services</p>
         </div>
         <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Advocacy</h6>
-          <p class="mb-10">Promote policies that remove barriers to innovation in government while increasing adoption of best practices, methodologies, and processes, such as human-centered design and agile delivery</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Advocacy</h6>
+          <p class="mb-4">Promote policies that remove barriers to innovation in government while increasing adoption of best practices, methodologies, and processes, such as human-centered design and agile delivery</p>
 
-          <h6 class="text-blue text-xl">Partnership</h6>
-          <p class="mb-8">Cultivate enduring relationships within our community of vendors and government partners to maintain long-term success in digital service delivery</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Partnership</h6>
+          <p>Cultivate enduring relationships within our community of vendors and government partners to maintain long-term success in digital service delivery</p>
         </div>
         <div class="tablet:mx-2">
-          <h6 class="text-blue text-xl">Impact</h6>
-          <p class="mb-8">Make a meaningful difference in the daily lives of users through improved interactions with government, prioritizing equitable delivery to those who have traditionally been underserved</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Impact</h6>
+          <p>Make a meaningful difference in the daily lives of users through improved interactions with government, prioritizing equitable delivery to those who have traditionally been underserved</p>
         </div>
       </div>
     </div>
