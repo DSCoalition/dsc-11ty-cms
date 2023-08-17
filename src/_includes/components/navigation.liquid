@@ -1,37 +1,36 @@
-<nav class="flex items-center justify-between flex-wrap m-3">
-<!-- Brand/Logo -->
-    <a class="flex items-center flex-shrink-0 mr-6" href="/" >
-        <img class= "navbar-logo" alt="Digital Services Coalition" src="/assets/img/dsc-logo.png" class="logo">
+<nav class="navbar flex items-center justify-between flex-wrap">
+    <a href="/" class="navbar-brand">
+        <img alt="Digital Services Coalition" src="/assets/img/dsc-logo.png" class="logo">
     </a>
-
-    <!-- Mobile Menu (Hamburger Icon) -->
-    <button class="nav-toggler pr-2 block desktop:hidden" type="button">
-        <i class="material-icons text-red hover:text-magenta">menu</i>
+    <button class="navbar-toggler block pr-3 pb-6 desktop:hidden" type="button">
+        <span class="navbar-toggler-icon">
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+        </span>
     </button>
-
-    <!-- Navigation Links -->
     <div class="hidden desktop:visible navbar-links w-full block desktop:flex desktop:items-center desktop:w-auto" id="navigation-container">
         <ul class="navbar-nav desktop:flex-grow duration-500 ease-out transition-all delay-150" id="navigation-links">
-            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
-                <a href="/" class=""><span class="nav-item">Home</span></a>
+            <li class="nav-item block  desktop:inline-block">
+                <a href="/" class="nav-link">Home</a>
             </li>
-            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
-                <a href="/mission" class=""><span class="nav-item">Mission</span></a>
+            <li class="nav-item block  desktop:inline-block">
+                <a href="/mission" class="nav-link">Mission</a>
             </li>
-            <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
-                <a href="/story" class=""><span class="nav-item">Story</span></a>
+            <li class="nav-item block  desktop:inline-block">
+                <a href="/story" class="nav-link">Story</a>
             </li>
-            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="/membership" class=""><span class="nav-item">Membership</span></a>
+            <li class="nav-item block desktop:inline-block">
+                <a href="/membership" class="nav-link">Membership</a>
             </li>
-            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="https://medium.com/@DigitalServicesCoalition" target="_blank" rel="noopener"><span class="nav-item">News</span></a>
+            <li class="nav-item block desktop:inline-block">
+                <a href="https://medium.com/@DigitalServicesCoalition" target="_blank" rel="noopener" class="nav-link">News</a>
             </li>
-            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="https://shop.digitalservicescoalition.org/" target="_blank" rel="noopener"><span class="nav-item">Shop</span></a>
+            <li class="nav-item block desktop:inline-block">
+                <a href="https://shop.digitalservicescoalition.org/" target="_blank" rel="noopener" class="nav-link">Shop</a>
             </li>
-            <li class="navbar-item block desktop:inline-block desktop:mt-0 mx-6">
-                <a href="/contact" class=""><span class="nav-item">Contact</span></a>
+            <li class="nav-item block desktop:inline-block">
+                <a href="/contact" class="nav-link">Contact</a>
             </li>
         </ul>
     </div>

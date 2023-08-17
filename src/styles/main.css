@@ -39,7 +39,7 @@
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 1.4rem;
         color: theme(colors.grayLight);
     }
 
@@ -105,28 +105,67 @@
     }
 
     /* Navbar */
-    .navbar-logo {
-        margin: 1.88rem 0 1.88rem 3.13rem;
+    .navbar {
+        margin: 30px 0 30px 50px;
         padding: 0;
-        height: 3.13rem;
-    }
 
-    .nav-item {
-        color: theme(colors.red);
-        font-family: 'Merriweather';
-        font-size: 1.075rem;
-    }
+        .navbar-brand .logo {
+            height: 50px;
+        }
 
-    .navbar-nav {
-        border-bottom: 0.31rem solid theme(colors.grayLightest);
-        padding: 1.56rem 3.13rem 1.46rem 0;
+        .navbar-toggler {
+            &:focus {
+                outline: none;
+            }
+
+            .navbar-toggler-icon {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+
+                .line-1, .line-2, .line-3 {
+                    position: absolute;
+                    right: 0;
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background: theme(colors.red);
+                    transition: opacity .2s ease,background .2s ease,top .2s ease .2s,transform .2s ease;
+                }
+
+                .line-1 { top: 8px; }
+                .line-2 { top: 14px; }
+                .line-3 { top: 20px; }
+
+                &:hover {
+                    .line-1, .line-2, .line-3 {
+                        background: theme(colors.magenta);
+                    }
+                }
+            }
+        }
+
+        .navbar-nav {
+            border-bottom: 5px solid theme(colors.grayLightest);
+            padding: 25px 50px 25px 0;
+
+            .nav-item .nav-link {
+                color: theme(colors.red);
+                font-family: 'Merriweather';
+                padding: 0 25px;
+                font-size: .9rem;
+            }
+
+        }
     }
 
     @media (max-width: 992px) {
-        .navbar-logo {
-            margin: 0.94rem;
+        .navbar {
+            margin: 15px;
         }
     }
+
 
      /* Datebox */
     .date-link {
@@ -171,8 +210,9 @@
       .membership-content {
         h3 {
             margin-bottom: 1rem;
-            font-size: 1.85rem;
-            font-weight: 500;
+            font-size: 1.65rem;
+
+
         }
 
         ul {

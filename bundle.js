@@ -1,5 +1,5 @@
   // Add an event listener to the hamburger icon button
-  const navToggler = document.querySelector('.nav-toggler');
+  const navToggler = document.querySelector('.navbar-toggler');
   const navigationContainer = document.getElementById('navigation-container');
   const navigationLinks = document.getElementById('navigation-links');
 
