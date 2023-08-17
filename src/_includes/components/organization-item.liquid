@@ -1,14 +1,14 @@
 {% assign orgs = collections.orgItem %}
 
-<div class="grid gap-8 p-2 mt-6 tablet:p-8 tablet:grid-cols-2 tablet:gap-10 desktop:grid-cols-2 desktop:gap-20 desktop:p-20">
+<div class="grid gap-14 p-1 mt-6 tablet:p-8 tablet:grid-cols-2 desktop:mt-0 desktop:grid-cols-2 desktop:gap-20 desktop:px-24">
   {% for org in orgs %}
     <div class="flex desktop:justify-between">
-      <div class="flex-none mx-10 w-16 h-1/2 tablet:w-20 desktop:w-24">
+      <div class="flex-none items-center w-16 h-1/2 tablet:w-20 desktop:w-40">
         <a href="{{ org.data.linkURL }}"
           ><img
             src="{{ org.data.organizationImage }}"
             alt="{{ org.data.organizationAlt }}"
-            class="max-w-full h-auto"
+            class="max-w-full h-auto pt-2 pr-4 desktop:p-0 desktop:pr-8"
         /></a>
       </div>
       <div class="grow">
@@ -20,3 +20,4 @@
     </div>
   {% endfor %}
 </div>
+

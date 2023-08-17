@@ -5,7 +5,7 @@ layout: layouts/base.liquid
 <section class="tablet:p-6 desktop:p-0">
   <div class="grid mx-auto desktop:gap-8  desktop:grid-cols-2">
     <div class="row-start-2 items-center desktop:mb-20 desktop:mt-28 desktop:ml-20 desktop:row-start-1">
-      <div>
+      <div class="p-4">
         <h1 class="text-magenta leading-none">{{ membershipHeader }}</h1>
         <div class="bg-greenLight text-greenDark py-4 px-5 mb-6">
           <h2 class="text-greenDark mb-1">Announcement</h2>
@@ -17,9 +17,11 @@ layout: layouts/base.liquid
       </div>
     </div>
     <div class="ml-auto desktop:mt-6 ">
-      <img src="/assets/img/bg-triangle-pink3.png" alt="">
+      <img src="/assets/img/bg-triangle-pink3.png" alt="" class="p-0">
     </div>
   </div>
 </section>
 
-<div class="membership-banner w-full h-64 object-cover bg-cover bg-fixed bg-no-repeat shadow-lg" style="background-image: url('/assets/img/bg-rectangle-purple.png');"></div>
+<div class="w-full h-[250px] pb-16 mt-6 desktop:pb-0  flex items-center justify-center">
+  <img src="/assets/img/bg-rectangle-purple.png" alt="" class=" w-full h-full object-cover object-top">
+</div>

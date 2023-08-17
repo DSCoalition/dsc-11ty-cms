@@ -36,6 +36,7 @@
 
     h2 {
         font-size: 1.8em;
+        margin-bottom: 0;
     }
 
     h3 {
@@ -172,7 +173,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        max-width: 62ch;
+        max-width: 60ch;
       }
 
       .date-link:hover .link {
@@ -184,12 +185,11 @@
         word-break: break-word;
         line-height: 1.1em;
         background-color: #dedede;
-        padding: 0.01rem;
       }
 
       .date-box-inner {
         width: 4ch;
-        margin: 5px 10px;
+        margin: 4px 8px;
       }
 
       .date {
@@ -200,7 +200,6 @@
 
       .link-box {
         margin-left: 0.7rem;
-        padding: 0.01rem
       }
 
       .link {

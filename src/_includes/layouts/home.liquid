@@ -4,11 +4,11 @@ layout: layouts/base.liquid
 
 <div class="relative overflow-clip">
   <div class="absolute z-[-1]">
-    <img src="/assets/img/bg-triangle-gray.png" alt=""/>
+    <img src="/assets/img/bg-triangle-gray.png" alt="" />
   </div>
-  <div class="z-1 py-5 mx-8 desktop:mx-[8rem] bg-illustration bg-no-repeat h-[85vh]" style="background-image: url('/assets/img/illustration-gov.png'); background-size: contain;">
+  <div class="z-1 py-5 mx-8 bg-illustration" style="background-image: url('/assets/img/illustration-gov.png');">
     <div class="grid items-center desktop:grid-cols-2">
-      <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[8rem] bg-white bg-opacity-90">
+      <div class="py-5 desktop:col-start-2 desktop:row-start-1 desktop:mt-[6rem] desktop:pb-24 bg-white opacity-90">
         <h1 class="text-blue mb-8 leading-tight">{{ homeHeroRight.heroTitle }}</h1>
         <h3 class="text-grayLight mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
         {{ homeHeroRight.heroContent | markdownify }}
@@ -17,38 +17,38 @@ layout: layouts/base.liquid
   </div>
 </div>
 
-<div class=" flex items-center text-center  bg-blue text-white  leading-tight">
-  <div class="py-10 p-10 desktop:px-60">
+<div class="h-[281px] flex items-center text-center  bg-blue text-white  leading-tight">
+  <div class="px-10 desktop:px-48 desktop:py-10">
     {{ bannerText | markdownify }}
   </div>
 </div>
 
 <div class="text-left xl:px-32">
   <div class="grid items-center desktop:grid-cols-2">
-    <div class="relative w-full h-[70vh] overflow-visible">
-      <div class="absolute top-[-10rem] right-0 z-[-1]">
-        <img src="/assets/img/bg-triangle-pink.png" alt="">
-      </div>
-    </div>
-    <div class="col-start-1 row-start-1 mb-12 desktop:mb-0 desktop:px-20">
-      <div class="relative z-[1] px-6 py-12 md:px-12 desktop:-mr-14">
-        <h3 class="text-red mb-6">{{ homeHeroLeft.heroTitle }}</h3>
+    <div class="row-start-2 mb-4 desktop:row-start-2 desktop:mb-0 desktop:px-6">
+      <div class="relative z-[1] px-[15px] desktop:ml-10">
+        <h3 class="text-red leading-tight mb-5">{{ homeHeroLeft.heroTitle }}</h3>
         <div class="text-gray mb-2">
           {{ homeHeroLeft.heroContent | markdownify }}
         </div>
       </div>
     </div>
+    <div class="relative h-[70vh] overflow-visible desktop:row-start-2">
+      <div class="absolute top-[-10rem] right-0 z-[-1]">
+        <img src="/assets/img/bg-triangle-pink.png" alt="">
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="bg-grayLightest">
-  <div class="tablet:mx-10 desktop:px-20 desktop:py-8">
-    <div class="flex flex-col px-2 tablet:mx-2 desktop:w-[730px]">
+<div class="bg-grayLightest opacity-90 p-[16px] desktop:py-16">
+  <div class="tablet:mx-10 desktop:px-6 ">
+    <div class="flex flex-col tablet:mx-2 desktop:w-[730px]">
       <h1 class="text-blue leading-tight mb-8">{{ homeSectionHeader.sectionHeaderTitle }}</h1>
       <p class="text-gray">{{ homeSectionHeader.sectionHeaderSubText }}</p>
       <h3 class="text-grayLight my-10">{{ homeSectionHeader.sectionHeaderSubTitle }}</h3>
     </div>
-    <div class="grid tablet:grid-cols-3 gap-5 p-4">
+    <div class="grid tablet:grid-cols-3 gap-5 mt-4">
       <div class="tablet:mx-2">
         <h6 class="text-blue text-base mb-1">Community over credit</h6>
         <p class="mb-10">Each win moves us all closer to digital transformation</p>
@@ -74,4 +74,10 @@ layout: layouts/base.liquid
   </div>
 </div>
 
-<div class="w-full h-64 object-cover bg-cover bg-fixed bg-no-repeat shadow-lg" style="background-image: url('/assets/img/bg-rectangle-blue.png');"></div>
+
+<div class="w-full h-[250px] pb-16 desktop:pb-0  flex items-center justify-center">
+  <img
+    src="/assets/img/bg-rectangle-blue.png"
+    alt=""
+    class=" w-full h-full object-cover object-center">
+</div>
