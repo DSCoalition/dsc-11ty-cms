@@ -5,11 +5,6 @@ backend:
   name: git-gateway
   branch: main
 
-# backend:
-#   name: github
-#   repo: kindsys/digital-services-coalition
-#   branch: main
-
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
 
