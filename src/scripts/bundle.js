@@ -1,10 +1,11 @@
-  // Add an event listener to the hamburger icon button
-  const navToggler = document.querySelector('.navbar-toggler');
-  const navigationContainer = document.getElementById('navigation-container');
-  const navigationLinks = document.getElementById('navigation-links');
+const navTogglers = document.querySelectorAll('.navbar-toggler');
+
+navTogglers.forEach(navToggler => {
+  const navigationContainer = navToggler.nextElementSibling;
+  const navigationLinks = navigationContainer.querySelector('.navigation-links');
 
   navToggler.addEventListener('click', () => {
-    // Toggle the 'hidden' class on the navigation links container
     navigationContainer.classList.toggle('hidden');
     navigationLinks.classList.toggle('translate-y-2');
   });
+});
