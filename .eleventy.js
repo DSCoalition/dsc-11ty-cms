@@ -7,11 +7,11 @@ const Image = require("@11ty/eleventy-img");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("src/assets/**");
-  eleventyConfig.addPassthroughCopy("src/favicon");
+  eleventyConfig.addPassthroughCopy("src/favicon/**");
   eleventyConfig.addPassthroughCopy("src/admin");
   eleventyConfig.addPassthroughCopy("CNAME");
   eleventyConfig.addPassthroughCopy("404.html");
-  eleventyConfig.addPassthroughCopy("bundle.js");
+  eleventyConfig.addPassthroughCopy("src/scripts/bundle.js");
 
   eleventyConfig.addCollection("boardMemberItem", (collection) => {
     const boardMembers = collection
@@ -33,43 +33,6 @@ module.exports = function (eleventyConfig) {
         else return 0;
       });
   });
-
-
-
-  // function generateImages(src, widths){
-  //   let source = path.join(__dirname, "assets/img");
-  //   let options = {
-  //     widths: widths,
-  //     formats: ['jpeg',],
-  //     outputDir: "./_site/assets/img",
-  //     urlPath: "assets/img/",
-  //     useCache: true,
-  //     sharpJpegOptions: {
-  //       quality: 99,
-  //       progressive: true
-  //     }
-  //   };
-  //   // genrate images, ! dont wait
-  //   Image(source, options);
-  //   // get metadata even the image are not fully generated
-  //   return Image.statsSync(source, options);
-  // }
-
-  // function imageCssBackground (src, selector, widths){
-  //   const metadata = generateImages(src, widths);
-  //   let markup = [`${selector} { background-image: url(${metadata.jpeg[0].url});} `];
-  //   // i use always jpeg for backgrounds
-  //   metadata.jpeg.slice(1).forEach((image, idx) => {
-  //     markup.push(`@media (min-width: ${metadata.jpeg[idx].width}px) { ${selector} {background-image: url(${image.url});}}`);
-  //   });
-  //   return markup.join("");
-  // }
-  // module.exports = function(eleventyConfig) {
-  //   eleventyConfig.addLiquidShortcode("cssBackground", imageCssBackground);
-  // }
-
-
-
 
   const md = require("markdown-it")({
     html: true,
