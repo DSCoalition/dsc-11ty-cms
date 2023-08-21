@@ -1,10 +1,13 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
-const path = require('path');
+const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-attrs");
 
-module.exports = function (eleventyConfig) {
+module.exports = function(eleventyConfig) {
+  // Plugins and Passthrough Copies
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("src/assets/**");
   eleventyConfig.addPassthroughCopy("src/favicon/**");
@@ -13,83 +16,67 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("src/scripts/bundle.js");
 
-  eleventyConfig.addCollection("boardMemberItem", (collection) => {
+  // Collections
+  eleventyConfig.addCollection("boardMemberItem", collection => {
     const boardMembers = collection
       .getFilteredByGlob("src/pages/board-members/*.md")
-      .sort((a, b) => {
-        return Number(a.data.order) - Number(b.data.order);
-      });
+      .sort((a, b) => Number(a.data.order) - Number(b.data.order));
     return boardMembers;
   });
 
-  eleventyConfig.addCollection("orgItem", function (collection) {
+  eleventyConfig.addCollection("orgItem", collection => {
     return collection
       .getFilteredByGlob("src/pages/organizations/*.md")
-      .sort(function (a, b) {
-        let nameA = a.data.organizationName.toUpperCase();
-        let nameB = b.data.organizationName.toUpperCase();
-        if (nameA < nameB) return -1;
-        else if (nameA > nameB) return 1;
-        else return 0;
-      });
+      .sort((a, b) => a.data.organizationName.localeCompare(b.data.organizationName));
   });
 
-  const md = require("markdown-it")({
+  // Markdown Filters and Libraries
+  const markdownItOptions = {
     html: true,
+    breaks: true,
     linkify: true,
-    typographer: true,
-  });
+  };
 
-  eleventyConfig.addFilter("markdownify", (markdownString) =>
-    md.render(markdownString)
+  const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  eleventyConfig.addFilter("markdownify", markdownString =>
+    markdownLib.render(markdownString)
   );
 
+  // Date Filters
+  eleventyConfig.addFilter("htmlDateString", dateObj =>
+    DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yy-MM-dd")
+  );
 
-  const { DateTime } = require("luxon");
+  eleventyConfig.addFilter("readableDate", dateObj =>
+    DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("dd-MM-yy")
+  );
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: "utc",
-    }).toFormat("yy-MM-dd");
+  // Minify Filters
+  eleventyConfig.addFilter("jsmin", code => {
+    const minified = UglifyJS.minify(code);
+    return minified.error ? code : minified.code;
   });
 
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {
-      zone: "utc",
-    }).toFormat("dd-MM-yy");
-  });
-
-  // Minify JS
-  eleventyConfig.addFilter("jsmin", function (code) {
-    let minified = UglifyJS.minify(code);
-    if (minified.error) {
-      console.log("UglifyJS error: ", minified.error);
-      return code;
-    }
-    return minified.code;
-  });
-
-  // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath.indexOf(".html") > -1) {
-      let minified = htmlmin.minify(content, {
+  // HTML Minification Transform
+  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+    if (outputPath.endsWith(".html")) {
+      return htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
         collapseWhitespace: true,
       });
-      return minified;
     }
     return content;
   });
 
+  // Configuration
   return {
-    templateFormats: ["md", "liquid", "njk"],
-
+    templateFormats: ["md", "liquid"],
     pathPrefix: "/",
-
     markdownTemplateEngine: "liquid",
-    htmlTemplateEngine: ["liquid", "njk"],
+    htmlTemplateEngine: ["liquid"],
     dataTemplateEngine: "liquid",
     passthroughFileCopy: true,
     dir: {

@@ -198,29 +198,42 @@
 
       .membership-content {
         h3 {
-            margin-bottom: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
             font-size: 1.65rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
         }
 
         ul {
             list-style-type: circle;
-            padding-left: 1rem;
+            margin-left: 1rem;
         }
 
         ol {
             list-style-type:lower-roman;
-            margin-left: 1.5rem;
-        }
-
-        p {
-            margin-bottom: .2rem;
+            margin-left: 40px;
         }
 
         li {
             margin-bottom: .2rem;
         }
+
+        strong {
+            margin-top: 1rem;
+        }
       }
 
+      #membership-list-item {
+        list-style-type: disc;
+        margin-left: 1.5rem;
+      }
+
+      .membership-list-last {
+        margin-top: 1rem;
+      }
        /* .membership-banner {
         background-image: url('../assets/img/bg-rectangle-purple.png');
       }
