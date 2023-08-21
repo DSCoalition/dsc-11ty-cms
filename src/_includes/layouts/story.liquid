@@ -4,11 +4,11 @@ layout: layouts/base.liquid
 
 <section class="z-2">
   <div class="grid desktop:gap-8 desktop:grid-cols-2 desktop:mb-56">
-    <div class="mb-4">
-      <img src="/assets/img/bg-triangle-pink2.png" alt="">
+    <div class="mb-4 ml-auto h-4/5 desktop:h-auto">
+      <img src="/assets/img/bg-triangle-pink2.png" alt="" class="h-full w-auto">
     </div>
     <div class="px-4 desktop:px-8 desktop:mt-20 desktop:mx-12 dekstop:col-span-2">
-      <h1 class="text-blue leading-tight mb-10 mt-16 desktop:mb-8">{{ heroTitle }}</h1>
+      <h1 class="text-blue leading-tight mb-10 mt-[-6rem] desktop:mt-10 desktop:mb-8">{{ heroTitle }}</h1>
       <div class="text-gray mb-2">
         {{ content | markdownify }}
       </div>
@@ -17,7 +17,7 @@ layout: layouts/base.liquid
 </section>
 
 <div class="relative overflow-visible">
-  <div class="absolute z-[-1] top-[-16rem]">
+  <div class="absolute z-[-1] top-[-3rem] desktop:top-[-16rem]">
     <img src="/assets/img/bg-triangle-gray.png" alt="" />
   </div>
   <div class="z-1 p-2">

@@ -27,15 +27,15 @@ layout: layouts/base.liquid
   <div class="grid items-center desktop:grid-cols-2">
     <div class="row-start-2 mb-4 desktop:row-start-2 desktop:mb-0 desktop:px-6">
       <div class="relative z-[1] px-[15px] desktop:ml-10">
-        <h3 class="text-red leading-tight mb-5">{{ homeHeroLeft.heroTitle }}</h3>
+        <h3 class="text-red text-[23.46px] leading-tight mb-5 ">{{ homeHeroLeft.heroTitle }}</h3>
         <div class="text-gray mb-2">
           {{ homeHeroLeft.heroContent | markdownify }}
         </div>
       </div>
     </div>
-    <div class="relative h-[55vh] desktop:h-[70vh] overflow-visible desktop:row-start-2">
-      <div class="absolute top-[-10rem] right-0 z-[-1]">
-        <img src="/assets/img/bg-triangle-pink.png" alt="">
+    <div class="relative h-[45vh] desktop:h-[70vh] overflow-visible desktop:row-start-2">
+      <div class="absolute h-full desktop:top-[-10rem] desktop:h-auto right-0 z-[-1]">
+        <img src="/assets/img/bg-triangle-pink.png" alt="" class="h-full w-full">
       </div>
     </div>
   </div>
