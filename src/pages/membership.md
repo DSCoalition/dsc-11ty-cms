@@ -11,23 +11,23 @@ membershipAnnouncement: "**We are now accepting applications for membership in t
 ---
 ### Who can join
 
-- Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.</br>
+ Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.</br> {.list-items}
 
   1. Small businesses: revenue less than $30M (3-year running average)
   2. Mid-tier firms: revenue less than $55M (3-year running average)
   3. Large firms: revenue greater than $55M (3-year running average)
-  4. Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.</br>
+  4. Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.</br>{.last-list-item}
 
-- Digital service work is defined as services supporting the development, implementation, or maintenance of:</br>{.membership-list-last}
+Digital service work is defined as services supporting the development, implementation, or maintenance of:</br>{.list-items}
 
   1. A service that is delivered via the internet or electronic network
-  2. Automated and requires little to no human intervention</br>
+  2. Automated and requires little to no human intervention</br>{.last-list-item}
 
-- Digital transformations are efforts that have fundamentally improved the technologies, data, processes, and organizational change necessary to deliver successful outcomes for users and customers</br>{.membership-list-last}
+Digital transformations are efforts that have fundamentally improved the technologies, data, processes, and organizational change necessary to deliver successful outcomes for users and customers</br> {.list-items}
 
-- Academic institutions that align with the values and mission of the DSC.</br>
+Academic institutions that align with the values and mission of the DSC.</br>{.list-items}
 
-- Firms who are committed to following the DSC’s documented Community Standards and Organizational Bylaws.</br>
+Firms who are committed to following the DSC’s documented Community Standards and Organizational Bylaws.</br>{.list-items}
 
 ### Membership benefits
 

@@ -4,13 +4,13 @@ layout: layouts/base.liquid
 
 <section class="z-2">
   <div class="grid desktop:gap-8 desktop:grid-cols-2 desktop:mb-56">
-    <div class="mb-4 ml-auto h-4/5 desktop:h-auto">
+    <div class="mb-4 ml-auto tablet:ml-0 tablet:col-span-1 h-4/5 tablet:h-2/5 desktop:h-auto">
       <img
         src="/assets/img/bg-triangle-pink2.png"
         alt=""
         class="h-full w-auto">
     </div>
-    <div class="px-4 desktop:px-8 desktop:mt-20 desktop:mx-12 dekstop:col-span-2">
+    <div class="px-4 tablet:mt-[-22rem] tablet:mb-32 tablet:ml-auto tablet:mr-20 tablet:w-[16.625rem] desktop:w-auto desktop:px-8 desktop:mt-20 desktop:mx-12 dekstop:col-span-2 desktop:mr-12">
       <h1 class="text-blue leading-tight mb-10 mt-[-6rem] desktop:mt-10 desktop:mb-8">{{ heroTitle }}</h1>
       <div class="text-gray mb-2">
         {{ content | markdownify }}

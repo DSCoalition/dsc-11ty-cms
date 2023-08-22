@@ -2,12 +2,12 @@
 layout: layouts/base.liquid
 ---
 
-<section class="tablet:p-6 desktop:p-0">
-  <div class="grid mx-auto desktop:gap-8  desktop:grid-cols-2">
-    <div class="row-start-2 items-center desktop:mb-20 desktop:mt-28 desktop:ml-20 desktop:row-start-1">
-      <div class="p-[0.937rem] mt-[-15rem] desktop:mt-0">
-        <h1 class="text-magenta leading-none mb-10">{{ membershipHeader }}</h1>
-        <div class="bg-greenLight text-greenDark py-2 px-5 mb-6">
+<section class="desktop:p-0">
+  <div class="grid mx-auto desktop:gap-8 desktop:grid-cols-2">
+    <div class="row-start-2 items-center desktop:mb-20 desktop:mt-28 desktop:row-start-1">
+      <div class="p-[0.937rem] mt-[-15rem] tablet:mt-[-28rem] tablet:ml-14 tablet:w-[20rem] desktop:mt-0 desktop:w-[35.625rem]">
+        <h1 class="text-magenta leading-tight mb-10">{{ membershipHeader }}</h1>
+        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
           <h2 class="text-greenDark mb-1">Announcement</h2>
           {{ membershipAnnouncement | markdownify }}
         </div>
@@ -16,7 +16,7 @@ layout: layouts/base.liquid
         </div>
       </div>
     </div>
-    <div class="ml-auto h-3/5 desktop:mt-6">
+    <div class="ml-auto h-3/5 tablet:h-1/2 desktop:mt-6">
       <img
         src="/assets/img/bg-triangle-pink3.png"
         alt=""
