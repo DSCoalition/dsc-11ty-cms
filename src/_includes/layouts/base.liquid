@@ -19,6 +19,10 @@
     <div class="">
       {% include "components/navigation.liquid" %}
     </div>
+      <!-- Netlify Identity Widget -->
+    {% if path == "home" %}
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% endif %}
     <script src="{{ '/assets/main.js' | url }}"></script>
   </body>
 </html>

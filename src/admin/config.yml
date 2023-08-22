@@ -1,12 +1,8 @@
 # For Development with DecapCMS
 # local_backend: true
 
-# backend:
-#   name: git-gateway
-
 backend:
-  name: github
-  repo: kindsys/digital-services-coalition
+  name: git-gateway
   branch: main
 
 media_folder: "src/assets/img/"
