@@ -42,6 +42,10 @@
         font-size: 1.60rem;
     }
 
+    h5 {
+        font-size: 1.25rem; 
+    }
+
     h6 {
         font-weight: bold;
     }

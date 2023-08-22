@@ -17,8 +17,10 @@ module.exports = {
       white: "#ffffff",
       grayLightest: "#f9f7f6"
     },
-    screens: {
-      desktop: '992px'
+    extend: {
+      screens: {
+        desktop: '992px'
+      }
     }
   }
 }

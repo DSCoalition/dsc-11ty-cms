@@ -61,7 +61,7 @@ collections:
           file: "src/pages/contact.md"
           fields:
             - { label: "Contact Header", name: "contactHeader", widget: "string" }
-            - { label: "Contact Content", name: "body", widget: "markdown" }
+            - { label: "Contact Description", name: "contactDescription", widget: "string" }
         - name: "story"
           label: "Story"
           file: "src/pages/story.md"
