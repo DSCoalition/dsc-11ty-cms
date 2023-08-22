@@ -1,22 +1,13 @@
 ---
 layout: layouts/base.liquid
 ---
-<div class="relative hidden md:block">
-  <div class="absolute top-0 left-0 w-2/5 min-h-[21.875rem] max-w-full overflow-visible z-[-1] ">
-    <div class="absolute top-0 left-0 right-0 h-auto w-full overflow-visible">
-      <img src="/assets/img/bg-triangle-blue2.png" class="float-left" />
-    </div>
+<div class="flex flex-col sm:flex-row sm:justify-center md:justify-around">
+  <div class="py-5 px-4">
+    <h1 class="absolute text-blue px-4 md:mt-12 md:mb-12">{{ contactHeader }}</h1>
+     <img src="/assets/img/bg-triangle-blue2.png" alt="Blue triangle"/>
   </div>
-</div>
-
-<div class="container max-w-[90%] mx-auto px-4 py-5 md:px-8 md:mx-20">
-  <div class="flex flex-row justify-between -mx-15">
-    <div class="w-2/5 flex-shrink-0 flex-grow-0 px-4 py-12">
-      <h1 class="text-blue mt-12 mb-12">{{ contactHeader }}</h1>
-    </div>
-
-    <div class="flex flex-col py-12 px-4 relative w-3/5 max-w-3/5 flex-shrink-0 flex-grow-0 items-center">
-      <h5 class="text-grayLight flex-grow">{{ contactDescription }}</h5>
+  <div class="flex flex-col px-4 items-center md:py-12 ">
+      <h5 class="max-w-prose text-grayLight">{{ contactDescription }}</h5>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSfOo7ss8JtJ1mWCNdXoUNB3F-pj6OSabhmt9ZBeE6PcVQ1dDA/viewform?embedded=true"
         style="height: 1020px;"
@@ -25,5 +16,4 @@ layout: layouts/base.liquid
         marginwidth="0"
         width="100%"></iframe>
     </div>
-  </div>
 </div>

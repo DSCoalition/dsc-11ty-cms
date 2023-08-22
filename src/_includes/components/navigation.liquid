@@ -10,7 +10,7 @@
     </button>
 
     <!-- Navigation Links -->
-    <div class="invisible desktop:visible navbar-links w-full block desktop:flex desktop:items-center desktop:w-auto" id="navigation-container">
+    <div class="hidden desktop:visible navbar-links w-full block desktop:flex desktop:items-center desktop:w-auto" id="navigation-container">
         <ul class="navbar-nav desktop:flex-grow duration-500 ease-out transition-all delay-150" id="navigation-links">
             <li class="navbar-item block  desktop:inline-block desktop:mt-0 mx-6">
                 <a href="/" class=""><span class="nav-item">Home</span></a>
@@ -46,7 +46,7 @@
 
   navToggler.addEventListener('click', () => {
     // Toggle the 'hidden' class on the navigation links container
-    navigationContainer.classList.toggle('invisible');
+    navigationContainer.classList.toggle('hidden');
     navigationLinks.classList.toggle('translate-y-2');
 
     window.addEventListener("resize", function() {
