@@ -68,7 +68,7 @@ To start the development server and build your Eleventy project with Tailwind CS
 
 ### Content Management
 
-To access the CMS open your web browser and navigation to `http://localhost:8080/admin` to access the Decap CMS interface. Here, you can manage your website's content.
+To access the CMS open your web browser and navigate to `http://localhost:8080/admin` to access the Decap CMS interface. Here, you can manage your website's content.
 
 
 ### Production Build
