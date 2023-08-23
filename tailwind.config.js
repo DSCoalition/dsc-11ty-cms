@@ -21,6 +21,7 @@ module.exports = {
     screens: {
       tablet: "768px",
       desktop: "992px",
+      xl: "1200px",
     },
   },
 };
