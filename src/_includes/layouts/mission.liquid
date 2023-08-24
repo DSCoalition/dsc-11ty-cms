@@ -1,23 +1,18 @@
 ---
 layout: layouts/base.liquid
 ---
-<div class="bg-div-photo">
-  <div>
-    <img src="/assets/img/bg-triangle-blue.png" class="" />
-  </div>
-</div>
 
-<div class="">
-  <div class="">
-    <div class="">
-      <h1 class="text-magenta">{{ missionHero.heroTitle }}</h1>
-    </div>
-  </div>
-  <div class="row justify-content-md-start">
-    <div class="col-lg-8 pb-5">
-      {{ missionHero.heroContent | markdownify }}
-      <a download :href="`${publicPath}DSCStrategicPlan.pdf`">
-        <div class="date-link bg-gray">
+<section>
+  <div class="grid desktop:mb-10 desktop:ml-10 desktop:gap-8 desktop:grid-cols-2">
+    <div class="px-2 mb-10 row-start-2 tablet:mx-auto tablet:mt-[-14rem] desktop:mx-0 desktop:mt-24 desktop:ml-2 desktop:row-start-1 ">
+      <h1 class="text-magenta text-[2.75rem] leading-tight px-2 my-6 pb-4 desktop:w-auto tablet:w-[290px]">{{ missionHero.heroTitle }}</h1>
+      <div class="flex flex-col justify-start">
+        <div class="px-2 tablet:px-0 tablet:w-[640px] desktop:w-[47.5rem]">
+          {{ missionHero.heroContent | markdownify }}
+        </div>
+      </div>
+      <a href="/assets/pdf/DSCStrategicPlan.pdf" download>
+        <div class="my-5 date-link bg-grayLightest">
           <div
             class="date-box"
             aria-label="March 12"
@@ -32,41 +27,41 @@ layout: layouts/base.liquid
         </div>
       </a>
     </div>
-  </div>
-</div>
-
-<div class="bg-div">
-  <div>
-    <img src="/assets/img/bg-triangle-lightblue.png" class="float-right" />
-  </div>
-</div>
-
-<div class="bg-gray">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-8">
-        <h3 class="text-gray mt-5">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
-      </div>
+    <div class="tablet:ml-auto tablet:h-3/6 desktop:h-auto desktop:ml-0">
+      <img src="/assets/img/bg-triangle-blue.png" alt="" class="h-full w-auto">
     </div>
+  </div>
+</section>
 
-    <div class="row">
-      <div class="col-md-4">
-        <h6 class="text-blue mt-5 mb-1">Community</h6>
-        <p>Establish a collaborative community of innovative vendors to influence digital services in the government</p>
+<div class="relative w-full overflow-visible">
+  <div class="absolute desktop:top-[-22rem] right-0 z-[-1]">
+    <img src="/assets/img/bg-triangle-lightblue.png" alt="" />
+  </div>
 
-        <h6 class="text-blue mt-5 mb-1">Education</h6>
-        <p>Educate the civic tech ecosystem, including government agencies, other vendors, and users, on best practices in digital services</p>
+  <div class=" bg-grayLightest opacity-90 px-4 pt-[0.9375rem] pb-8 desktop:py-8">
+    <div class="tablet:mx-10 desktop:px-4 desktop:py-5">
+      <div class="flex flex-col tablet:mx-2 desktop:w-[45.625rem]">
+        <h3 class="text-grayLight leading-tight pt-12 desktop:text-start">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
       </div>
-      <div class="col-md-4">
-        <h6 class="text-blue mt-5 mb-1">Advocacy</h6>
-        <p>Promote policies that remove barriers to innovation in government while increasing adoption of best practices, methodologies, and processes, such as human-centered design and agile delivery</p>
+      <div class="grid tablet:grid-cols-3 gap-5 mt-10">
+        <div class="tablet:mx-2">
+          <h6 class="text-blue text-base mb-1">Community</h6>
+          <p class="mb-4">Establish a collaborative community of innovative vendors to influence digital services in the government</p>
 
-        <h6 class="text-blue mt-5 mb-1">Partnership</h6>
-        <p>Cultivate enduring relationships within our community of vendors and government partners to maintain long-term success in digital service delivery</p>
-      </div>
-      <div class="col-md-4">
-        <h6 class="text-blue mt-5 mb-1">Impact</h6>
-        <p>Make a meaningful difference in the daily lives of users through improved interactions with government, prioritizing equitable delivery to those who have traditionally been underserved</p>
+          <h6 class="text-blue text-base mt-8 mb-1">Education</h6>
+          <p>Educate the civic tech ecosystem, including government agencies, other vendors, and users, on best practices in digital services</p>
+        </div>
+        <div class="tablet:mx-2">
+          <h6 class="text-blue text-base mt-8 mb-1">Advocacy</h6>
+          <p class="mb-4">Promote policies that remove barriers to innovation in government while increasing adoption of best practices, methodologies, and processes, such as human-centered design and agile delivery</p>
+
+          <h6 class="text-blue text-base mt-8 mb-1">Partnership</h6>
+          <p>Cultivate enduring relationships within our community of vendors and government partners to maintain long-term success in digital service delivery</p>
+        </div>
+        <div class="tablet:mx-2">
+          <h6 class="text-blue text-base mt-8 mb-1">Impact</h6>
+          <p>Make a meaningful difference in the daily lives of users through improved interactions with government, prioritizing equitable delivery to those who have traditionally been underserved</p>
+        </div>
       </div>
     </div>
   </div>

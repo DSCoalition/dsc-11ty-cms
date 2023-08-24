@@ -1,11 +1,21 @@
 {% assign orgs = collections.orgItem %}
 
-{% for org in orgs %}
-  <div class="">
-    <a href="{{ org.data.linkURL }}"><img src="{{ org.data.organizationImage }}" alt="{{ org.data.organizationAlt }}"></a>
-    <p>{{ org.data.organizationDescription }}</p>
-    {% if org.data.foundingMember %}
-      <i>*</i>
-    {% endif %}
-  </div>
-{% endfor %}
+<div class="p-1 mt-6 tablet:columns-2 desktop:gap-x-20 desktop:mt-0">
+  {% for org in orgs %}
+    <div class="flex py-8 px-2 desktop:justify-between desktop:pb-16 desktop:px-16">
+      <div class="flex-none items-center w-16 h-1/2 tablet:w-20 desktop:w-40">
+        <a href="{{ org.data.linkURL }}"><img
+            src="{{ org.data.organizationImage }}"
+            alt="{{ org.data.organizationAlt }}"
+            class="max-w-full h-auto pt-2 pr-4 desktop:p-0 desktop:pr-8" /></a>
+      </div>
+      <div class="grow break-inside-avoid-column">
+        <p>
+          {{ org.data.organizationDescription }}{% if org.data.foundingMember %}
+            <i>*</i>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  {% endfor %}
+</div>

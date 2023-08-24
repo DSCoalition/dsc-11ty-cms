@@ -8,63 +8,43 @@
         padding: 0;
         color: theme(colors.gray);
         font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
-        font-size: 0.69rem; /* Equivalent to 11pt */
-    }
-
-    @media (max-width: 992px) {
-        .container.py-5 {
-            padding-top: 1.00rem !important;
-            padding-bottom: 1.00rem !important;
-        }
-    }
-
-    @media (min-width: 576px) and (max-width: 768px) {
-        .container {
-            max-width: 40.00rem; /* Equivalent to 640px */
-        }
+        font-size: 0.91625rem;
     }
 
     /* Typography */
+
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Merriweather', serif;
-        margin-bottom: 1.00rem;
+        font-family: Merriweather, serif;
     }
 
     h1 {
-        font-size: 3.00rem;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 1.80rem;
+        font-size: 1.8em;
     }
 
     h3 {
-        font-size: 1.60rem;
-    }
-
-    h5 {
-        font-size: 1.25rem; 
-    }
-
-    h6 {
-        font-weight: bold;
+        font-size: 1.4rem;
+        color: theme(colors.grayLight);
     }
 
     p {
-        font-size: 1.00rem;
+        font-size: 1em;
 
         &.text-sm {
-            font-size: 0.80rem;
+            font-size: .8em;
         }
     }
 
     p.list-items::before {
         content: "";
         display: inline-block;
-        width: 0.38rem; /* Equivalent to 6px */
-        height: 0.38rem; /* Equivalent to 6px */
-        margin-right: 0.50rem; /* Equivalent to 8px */
-        margin-bottom: 0.13rem; /* Equivalent to 2px */
+        width: 0.38rem;
+        height: 0.38rem;
+        margin-right: 0.50rem;
+        margin-bottom: 0.13rem;
         border: 1px solid theme(colors.gray);
         border-radius: 50%;
     }
@@ -90,47 +70,251 @@
         }
     }
 
+     /* Home Background Image */
+
+     .bg-illustration {
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: contain;
+    }
+
     @media (max-width: 768px) {
         .container.bg-illustration {
-            padding-bottom: 15.63rem !important; /* Equivalent to 250px */
-            padding-top: 0 !important;
+            padding-top: 0;
             background-position: bottom center;
         }
     }
 
     @media (max-width: 992px) {
         .container.bg-illustration {
-            background-size: 10.00rem; /* Equivalent to 40% */
+            background-size: 40%;
         }
     }
 
     /* Parallax */
-    /* TODO: add parallax styling */
-
-    /* Navbar */
-    .navbar-logo {
-        margin: 1.88rem 0 1.88rem 3.13rem; /* Equivalent to 30px */
-        padding: 0;
-        height: 3.13rem;
-    }
-
-    .nav-item {
-        color: theme(colors.red);
-        font-family: 'Merriweather';
-        font-size: 1.075rem;
-    }
-
-
-    .navbar-nav {
-        border-bottom: 0.31rem solid theme(colors.grayLightest); /* Equivalent to 5px */
-        padding: 1.56rem 3.13rem 1.46rem 0;
- /* Equivalent to 25px 50px 25px 0 */
-    }
-
 
     @media (max-width: 992px) {
-        .navbar-logo {
-            margin: 0.94rem; /* Equivalent to 15px */
+        .container.con-5 {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         }
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        .container {
+            max-width: 640px;
+        }
+    }
+
+
+    .bg-parallax, .bg-parallax-photo {
+        position: relative;
+
+        .parallax-outside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 21.875rem;
+            width: 100%;
+            max-width: 100%;
+            scroll-behavior: smooth;
+            transform: translate3d(0px, 0px, 0px);
+            z-index: -1;
+
+            .parallax-inside {
+                height: auto;
+                width: 100%;
+                transform: translate3d(0px, 0px, 0px);
+
+                &.is-parallax {
+                    left: 0;
+                    position: absolute;
+                    will-change: transform;
+                    right: 0;
+                    top: 0;
+                }
+
+                > img {
+                    height: auto;
+                    width: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .parallax-outside-cover {
+            position: relative;
+            width: 100%;
+            height: 250px !important;
+            scroll-behavior: smooth;
+            overflow: hidden;
+            z-index: -1;
+
+            .parallax-inside {
+                width: 100%;
+                overflow: hidden;
+
+                &.is-parallax {
+                    left: 0;
+                    position: absolute;
+                    will-change: transform;
+                    right: 0;
+                    top: 0;
+                }
+
+                > img {
+                    height: 100%;
+                    width: 100%;
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                    -o-object-position: top;
+                    object-position: top;
+                    font-family: "object-fit: cover; object-position: top";
+                }
+            }
+        }
+    }
+
+    /* Navigation Bar */
+
+    .navbar {
+        margin: 30px 0 30px 50px;
+        padding: 0;
+
+        .navbar-brand .logo {
+            height: 50px;
+        }
+
+        .navbar-toggler {
+            &:focus {
+                outline: none;
+            }
+
+            .navbar-toggler-icon {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+
+                .line-1, .line-2, .line-3 {
+                    position: absolute;
+                    right: 0;
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background: theme(colors.red);
+                    transition: opacity .2s ease,background .2s ease,top .2s ease .2s,transform .2s ease;
+                }
+
+                .line-1 { top: 8px; }
+                .line-2 { top: 14px; }
+                .line-3 { top: 20px; }
+
+                &:hover {
+                    .line-1, .line-2, .line-3 {
+                        background: theme(colors.magenta);
+                    }
+                }
+            }
+        }
+
+        .navbar-nav {
+            border-bottom: 5px solid theme(colors.grayLightest);
+            padding: 25px 50px 25px 0;
+
+            .nav-item .nav-link {
+                color: theme(colors.red);
+                font-family: 'Merriweather';
+                padding: 0 25px;
+                font-size: .9rem;
+            }
+
+        }
+    }
+
+    @media (max-width: 992px) {
+        .navbar {
+            margin: 15px;
+        }
+    }
+
+     /* Date Box */
+
+    .date-link {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 60ch;
+      }
+
+    .date-link:hover .link {
+    text-decoration: underline;
+    }
+
+    .date-box {
+    text-align: center;
+    word-break: break-word;
+    line-height: 1.1em;
+    background-color: #dedede;
+    }
+
+    .date-box-inner {
+    width: 4ch;
+    margin: 4px 8px;
+    }
+
+    .date {
+    font-weight: 700;
+    color: theme(colors.gray);
+
+    }
+
+    .link-box {
+    margin-left: 0.7rem;
+    }
+
+    .link {
+    color: theme(colors.gray);
+    }
+
+    /* Membership Markdown Content */
+
+    .membership-content {
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        font-size: 1.65rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style-type: circle;
+        margin-left: 1rem;
+    }
+
+    ol {
+        list-style-type:lower-roman;
+        margin-left: 40px;
+    }
+
+    strong {
+        margin-top: 1rem;
+    }
+    }
+
+    #membership-list-item {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    }
+
+    .last-list-item {
+    margin-bottom: 1rem;
+    }
+
+    .membership-list-last {
+    margin-top: 1rem;
     }
 }

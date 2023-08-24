@@ -1,12 +1,13 @@
 {% assign members = collections.boardMemberItem %}
 
 {% for member in members %}
-  <div class="">
-    <img src="{{ member.data.memberImage }}" alt="{{ member.data.memberAlt }}" class="" />
-    <h6 class="text-blue">
-        {{ member.data.memberName }}<br/>
-        <small class="text-gray">{{ member.data.memberRole }}</small><br/>
-        <small class="text-blue">{{ member.data.memberOrganization }}</small>
-    </h6>
+  <div class="flex flex-col items-center text-center px-4 pb-4 mx-auto desktop:pb-0 desktop:mt-4">
+    <img
+      src="{{ member.data.memberImage }}"
+      alt="{{ member.data.memberAlt }}"
+      class="w-full h-auto pb-6 desktop:pb-4" />
+    <h6 class="text-blue text-base">{{ member.data.memberName }}</h6>
+    <h5 class="text-grayLight text-[0.8rem]">{{ member.data.memberOrganization }}</h5>
+    <h4 class="text-blue text-[0.8rem]">{{ member.data.memberRole }}</h4>
   </div>
 {% endfor %}

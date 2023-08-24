@@ -1,28 +1,33 @@
 ---
 layout: layouts/base.liquid
 ---
-<div class="bg-parallax-photo">
-  <div
-    :speed-factor="0.8"
-    sectionClass="parallax-outside"
-    containerClass="parallax-inside">
-    <img src="/assets/img/bg-triangle-pink3.png" class="float-right" />
-  </div>
-</div>
-<div class="container py-5">
-  <div class="row justify-content-md-between">
-    <div class="col-md-6 py-md-5">
-      <h1 class="text-magenta my-md-5">{{ membershipHeader }}</h1>
-      {{ membershipAnnouncement | markdownify }}
-      {{ content }}
+
+<section class="desktop:p-0">
+  <div class="grid mx-auto desktop:gap-8 desktop:grid-cols-2">
+    <div class="row-start-2 items-center desktop:mb-20 desktop:mt-28 desktop:row-start-1">
+      <div class="p-[0.937rem] mt-[-15rem] tablet:mt-[-28rem] tablet:ml-14 tablet:w-[20rem] desktop:mt-0 desktop:w-[35.625rem]">
+        <h1 class="text-magenta leading-tight mb-10">{{ membershipHeader }}</h1>
+        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
+          <h2 class="text-greenDark mb-1">Announcement</h2>
+          {{ membershipAnnouncement | markdownify }}
+        </div>
+        <div class="membership-content">
+          {{ content | markdownify }}
+        </div>
+      </div>
+    </div>
+    <div class="ml-auto h-3/5 tablet:h-1/2 desktop:mt-6">
+      <img
+        src="/assets/img/bg-triangle-pink3.png"
+        alt=""
+        class="h-full w-auto desktop:h-auto">
     </div>
   </div>
-</div>
-<div class="bg-parallax">
-  <div
-    :speed-factor=".15"
-    sectionClass="parallax-outside-cover"
-    containerClass="parallax-inside">
-    <img src="/assets/img/bg-rectangle-purple.png" />
-  </div>
+</section>
+
+<div class="w-full h-[15.625rem] pb-16 mt-6 desktop:pb-0  flex items-center justify-center">
+  <img
+    src="/assets/img/bg-rectangle-purple.png"
+    alt=""
+    class="w-full h-full object-cover object-top">
 </div>
