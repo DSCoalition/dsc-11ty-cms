@@ -4,15 +4,15 @@ layout: layouts/base.liquid
 
 <section>
   <div class="bg-parallax">
-    <div class="parallax-outside h-[70vh] overflow-clip">
+    <div class="parallax-outside h-[80vh] desktop:overflow-clip">
       <div class="is-parallax parallax-inside">
         <img src="/assets/img/bg-triangle-gray.png" alt="">
       </div>
     </div>
   </div>
-  <div class="bg-illustration container w-full px-[0.9375rem] mx-auto py-[3rem] pb-40" style="background-image: url('/assets/img/illustration-gov.png');">
-    <div class="flex flex-wrap justify-end mx-[-0.9375rem] border-box">
-      <div class="w-[570px] pt-14 pb-40 p-4 desktop:p-0 desktop:pt-20">
+  <div class="bg-illustration container w-full px-[0.9375rem] mx-auto pt-12 pb-32" style="background-image: url('/assets/img/illustration-gov.png');">
+    <div class="flex flex-wrap justify-end mx-[-.2rem]">
+      <div class="pt-14 pb-40 px-4 tablet:w-80 desktop:w-[35.625rem] desktop:p-0 desktop:pt-20">
         <h1 class="text-blue mb-8 leading-tight">{{ homeHeroRight.heroTitle }}</h1>
         <h3 class="text-grayLight mb-6 leading-tight">{{ homeHeroRight.heroSubTitle }}</h3>
         {{ homeHeroRight.heroContent | markdownify }}
@@ -20,29 +20,27 @@ layout: layouts/base.liquid
     </div>
   </div>
 
-  <div class="h-[17.56rem] flex items-center text-center bg-blue text-white leading-tight">
-    <div class="px-10 tablet:px-28 desktop:px-48 desktop:py-10">
+  <div class="flex items-center text-center bg-blue text-white leading-tight h-[19.5rem] tablet:h-[17.5625rem] desktop:h-[17.5625rem]">
+    <div class="px-8 tablet:px-28 desktop:px-48 desktop:py-10">
       {{ bannerText | markdownify }}
     </div>
   </div>
 
-  <div class="text-left">
-    <div class="grid items-center desktop:grid-cols-2">
-      <div class="row-start-2 mb-4 desktop:row-start-2 desktop:mb-0 desktop:px-6">
-        <div class="relative z-[1] px-[0.93rem] tablet:mx-16 tablet:mb-14 tablet:w-[20rem] desktop:w-auto desktop:ml-10 desktop:mx-0">
-          <h3 class="text-red text-[1.466rem] leading-tight mb-5 ">{{ homeHeroLeft.heroTitle }}</h3>
-          <div class="text-gray mb-2">
-            {{ homeHeroLeft.heroContent | markdownify }}
-          </div>
+  <div class="grid items-center desktop:grid-cols-2">
+    <div class="row-start-2 mb-4 desktop:row-start-2 desktop:mb-0 desktop:px-6">
+      <div class="relative z-[1] px-[0.93rem] tablet:mx-16 tablet:mb-14 tablet:w-[20rem] desktop:w-auto desktop:ml-10 desktop:mx-0">
+        <h3 class="text-red text-[1.466rem] leading-tight mb-5 ">{{ homeHeroLeft.heroTitle }}</h3>
+        <div class="text-gray mb-2">
+          {{ homeHeroLeft.heroContent | markdownify }}
         </div>
       </div>
-      <div class="relative h-[45vh] desktop:h-[70vh] overflow-visible desktop:row-start-2">
-        <div class="absolute h-full desktop:ml-auto desktop:top-[-10rem] desktop:h-auto right-0 z-[-1]">
-          <img
-            src="/assets/img/bg-triangle-pink.png"
-            alt=""
-            class="h-full w-full">
-        </div>
+    </div>
+    <div class="relative h-[45vh] desktop:h-[70vh] overflow-visible desktop:row-start-2">
+      <div class="absolute h-full desktop:ml-auto desktop:top-[-10rem] desktop:h-auto right-0 z-[-1]">
+        <img
+          src="/assets/img/bg-triangle-pink.png"
+          alt=""
+          class="h-full w-full">
       </div>
     </div>
   </div>
@@ -80,8 +78,7 @@ layout: layouts/base.liquid
     </div>
   </div>
 
-
-  <div class="w-full h-[250px] pb-16 tablet:pb-0 desktop:pb-0  flex items-center justify-center">
+  <div class="flex items-center justify-center w-full h-[15.625rem] pb-16 tablet:pb-0 desktop:pb-0">
     <img
       src="/assets/img/bg-rectangle-blue.png"
       alt=""

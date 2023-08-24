@@ -118,7 +118,6 @@
             width: 100%;
             max-width: 100%;
             scroll-behavior: smooth;
-            overflow: visible;
             transform: translate3d(0px, 0px, 0px);
             z-index: -1;
 
@@ -126,7 +125,6 @@
                 height: auto;
                 width: 100%;
                 transform: translate3d(0px, 0px, 0px);
-                overflow: clip;
 
                 &.is-parallax {
                     left: 0;
