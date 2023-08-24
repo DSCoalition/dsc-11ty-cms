@@ -81,9 +81,9 @@ Each existing charter member firm can evaluate and agree to sponsor one prospect
 
 ### Criteria for membership
 
-* Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/assets/pdf/Appendix-A-Case-Study-Instructions-2023.pdf) {#membership-list-item}
+* Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/assets/pdf/Appendix-A-Case-Study-Instructions-2023.pdf){target="_blank" rel="noopener"} {#membership-list-item}
 * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.{#membership-list-item}
 * Sponsorship from a current DSC member.{#membership-list-item}
 * Commitment to attendance at regular meetings with DSC members.{#membership-list-item}
 
-For more information on the full membership criteria and qualifications, please review [2023 DSC Membership Policy](/assets/pdf/Membership-Policy-2023.pdf). {.membership-list-last}
+For more information on the full membership criteria and qualifications, please review [2023 DSC Membership Policy](/assets/pdf/Membership-Policy-2023.pdf){target="_blank" rel="noopener"}. {.membership-list-last}
