@@ -68,6 +68,16 @@ To start the development server and build your Eleventy project with Tailwind CS
 
 ### Content Management
 
+Before accessing the CMS uncomment `local_backend: true` in the `admin/config.yml` file and comment out:
+```
+backend:
+  name: git-gateway
+  branch: main
+```
+Next, open a terminal and run the command `npx netlify-cms-proxy-server` in another terminal, run the command `npm run serve`
+
+This should allow you to access the CMS without having to authenticate to use the CMS.
+
 To access the CMS open your web browser and navigate to `http://localhost:8080/admin` to access the Decap CMS interface. Here, you can manage your website's content.
 
 
