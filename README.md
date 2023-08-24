@@ -68,6 +68,8 @@ To start the development server and build your Eleventy project with Tailwind CS
 
 ### Content Management
 
+How to set up the local proxy to use the CMS locally:
+
 Before accessing the CMS uncomment `local_backend: true` in the `admin/config.yml` file and comment out:
 ```
 backend:
