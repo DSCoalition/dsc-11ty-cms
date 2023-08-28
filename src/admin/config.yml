@@ -6,7 +6,7 @@ backend:
   branch: main
 
 publish_mode: editorial_workflow
-media_folder: "/assets/"
+media_folder: "src/assets/"
 public_folder: "/assets/"
 
 collections:
