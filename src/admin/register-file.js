@@ -1,5 +1,3 @@
-// import { File } from "./file-component.js"
-
 export const RegisterFile = {
 
   // Internal id of the component
@@ -18,7 +16,6 @@ export const RegisterFile = {
         config: {
           multiple: false,
           choose_url: false,
-          
         },
       },
     },
@@ -50,10 +47,6 @@ export const RegisterFile = {
   // (component gives better render performance)
   toPreview(obj) {
     return obj.title;
-    // (
-      // <File src={obj.src}>{obj.title}</File>
-      // <a href={obj.src}>{(obj.title.length > 0 && obj.title !== 'undefined') ? obj.title : 'View file'}</a>
-    //);
   },
 
 };
