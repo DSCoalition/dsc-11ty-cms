@@ -1,3 +1,19 @@
 ---
 layout: layouts/base.liquid
 ---
+<div class="flex flex-col sm:flex-row sm:justify-center md:justify-around">
+  <div class="py-5 px-4">
+    <h1 class="absolute text-blue px-4 md:mt-12 md:mb-12">{{ contactHeader }}</h1>
+     <img src="/assets/img/bg-triangle-blue2.png" alt=""/>
+  </div>
+  <div class="px-4 items-center md:py-12 ">
+      <h5 class="max-w-prose text-grayLight">{{ contactDescription }}</h5>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfOo7ss8JtJ1mWCNdXoUNB3F-pj6OSabhmt9ZBeE6PcVQ1dDA/viewform?embedded=true"
+        style="height: 1020px;"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        width="100%"></iframe>
+    </div>
+</div>

@@ -1,3 +1,43 @@
 ---
 layout: layouts/base.liquid
 ---
+
+<section class="z-2">
+  <div class="grid desktop:gap-8 desktop:grid-cols-2 desktop:mb-56">
+    <div class="mb-4 ml-auto tablet:ml-0 tablet:col-span-1 h-4/5 tablet:h-2/5 desktop:h-auto">
+      <img
+        src="/assets/img/bg-triangle-pink2.png"
+        alt=""
+        class="h-full w-auto">
+    </div>
+    <div class="px-4 tablet:mt-[-22rem] tablet:mb-32 tablet:ml-auto tablet:mr-20 tablet:w-[16.625rem] desktop:w-auto desktop:px-8 desktop:mt-20 desktop:mx-12 dekstop:col-span-2 desktop:mr-12">
+      <h1 class="text-blue leading-tight mb-10 mt-[-6rem] desktop:mt-10 desktop:mb-8">{{ heroTitle }}</h1>
+      <div class="text-gray mb-2">
+        {{ content | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="relative overflow-visible">
+  <div class="absolute z-[-1] top-[-3rem] desktop:top-[-16rem]">
+    <img src="/assets/img/bg-triangle-gray.png" alt="" />
+  </div>
+  <div class="z-1 p-2">
+    <div class="p-2 mb-10 desktop:mb-0 tablet:px-10 desktop:px-20">
+      <h2 class="text-grayLight mb-4">Our community</h2>
+      <p class="mb-4">The Coalition formed from the shared ideals of 16 companies and continues to grow as other firms join the call.</p>
+      <p>
+        <i>* = Founding member</i>
+      </p>
+    </div>
+    {% include "components/organization-item.liquid" %}
+  </div>
+</div>
+
+<div class="bg-grayLightest py-5 desktop:px-12 desktop:py-[3.125rem]">
+  <h3 class="text-grayLight py-2 ml-4 mb-5">Who We Are</h3>
+  <div class="grid grid-cols-3">
+    {% include "components/board-member-item.liquid" %}
+  </div>
+</div>
