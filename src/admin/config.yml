@@ -2,8 +2,10 @@
 # local_backend: true
 
 backend:
-  name: git-gateway
-  branch: main
+  name: github
+  repo: DSCoalition/dsc-11ty-cms
+  branch: main # Branch to update (optional; defaults to master)
+  base_url: https://dsc-11ty-cms.pages.dev
 
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
