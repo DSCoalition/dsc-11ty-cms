@@ -6,6 +6,7 @@ backend:
   repo: DSCoalition/dsc-11ty-cms
   branch: main # Branch to update (optional; defaults to master)
   base_url: https://dsc-11ty-cms.pages.dev
+  auth_endpoint: /api/auth
 
 publish_mode: editorial_workflow
 media_folder: "src/assets/"
@@ -58,7 +59,7 @@ collections:
           file: "src/pages/membership.md"
           fields:
             - { label: "Membership Header", name: "membershipHeader", widget: "string" }
-            - { label: "Membership Announcement", name: "membershipAnnouncement", widget: "markdown", editor-blocks: ["file"]}
+            - { label: "Membership Announcement", name: "membershipAnnouncement", widget: "markdown", required: false}
             - { label: "Membership Content", name: "body", widget: "markdown" }
         - name: "contact"
           label: "Contact"
