@@ -9,8 +9,8 @@ backend:
   auth_endpoint: /api/auth
 
 publish_mode: editorial_workflow
-media_folder: "src/assets/img/"
-public_folder: "/assets/img/"
+media_folder: "src/assets/"
+public_folder: "/assets/"
 
 collections:
     - name: "pages"
