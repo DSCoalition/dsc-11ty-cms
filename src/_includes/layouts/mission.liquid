@@ -4,8 +4,8 @@ layout: layouts/base.liquid
 
 <section>
   <div class="grid desktop:mb-10 desktop:ml-10 desktop:gap-8 desktop:grid-cols-2">
-    <div class="px-2 mb-10 row-start-2 tablet:mx-auto tablet:mt-[-14rem] desktop:mx-0 desktop:mt-24 desktop:ml-2 desktop:row-start-1 ">
-      <h1 class="text-magenta text-[2.75rem] leading-tight px-2 my-6 pb-4 desktop:w-auto tablet:w-[290px]">{{ missionHero.heroTitle }}</h1>
+    <div class="px-2 mb-10 row-start-2 tablet:mx-auto tablet:mt-[-40rem] desktop:mt-0 desktop:mx-0 desktop:mt-24 desktop:ml-2 desktop:row-start-1 ">
+      <h1 class="text-magenta text-[2.75rem] leading-tight px-2 my-6 pb-4 desktop:w-auto tablet:max-w-sm">{{ missionHero.heroTitle }}</h1>
       <div class="flex flex-col justify-start">
         <div class="px-2 tablet:px-0 tablet:w-[640px] desktop:w-[47.5rem]">
           {{ missionHero.heroContent | markdownify }}
