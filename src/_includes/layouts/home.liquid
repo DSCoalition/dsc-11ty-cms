@@ -4,13 +4,13 @@ layout: layouts/base.liquid
 
 <section>
   <div class="bg-parallax">
-    <div class="parallax-outside h-[80vh] desktop:overflow-clip">
+    <div class="parallax-outside h-4/5 desktop:overflow-visible">
       <div class="is-parallax parallax-inside">
         <img src="/assets/img/bg-triangle-gray.png" alt="">
       </div>
     </div>
   </div>
-  <div class="bg-illustration container w-full px-[0.9375rem] mx-auto pt-12 desktop:pb-32" style="background-image: url('/assets/img/illustration-gov.png');">
+  <div class="bg-illustration container w-full px-[0.9375rem] mx-auto pt-12 max-h-[75vh] desktop:pb-32" style="background-image: url('/assets/img/illustration-gov.png');">
     <div class="flex flex-wrap justify-end mx-[-.2rem]">
       <div class="py-14 desktop:pb-40 px-4 tablet:w-80 desktop:w-[35.625rem] desktop:p-0 desktop:pt-20">
         <h1 class="text-blue mb-8 leading-tight">{{ homeHeroRight.heroTitle }}</h1>
@@ -21,12 +21,12 @@ layout: layouts/base.liquid
   </div>
 
   <div class="flex items-center text-center bg-blue text-white leading-tight h-[19.5rem] tablet:h-[17.5625rem] desktop:h-[17.5625rem]">
-    <div class="px-8 tablet:px-28 desktop:px-48 desktop:py-10">
+    <div class="grow px-8 tablet:px-28 desktop:px-48 desktop:py-10">
       {{ bannerText | markdownify }}
     </div>
   </div>
 
-  <div class="grid items-center tablet:grid-cols-2">
+  <div class="grid items-center tablet:grid-cols-2 py-10 desktop:py-16">
     <div class="row-start-2 mb-4 tablet:row-start-2 tablet:mb-0 tablet:px-6 desktop:pl-[4rem]">
       <div class="relative z-[1] px-[0.93rem] tablet:mx-16 desktop:mb-14 tablet:w-[20rem] tablet:w-auto tablet:ml-10 tablet:mx-0">
         <h3 class="text-red text-[1.466rem] leading-tight mb-5 ">{{ homeHeroLeft.heroTitle }}</h3>
@@ -35,7 +35,7 @@ layout: layouts/base.liquid
         </div>
       </div>
     </div>
-    <div class="relative h-[45vh] tablet:h-[70vh] overflow-visible tablet:row-start-2">
+    <div class="relative h-[40%] tablet:h-[70%] overflow-visible tablet:row-start-2">
       <div class="absolute h-full tablet:ml-auto desktop:top-[-10rem] tablet:h-auto right-0 z-[-1]">
         <img
           src="/assets/img/bg-triangle-pink.png"
