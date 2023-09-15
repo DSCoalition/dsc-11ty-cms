@@ -3,28 +3,18 @@ layout: layouts/base.liquid
 ---
 
 <section class="desktop:p-0">
- <!--<div class="relative w-full ml-auto min-h-[21rem] tablet:min-h-0 desktop:mt-6">
-    <div class="absolute h-full tablet:ml-auto tablet:h-auto right-0 z-[-1]">
-      <img
-        src="/assets/img/bg-triangle-pink3.png"
-        alt=""
-        class="h-full w-full">
-    </div>
-  </div>-->
-  <div class="w-full ml-auto tablet:ml-auto tablet:h-[75%] 2xl:h-[90%] desktop:ml-0 desktop:absolute tablet:w-[45%] desktop:w-full">
+  <div class="w-full ml-auto tablet:h-[75%] 2xl:h-[90%] desktop:ml-0 desktop:absolute tablet:w-[45%] desktop:w-full">
     <img src="/assets/img/bg-triangle-pink3.png" alt="" class="h-[21rem] ml-auto w-auto tablet:h-auto tablet:float-right desktop:h-full">
   </div>
   <div class="container mx-auto p-4 md:p-12 2xl:max-w-[75rem]">
-    <div class="">
-      <div class="p-4 lg:p-12 md:max-w-[50%] lg:max-w-[60%]">
-        <h1 class="text-magenta leading-tight mb-12 md:my-12">{{ membershipHeader }}</h1>
-        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
-          <h2 class="text-greenDark mb-1">Announcement</h2>
-          {{ membershipAnnouncement | markdownify }}
-        </div>
-        <div class="membership-content">
-          {{ content | markdownify }}
-        </div>
+    <div class="p-4 lg:p-12 md:max-w-[50%] lg:max-w-[60%]">
+      <h1 class="text-magenta leading-tight mb-12 md:my-12">{{ membershipHeader }}</h1>
+      <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
+        <h2 class="text-greenDark mb-1">Announcement</h2>
+        {{ membershipAnnouncement | markdownify }}
+      </div>
+      <div class="membership-content">
+        {{ content | markdownify }}
       </div>
     </div>
   </div>
