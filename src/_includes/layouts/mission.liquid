@@ -6,9 +6,9 @@ layout: layouts/base.liquid
   <div class="ml-auto z-[-1] desktop:ml-0">
     <img src="/assets/img/bg-triangle-blue.png" alt="" class="object-contain desktop:h-full w-auto tablet:max-w-[50%] tablet:float-right">
   </div>
-  <div class="flex ml-16 2xl:justify-center desktop:mb-10">
-    <div class="container pr-2 mb-10 mx-auto desktop:mt-0 desktop:mt-24">
-      <h1 class="text-magenta text-[2.75rem] leading-tight px-2 my-6 pb-4 tablet:max-w-sm desktop:max-w-md 2xl:max-w-lg">{{ missionHero.heroTitle }}</h1>
+  <div class="flex px-4 tablet:pl-16 desktop:mb-10 desktop:justify-center">
+    <div class="container max-w-[75rem] pr-2 mb-10 desktop:mt-0 desktop:mt-24 tablet:max-w-sm desktop:max-w-md 2xl:max-w-lg">
+      <h1 class="text-magenta text-[2.75rem] leading-tight px-2 my-6 pb-4">{{ missionHero.heroTitle }}</h1>
       <div class="flex flex-col justify-start">
         <div class="px-2 tablet:px-0 tablet:w-[640px] desktop:w-[47.5rem]">
           {{ missionHero.heroContent | markdownify }}
@@ -36,8 +36,8 @@ layout: layouts/base.liquid
       <img src="/assets/img/bg-triangle-lightblue.png" alt="" />
     </div>
 
-    <div class="flex tablet:justify-center bg-grayLightest opacity-90 px-4 pt-[0.9375rem] pb-8 desktop:py-8">
-      <div class="tablet:container tablet:mx-10 desktop:px-4 desktop:py-5">
+    <div class="flex bg-grayLightest opacity-90 px-4 pt-[0.9375rem] pb-8 tablet:pl-16 desktop:py-8 desktop:justify-center">
+      <div class="tablet:container tablet:max-w-[75rem] desktop:py-5">
         <div class="flex flex-col tablet:mx-2 desktop:w-[45.625rem]">
           <h3 class="text-grayLight leading-tight pt-12 desktop:text-start">As thought leaders, advisors, and trusted partners in government digital services, we're driven by</h3>
         </div>
