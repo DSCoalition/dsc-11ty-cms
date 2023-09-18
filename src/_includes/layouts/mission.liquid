@@ -3,8 +3,8 @@ layout: layouts/base.liquid
 ---
 
 <section>
-  <div class="w-3/4 ml-auto tablet:ml-auto tablet:h-1/2 desktop:h-[57%] 2xl:h-[60%] desktop:ml-0 desktop:absolute tablet:w-[45%] desktop:w-full">
-    <img src="/assets/img/bg-triangle-blue.png" alt="" class="desktop:h-full w-auto tablet:float-right">
+  <div class="ml-auto z-[-1] desktop:ml-0">
+    <img src="/assets/img/bg-triangle-blue.png" alt="" class="object-contain desktop:h-full w-auto tablet:max-w-[50%] tablet:float-right">
   </div>
   <div class="flex ml-16 2xl:justify-center desktop:mb-10">
     <div class="container pr-2 mb-10 mx-auto desktop:mt-0 desktop:mt-24">
@@ -15,7 +15,7 @@ layout: layouts/base.liquid
         </div>
       </div>
       <a href="{{ missionHero.linkFile }}" download>
-        <div class="my-5 date-link bg-grayLightest">
+        <div class="my-5 date-link bg-grayLightest tablet:w-[640px] desktop:w-[47.5rem]">
           <div
             class="date-box"
             aria-label="March 12"
