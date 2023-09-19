@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kindsys/digital-services-coalition.git"
+    "url": "git+https://github.com/DSCoalition/dsc-11ty-cms.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kindsys/digital-services-coalition/issues"
+    "url": "https://github.com/DSCoalition/dsc-11ty-cms/issues"
   },
-  "homepage": "https://github.com/kindsys/digital-services-coalition",
+  "homepage": "https://github.com/DSCoalition/dsc-11ty-cms",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
