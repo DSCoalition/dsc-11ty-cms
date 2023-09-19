@@ -81,7 +81,9 @@
     @media (max-width: 768px) {
         .container.bg-illustration {
             padding-top: 0;
-            background-position: bottom center;
+            padding-bottom: 250px!important;
+            padding-top: 0!important;
+            background-position: bottom;
         }
     }
 
