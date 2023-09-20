@@ -19,6 +19,10 @@ module.exports = {
         greenLight: "#D4EDDA",
         greenDark: "#155724"
       },
+      fontFamily: {
+        sans: ['Open Sans', 'Calibri', 'Source Sans Pro', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
+      },
       screens: {
         tablet: "768px",
         desktop: "992px",
