@@ -4,38 +4,28 @@
 
 @layer components {
     body {
-        margin: 0;
-        padding: 0;
-        color: theme(colors.gray);
-        font-family: 'Open Sans', Calibri, Source Sans Pro, sans-serif;
-        font-size: 0.91625rem;
+        @apply m-0 p-0 text-gray font-sans font-[0.91625rem];
     }
 
     /* Typography */
-
     h1, h2, h3, h4, h5, h6 {
-        font-family: Merriweather, serif;
+        @apply font-serif;
     }
 
     h1 {
-        font-size: 3em;
+        @apply text-5xl;
     }
 
     h2 {
-        font-size: 1.8em;
+        @apply text-3xl;
     }
 
     h3 {
-        font-size: 1.4rem;
-        color: theme(colors.grayLight);
+        @apply text-2xl text-grayLight;
     }
 
     p {
-        font-size: 1em;
-
-        &.text-sm {
-            font-size: .8em;
-        }
+        @apply text-base;
     }
 
     p.list-items::before {
@@ -50,11 +40,10 @@
     }
 
     a, a:visited {
-        color: theme(colors.red);
+        @apply text-red;
 
         &:hover, &:focus {
-            color: theme(colors.magenta);
-            text-decoration: none;
+            @apply text-magenta no-underline;
         }
     }
 
