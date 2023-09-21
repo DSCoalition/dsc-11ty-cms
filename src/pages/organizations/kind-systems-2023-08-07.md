@@ -5,7 +5,7 @@ organizationDescription: “Using modern web, mobile, and data technologies
   approachable, fast digital services in an agile fashion based on the
   principles of the Digital Services Playbook and our own private sector
   experience.”
-linkURL: https://kindsys.us/
+linkURL: https://kind.systems/
 organizationImage: /assets/img/logo-kind.png
 organizationAlt: Kind Systems
 foundingMember: false
