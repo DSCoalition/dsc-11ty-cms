@@ -1,8 +1,8 @@
 ---
 memberName: Mike Gifford
 memberOrganization: CivicActions
-memberRole: Board Member
-memberImage: /assets/img/board-member-mike.jpg
-memberImageAlt: Mike Gifford
+memberRole: President, Board Member
+memberImage: /assets/mike-gifford-soocon23-serious.jpg
+memberImageAlt: President, Mike Gifford
 order: 7
 ---
