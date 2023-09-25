@@ -1,8 +1,8 @@
 ---
-memberName: Greg Godbout
+memberName: Steph von Rueden
 memberOrganization: Fearless
-memberRole: Board Member
-memberImage: /assets/img/board-member-greg-godbout.jpg
-memberImageAlt: Greg Godbout
+memberRole: Skyward
+memberImage: /assets/img_6294.jpg
+memberImageAlt: Steph von Rueden
 order: 3
 ---
