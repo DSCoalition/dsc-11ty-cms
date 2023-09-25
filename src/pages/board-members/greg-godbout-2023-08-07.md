@@ -4,5 +4,5 @@ memberOrganization: Fearless
 memberRole: Skyward
 memberImage: /assets/img_6294.jpg
 memberImageAlt: Steph von Rueden
-order: 3
+order: 6
 ---
