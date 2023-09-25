@@ -2,7 +2,7 @@
 memberName: Kalid Tarapolsi
 memberOrganization: Aquia
 memberRole: Board Member
-memberImage: /assets/img/board-member-ivy.jpg
+memberImage: /assets/headshot.jpeg
 memberImageAlt: Kalid Tarapolsi
 order: 2
 ---
