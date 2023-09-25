@@ -1,8 +1,8 @@
 ---
-memberName: Ivy Teng Lei
-memberOrganization: Exygy
-memberRole: President, Board Member
+memberName: Kalid Tarapolsi
+memberOrganization: Aquia
+memberRole: Board Member
 memberImage: /assets/img/board-member-ivy.jpg
-memberImageAlt: Ivy Teng Lei
+memberImageAlt: Kalid Tarapolsi
 order: 2
 ---
