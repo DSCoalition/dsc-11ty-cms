@@ -9,10 +9,12 @@ layout: layouts/base.liquid
   <div class="container p-4 md:p-12 lg:mx-auto 2xl:max-w-[75rem]">
     <div class="p-4 lg:p-12 md:max-w-[50%] lg:max-w-[60%]">
       <h1 class="text-magenta leading-tight mb-12 md:my-12">{{ membershipHeader }}</h1>
-      <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
-        <h2 class="text-greenDark mb-1">Announcement</h2>
-        {{ membershipAnnouncement | markdownify }}
-      </div>
+      {% if membershipAnnouncement != "" %}
+        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
+          <h2 class="text-greenDark mb-1">Announcement</h2>
+          {{ membershipAnnouncement | markdownify }}
+        </div>
+      {% endif %}
       <div class="membership-content">
         {{ content | markdownify }}
       </div>
