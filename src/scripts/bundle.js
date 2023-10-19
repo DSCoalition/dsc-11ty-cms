@@ -1,3 +1,8 @@
+if (window.location.hash.includes('#')) {
+  const routeWithoutHash = window.location.hash.replace('#', '')
+  window.location.replace(routeWithoutHash)
+}
+
 const navTogglers = document.querySelectorAll('.navbar-toggler');
 
 navTogglers.forEach(navToggler => {
