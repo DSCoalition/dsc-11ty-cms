@@ -5,6 +5,12 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 1
+seo_data:
+  title: Digital Services Coalition - Home
+  desc: Redefining how the government does digital.
+  url: https://digitalservicescoalition.org/
+  img: https://digitalservicescoalition.org/assets/img/dsc-logo.png
+  img_alt: Digital Services Coalition Logo
 homeHeroRight:
   heroTitle: Redefining how the government does digital.
   heroSubTitle: We’re a collection of agile technology and design firms that

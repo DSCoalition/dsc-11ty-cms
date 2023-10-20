@@ -5,6 +5,12 @@ permalink: /mission/
 eleventyNavigation:
   key: Mission
   order: 2
+seo_data:
+  title: Digital Services Coalition - Mission
+  desc: We’re focused on the long game of changing government through digital transformation.
+  url: https://digitalservicescoalition.org/mission/
+  img: https://digitalservicescoalition.org/assets/img/dsc-logo.png
+  img_alt: Digital Services Coalition Logo
 missionHeader:
   dateText: Mar 12
   linkText: Read our 2022-2025 Strategic Plan (PDF, 2.5 MB, 22 pages)
