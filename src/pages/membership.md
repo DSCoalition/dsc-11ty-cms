@@ -8,7 +8,7 @@ seo_data:
   title: Digital Services Coalition - Membership
   desc: Join the coalition
   url: https://digitalservicescoalition.org/membership/
-  img: https://digitalservicescoalition.org/assets/img/dsc-logo.png
+  img: /assets/img/dsc-logo.png
   img_alt: Digital Services Coalition Logo
 membershipHeader: Join the coalition
 membershipAnnouncement: ""

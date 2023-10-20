@@ -10,7 +10,7 @@ seo_data:
   title: Digital Services Coalition - Story
   desc: Answering the call by building a community.
   url: https://digitalservicescoalition.org/story/
-  img: https://digitalservicescoalition.org/assets/img/dsc-logo.png
+  img: /assets/img/dsc-logo.png
   img_alt: Digital Services Coalition Logo
 ---
 It started with the Digital Services Playbook, which outlines 13 key “plays” to help the government build more successful digital services. Robert Rasmussen, the CEO of Agile Six, saw this as an opportunity to improve how government contractors could deliver these services by nurturing a sense of community, rather than rivalry.</br>

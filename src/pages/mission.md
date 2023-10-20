@@ -9,7 +9,7 @@ seo_data:
   title: Digital Services Coalition - Mission
   desc: We’re focused on the long game of changing government through digital transformation.
   url: https://digitalservicescoalition.org/mission/
-  img: https://digitalservicescoalition.org/assets/img/dsc-logo.png
+  img: /assets/img/dsc-logo.png
   img_alt: Digital Services Coalition Logo
 missionHeader:
   dateText: Mar 12
