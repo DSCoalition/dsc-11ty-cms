@@ -5,7 +5,7 @@ organizationDescription: “Simple Technology believes Government should operate
   source) are passionate about using cloud-native technologies to automate ITOps
   activities and business processes so agencies can focus on the mission.”
 linkURL: https://www.simpletechnology.io/
-organizationImage: /assets/img/logo-simple.jpg
+organizationImage: /assets/simple.png
 organizationAlt: Simple Technology
 foundingMember: false
 ---
