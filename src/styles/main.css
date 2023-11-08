@@ -214,7 +214,7 @@
             padding: 25px 50px 25px 0;
 
             .nav-item .nav-link {
-                color: theme(colors.red);
+                color: theme(colors.redDark);
                 font-family: 'Merriweather';
                 padding: 0 25px;
                 font-size: .9rem;
