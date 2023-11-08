@@ -4,6 +4,12 @@ permalink: /membership/
 eleventyNavigation:
   key: Membership
   order: 4
+seo_data:
+  title: Digital Services Coalition - Membership
+  desc: Join the coalition
+  url: https://digitalservicescoalition.org/membership/
+  img: /assets/img/dsc-logo.png
+  img_alt: Digital Services Coalition Logo
 membershipHeader: Join the coalition
 membershipAnnouncement: ""
 ---

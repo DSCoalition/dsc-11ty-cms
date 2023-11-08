@@ -5,6 +5,12 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 1
+seo_data:
+  title: Digital Services Coalition - Home
+  desc: Our goal is to collaborate, not compete, by bringing like-minded small to midsize companies together to work toward the common mission of serving the American public by improving how government works.
+  url: https://digitalservicescoalition.org/
+  img: /assets/img/dsc-logo.png
+  img_alt: Digital Services Coalition Logo
 homeHeroRight:
   heroTitle: Redefining how the government does digital.
   heroSubTitle: We’re a collection of agile technology and design firms that
@@ -33,7 +39,7 @@ homeSectionHeader:
   sectionHeaderSubText: The current “big box” contractor model is failing to
     deliver the kinds of collaboration, transparency, and efficiency that
     smaller, more forward-thinking firms excel at. Our goal is to collaborate,
-    not compete by bringing like-minded small to midsize companies together to
+    not compete, by bringing like-minded small to midsize companies together to
     work toward the common mission of serving the American public by improving
     how government works.
   sectionHeaderSubTitle: Our manifesto to do just that.

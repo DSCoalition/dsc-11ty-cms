@@ -5,10 +5,13 @@ const { DateTime } = require("luxon");
 const Image = require("@11ty/eleventy-img");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const metagen = require('eleventy-plugin-metagen');
 
 module.exports = function(eleventyConfig) {
   // Plugins and Passthrough Copies
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(metagen);
+
   eleventyConfig.addPassthroughCopy("src/assets/**");
   eleventyConfig.addPassthroughCopy("src/favicon/**");
   eleventyConfig.addPassthroughCopy("src/admin");
