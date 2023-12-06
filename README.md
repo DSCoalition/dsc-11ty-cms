@@ -93,4 +93,10 @@ When you're ready to deploy, build the site for production:
 
 Starts by cleaning the _site directory, then generates optimized assets using webpack, and finally generates optimized static HTML files using Eleventy with production-specific settings.
 
+## Deployment and Hosting
 
+The DSC website is hosted on Cloudflare Pages. Documentation for this can be found in our member documents.
+
+## CMS Authentication
+
+Only users who have write permissions on this GitHub repository can access Decap CMS.
