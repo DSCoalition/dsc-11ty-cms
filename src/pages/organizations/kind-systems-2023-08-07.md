@@ -7,6 +7,6 @@ organizationDescription: “Using modern web, mobile, and data technologies
   experience.”
 linkURL: https://kind.systems/
 organizationImage: /assets/img/logo-kind.png
-organizationAlt: Kind
+organizationAlt: Kind Systems
 foundingMember: false
 ---
