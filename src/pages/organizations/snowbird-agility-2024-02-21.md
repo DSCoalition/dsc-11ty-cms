@@ -5,7 +5,7 @@ organizationDescription: '"Snowbird Agility’s mission is to upgrade the digita
   leadership, and relentless improvement, resulting in happy employees and
   delighted customers."'
 linkURL: http://snowbirdagility.com/
-organizationImage: /assets/logo-4-.eps
+organizationImage: /assets/logo-4-.png
 organizationAlt: Logo for Snowbird Agility
 foundingMember: false
 ---
