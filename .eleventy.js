@@ -33,6 +33,11 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => a.data.organizationName.localeCompare(b.data.organizationName));
   });
 
+  eleventyConfig.addCollection("membershipItems", collection => {
+    return collection
+      .getFilteredByGlob("src/pages/membership/*.md");
+  })
+
   // Markdown Filters and Libraries
   const markdownItOptions = {
     html: true,
