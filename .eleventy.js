@@ -52,6 +52,12 @@ module.exports = function(eleventyConfig) {
     markdownLib.render(markdownString)
   );
 
+  eleventyConfig.addFilter("membershipOnClick", content =>
+    content.style.display === "none" ?
+    content.style.display = "block" :
+    content.style.display = "none"
+  );
+
   // Date Filters
   eleventyConfig.addFilter("htmlDateString", dateObj =>
     DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yy-MM-dd")

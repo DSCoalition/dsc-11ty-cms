@@ -2,9 +2,22 @@
 
 {% for item in membershipItems %}
   <div class="font-serif flex flex-col items-center text-center px-4 pb-4 mx-auto desktop:pb-0 desktop:mt-4">
-    <div class="h-[7.4375rem] w-[5.9375rem] tablet:h-[14.625rem] tablet:w-[13.125rem] desktop:h-[20.25rem] desktop:w-[18.75rem]">
-    <div class="text-blue text-base font-bold">{{ item.data.memberName }}</div>
-    <div class="text-gray text-[0.8rem]">{{ item.data.memberOrganization }}</div>
-    <div class="text-blue text-[0.8rem]">{{ item.data.memberRole }}</div>
+    <div type="button" onclick="displayContent()">
+        <div>{{ item.itemName }}{{ item.itemIcon }}</span>
+    </div>
   </div>
 {% endfor %}
+
+<script>
+    let isClicked = false;
+    Function displaycontent() {
+        isClicked = !isClicked;
+        if(isClicked){
+            return `<span class="font-serif flex items-center px-4 pb-4 mx-auto desktop:pb-0 desktop:mt-4">
+                {{ item.itemContent | markdownify }}
+                </span>`
+        } else{
+            return ``
+        }
+    }
+</script>
