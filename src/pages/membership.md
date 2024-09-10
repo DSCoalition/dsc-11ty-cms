@@ -12,6 +12,60 @@ seo_data:
   img_alt: Digital Services Coalition Logo
 membershipHeader: Join the coalition
 membershipAnnouncement: ""
+memberIntro:
+  statement: '#### Nurturing a sense of community for government contractors.'
+  content: '# Nurturing a sense of community for government contractors.
+
+  By working together, the Digital Services Coalition aims to accelerate the government’s ability to implement services that focus on good usability, reliable technology, and accessibility for all—while also benefiting the individuals and firms that are part of the community.'
+memberBenefits:
+  statement: '#### We are committed to the growth and development of the digital service industry.'
+  content: '###### MEMBER BENEFITS
+
+  ## We are committed to the growth and development of the digital service industry.
+
+  Members in the DSC have access to business resources, mentorship from companies and individuals with similar experiences, exclusive and impactful networking, education, and advocacy opportunities, and business development resources.'
+joinSection:
+  statement: ''
+  content: '###### WHO CAN JOIN
+
+  ## Eligible firms and academic institutions that align with the values and missions of the DSC are encouraged to apply.
+  
+  We are interested in small-sized or mid-tier businesses and eligible academic institutions who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. We also look for firms who are committed to following the DSC’s documented Community and Organizational Bylaws.'
+eligibilityCriteria:
+  title: ''
+  content: '#### Eligibility Criteria
+    
+    ##### **1** **Business Size to Revenue**
+
+    * **Small businesses** must make a revenue of less than **$30M** (3-year running average)
+    * **Mid-tier firms** must make a revenue of less than **$55M** (3-year running average)
+    * **Large firms** must make a revenue greater than **$55M** (3-year running average) 
+    <br>
+    <br>
+    <span style="color:red">*Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.*</span> 
+    <br>
+    <br>
+
+    ##### <span style="font-size: 2.5rem; padding-top: 1rem;">**2**</span> <span style="padding-bottom: 1rem;">**Digital Service or Transformation Work**</span>
+
+    **Digital service** work is defined as services supporting the development, implementation, or maintenance of: 
+    <br>
+    1. A service that is delivered via the internet or electronic network
+    2. Automated and requires little to no human intervention 
+    <br>
+    **Digital transformations** are efforts that have fundamentally improved the technologies, data, processes, and organizational change necessary to deliver successful outcomes for users and customers 
+    <br>
+    <br>'
+membershipCriteria:
+  title: '##### Membership Criteria'
+  content: '#### Membership Criteria
+    
+    * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. 2023 Case Study Instructions
+    * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.
+    * Sponsorship from a current DSC member. </br>
+
+    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="/assets/pdf/Membership-Policy-2023.pdf" style="color: #F25267;">2024 DSC Member Policies.</a></span>'
+  
 ---
 ### Who can join
 

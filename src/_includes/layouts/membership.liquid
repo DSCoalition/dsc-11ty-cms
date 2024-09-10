@@ -4,27 +4,56 @@ layout: layouts/base.liquid
 
 <section class="desktop:p-0">
   <div class="w-full z-[-1] ml-auto tablet:h-[75%] 2xl:h-[90%] desktop:ml-0 desktop:absolute tablet:w-[45%] desktop:w-full">
-    <img src="/assets/img/bg-triangle-pink3.png" alt="" class="h-[21rem] ml-auto w-auto object-contain lg:max-w-[50%] tablet:h-auto tablet:float-right desktop:h-full">
+    <img
+      src="/assets/img/membershipTopPhoto.png"
+      alt=""
+      class="h-[21rem] ml-auto w-auto object-contain lg:max-w-[50%] tablet:h-auto tablet:float-right desktop:h-full"
+      style="z-index: 10; position: relative;">
   </div>
   <div class="container p-4 md:p-12 lg:mx-auto 2xl:max-w-[75rem]">
-    <div class="p-4 lg:p-12 md:max-w-[50%] lg:max-w-[60%]">
-      <h1 class="text-magenta leading-tight mb-12 md:my-12">{{ membershipHeader }}</h1>
-      {% if membershipAnnouncement != "" %}
-        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
-          <h2 class="text-greenDark mb-1">Announcement</h2>
-          {{ membershipAnnouncement | markdownify }}
-        </div>
-      {% endif %}
+    <div class="p-4 lg:p-12 md:max-w-[80%] lg:max-w-[90%]">
+      <div class="membership-content" style="background: #FAFAFF; width:60%; margin-bottom: 8rem;">
+        {{ memberIntro.content | markdownify }}
+        <a
+          class="text-white"
+          style="background: #F25267;"
+          href="https://www.surveymonkey.com/r/8PRBJMD"
+          target="_blank">
+          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+            Apply to Join
+          </button>
+        </a>
+      </div>
+      <div class="membership-content" style="margin-bottom: 4rem; margin-top: 8rem;">
+        {{ memberBenefits.content | markdownify }}
+      </div>
       <div class="membership-content">
-        {{ content | markdownify }}
+        {% include "components/membership-item.liquid" %}
+      </div>
+      <div style="background: #FAFAFF;">
+        <div class="membership-content">
+          {{ joinSection.content | markdownify }}
+        </div>
+        <span class="italic" style="color: #F25267;">Large firms may be considered at a future date to be determined.</span>
+        <div class="membership-content">
+          {{ eligibilityCriteria.content | markdownify }}
+        </div>
+        <div class="membership-content">
+          {{ membershipCriteria.content | markdownify }}
+        </div>
+        <a
+          class="text-white"
+          style="background: #F25267;"
+          href="https://www.surveymonkey.com/r/8PRBJMD"
+          target="_blank">
+          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+            Apply to Join
+          </button>
+        </a>
+      </div>
+      <div class="membershiop-content">
+        {% include "components/resources.liquid" %}
       </div>
     </div>
   </div>
 </section>
-
-<div class="w-full h-[15.625rem] pb-16 mt-6 desktop:pb-0  flex items-center justify-center">
-  <img
-    src="/assets/img/bg-rectangle-purple.png"
-    alt=""
-    class="w-full h-full object-cover object-top">
-</div>
