@@ -45,8 +45,9 @@ eligibilityCriteria:
     <span style="color:red">*Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.*</span> 
     <br>
     <br>
-
-    ##### <span style="font-size: 2.5rem; padding-top: 1rem;">**2**</span> <span style="padding-bottom: 1rem;">**Digital Service or Transformation Work**</span>
+    
+    ##### <span style="font-size: 2.5rem; padding-top: 1rem;">**2**</span> <span style="vertical-align: middle;">**Digital Service or Transformation Work**</span>
+    
 
     **Digital service** work is defined as services supporting the development, implementation, or maintenance of: 
     <br>
@@ -64,7 +65,7 @@ membershipCriteria:
     * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.
     * Sponsorship from a current DSC member. </br>
 
-    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="/assets/pdf/Membership-Policy-2023.pdf" style="color: #F25267;">2024 DSC Member Policies.</a></span>'
+    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #F25267;">2024 DSC Member Policies.</a></span>'
   
 ---
 ### Who can join
