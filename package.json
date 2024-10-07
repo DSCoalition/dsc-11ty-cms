@@ -52,6 +52,7 @@
     "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
     "eleventy-plugin-metagen": "^1.7.11",
+    "font-awesome": "^4.7.0",
     "html-minifier": "^4.0.0",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.6",
