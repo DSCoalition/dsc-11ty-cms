@@ -433,7 +433,7 @@
         cursor: pointer;
         gap: 3rem;
         margin-bottom: 1.5rem;
-        width: 50%
+        width: 45%
     }
 
     .resources-container {
@@ -441,7 +441,7 @@
         color: black;
         padding-left: 2rem;
         border-radius: 12px;
-        height: 50%;
+        height: 100%;
         width: 100%;
         box-sizing: border-box;
         display: inline-flex;
@@ -467,6 +467,8 @@
     }
 
     .resources-links-container{
-        justify-content: space-evenly;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 }
