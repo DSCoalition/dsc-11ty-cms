@@ -275,7 +275,8 @@
             margin-top: 2rem;
             margin-bottom: 1rem;
             font-size: 2rem;
-            color: #5569B0
+            color: #5569B0;
+            
         }
     h3 {
         margin-top: 2rem;
@@ -287,6 +288,7 @@
         margin-bottom: 1rem;
         font-size: 1.75rem;
         color: #5569B0;
+        font-family: "Merriweather";
     }
     h4 {
         margin-top: 2rem;
@@ -311,11 +313,13 @@
 
     p {
         margin-bottom: 1rem;
+        font-family: "Open Sans", sans-serif;
     }
 
     ul {
         list-style-type: disc;
         margin-left: 1rem;
+        font-family: "Open Sans", sans-serif;
     }
 
     ol {
@@ -323,13 +327,15 @@
         margin-left: 1rem;
         font-weight: bold;
         font-size: large;
+        font-family: "Open Sans", sans-serif;
     }
 
     strong {
         margin-top: 1rem;
+        font-family: "Open Sans", sans-serif;
     }
 
-    font-family: "Open Sans", sans-serif;
+    
     }
 
     #membership-list-item {
@@ -448,7 +454,7 @@
         flex-direction: column;
         align-items: flex-start;
         /* padding: 80px 64px; */
-        gap: 1rem;
+        /* gap: 1rem; */
 
         h3 {
             font-size: 1.5rem;
@@ -464,11 +470,20 @@
             font-size: 0.75rem;
             color: #777777
         }
+
+        font-family: "Open Sans", sans-serif;
     }
 
     .resources-links-container{
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .section-title{
+        bottom: 0;
+    }
+    .subsection-title{
+
     }
 }

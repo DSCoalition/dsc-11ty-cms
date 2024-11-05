@@ -30,27 +30,39 @@ layout: layouts/base.liquid
       <div class="membership-content">
         {% include "components/membership-item.liquid" %}
       </div>
-      <div style="background: #FAFAFF;">
-        <div class="membership-content">
-          {{ joinSection.content | markdownify }}
+      <div style="background: #FAFAFF; display: flex; justify-content: flex-start;">
+        <div style="flex-direction: column; width:50%;">
+          <div class="membership-content">
+            {{ joinSection.content | markdownify }}
+          </div>
+          <span class="italic" style="color: #F25267;">Large firms may be considered at a future date to be determined.</span>
+          <div class="membership-content">
+            {{ eligibilityCriteria.content | markdownify }}
+          </div>
+          <div class="membership-content">
+            {{ membershipCriteria.content | markdownify }}
+          </div>
+          <br>
+
+          <a
+            class="text-white"
+            style="background: #F25267;"
+            href="https://www.surveymonkey.com/r/8PRBJMD"
+            target="_blank">
+            <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+              Apply to Join
+            </button>
+          </a>
         </div>
-        <span class="italic" style="color: #F25267;">Large firms may be considered at a future date to be determined.</span>
-        <div class="membership-content">
-          {{ eligibilityCriteria.content | markdownify }}
+        <div style="width: 50%; position: relative;">
+          <img
+            src="/assets/img/membership-cluster.png"
+            alt=""
+            class="h-[21rem] object-contain tablet:h-auto tablet:float-right desktop:h-full"
+            style="position: absolute; right: 44px; width: 90%; bottom: 0;">
         </div>
-        <div class="membership-content">
-          {{ membershipCriteria.content | markdownify }}
-        </div>
-        <a
-          class="text-white"
-          style="background: #F25267;"
-          href="https://www.surveymonkey.com/r/8PRBJMD"
-          target="_blank">
-          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
-            Apply to Join
-          </button>
-        </a>
       </div>
+      <br>
       <div class="membership-content">
         {% include "components/resources.liquid" %}
       </div>
