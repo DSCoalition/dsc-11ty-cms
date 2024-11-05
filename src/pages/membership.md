@@ -35,7 +35,7 @@ eligibilityCriteria:
   title: ''
   content: '#### Eligibility Criteria
     
-    ##### **1** **Business Size to Revenue**
+    ##### <span style="display: flex;  flex-direction: row;"> <span style="padding-right: 0.6rem; font-size: 2.5rem; vertical-align: middle;">**1** </span> <span style="vertical-align: middle; padding-top: 1rem;">**Business Size to Revenue**</span> </span>
 
     * **Small businesses** must make a revenue of less than **$30M** (3-year running average)
     * **Mid-tier firms** must make a revenue of less than **$55M** (3-year running average)
@@ -46,7 +46,7 @@ eligibilityCriteria:
     <br>
     <br>
     
-    ##### <span style="font-size: 2.5rem; padding-top: 1rem;">**2**</span> <span style="vertical-align: middle;">**Digital Service or Transformation Work**</span>
+    ##### <span style="display: flex; justify-content: space-evenly; flex-direction: row;"> <span style="font-size: 2.5rem; vertical-align: middle;">**2**</span> <span style="vertical-align: middle; padding-top: 1rem;">**Digital Service or Transformation Work**</span> </span>
     
 
     **Digital service** work is defined as services supporting the development, implementation, or maintenance of: 
@@ -62,8 +62,11 @@ membershipCriteria:
   content: '#### Membership Criteria
     
     * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. 2023 Case Study Instructions
+
     * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.
-    * Sponsorship from a current DSC member. </br>
+
+    * Sponsorship from a current DSC member.
+    <br>
 
     <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #F25267;">2024 DSC Member Policies.</a></span>'
   
