@@ -323,10 +323,8 @@
     }
 
     ol {
-        list-style-type:decimal;
+        list-style-type: decimal;
         margin-left: 1rem;
-        font-weight: bold;
-        font-size: large;
         font-family: "Open Sans", sans-serif;
     }
 
@@ -357,7 +355,7 @@
         display: inline-flex;
         flex-direction: column;
         position: relative;
-        align-items: flex-start;
+        align-items: start;
         /* background: rgb(85,105,176);
         background: -moz-linear-gradient(90deg, rgba(85,105,176,1) 100%, rgba(252,252,253,1) 100%);
         background: -webkit-linear-gradient(90deg, rgba(85,105,176,1) 100%, rgba(252,252,253,1) 100%); */
@@ -366,7 +364,6 @@
         border-radius: 12px;
         padding: 0.165rem;
         cursor: pointer;
-        gap: 3rem;
         margin-bottom: 1.5rem;
         width: 100%
     }
@@ -393,6 +390,7 @@
         box-sizing: border-box;
         color: #5569B0;
         height: 90%;
+        width: 100%;
 
         h4 {
             /* margin-top: 2rem;

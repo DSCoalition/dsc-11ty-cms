@@ -37,23 +37,27 @@ eligibilityCriteria:
     
     ##### <span style="display: flex;  flex-direction: row;"> <span style="padding-right: 0.6rem; font-size: 2.5rem; vertical-align: middle;">**1** </span> <span style="vertical-align: middle; padding-top: 1rem;">**Business Size to Revenue**</span> </span>
 
-    * **Small businesses** must make a revenue of less than **$30M** (3-year running average)
-    * **Mid-tier firms** must make a revenue of less than **$55M** (3-year running average)
-    * **Large firms** must make a revenue greater than **$55M** (3-year running average) 
-    <br>
-    <br>
-    <span style="color:red">*Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.*</span> 
-    <br>
-    <br>
+    <ul>
+      <li><strong>Small businesses</strong> must make a revenue of <strong>less than $30M</strong> (3-year running average)</li>
+      <li><strong>Mid-tier firms</strong> must make a revenue of <strong>less than $55M</strong> (3-year running average)</li>
+      <li><strong>Large firms</strong> must make a revenue <strong>greater than $55M</strong> (3-year running average) </li>
+    </ul>
+
+    </br>
+    </br>
+    <span style="color:red"><i>Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.</i></span> 
+    </br>
+    </br>
     
-    ##### <span style="display: flex; justify-content: space-evenly; flex-direction: row;"> <span style="font-size: 2.5rem; vertical-align: middle;">**2**</span> <span style="vertical-align: middle; padding-top: 1rem;">**Digital Service or Transformation Work**</span> </span>
+    <h5> <span style="display: flex; flex-direction: row;"> <span style="padding-right: 0.6rem; font-size: 2.5rem; vertical-align: middle;"><strong>2</strong></span> <span style="vertical-align: middle; padding-top: 1rem;">Digital Service or Transformation Work</span> </span></h5>
     
 
     **Digital service** work is defined as services supporting the development, implementation, or maintenance of: 
-    <br>
-    1. A service that is delivered via the internet or electronic network
-    2. Automated and requires little to no human intervention 
-    <br>
+    <ol>
+      <li> A service that is delivered via the internet or electronic network</li>
+      <li> Automated and requires little to no human intervention</li>
+    </ol>
+
     **Digital transformations** are efforts that have fundamentally improved the technologies, data, processes, and organizational change necessary to deliver successful outcomes for users and customers 
     <br>
     <br>'
@@ -61,14 +65,14 @@ membershipCriteria:
   title: '##### Membership Criteria'
   content: '#### Membership Criteria
     
-    * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. 2023 Case Study Instructions
+    * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each.
 
     * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.
 
     * Sponsorship from a current DSC member.
     <br>
 
-    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #F25267;">2024 DSC Member Policies.</a></span>'
+    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #F25267;">__2024 DSC Member Policies__.</a></span>'
   
 ---
 ### Who can join
