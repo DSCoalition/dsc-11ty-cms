@@ -2,29 +2,87 @@
 layout: layouts/base.liquid
 ---
 
-<section class="desktop:p-0">
-  <div class="w-full z-[-1] ml-auto tablet:h-[75%] 2xl:h-[90%] desktop:ml-0 desktop:absolute tablet:w-[45%] desktop:w-full">
-    <img src="/assets/img/bg-triangle-pink3.png" alt="" class="h-[21rem] ml-auto w-auto object-contain lg:max-w-[50%] tablet:h-auto tablet:float-right desktop:h-full">
+<section>
+  <div class="w-full z-[-1] ml-auto tablet:h-[75%] 2xl:h-[50%] desktop:ml-0  tablet:w-[45%] desktop:w-full">
+    <img
+      src="/assets/img/membershipTopPhoto.png"
+      alt=""
+      class="h-[15rem] ml-auto w-auto object-contain lg:max-w-[50%] tablet:h-auto tablet:float-right desktop:w-[34%]"
+      style="z-index: 10; position: relative; margin-bottom: 2rem">
   </div>
-  <div class="container p-4 md:p-12 lg:mx-auto 2xl:max-w-[75rem]">
-    <div class="p-4 lg:p-12 md:max-w-[50%] lg:max-w-[60%]">
-      <h1 class="text-magenta leading-tight mb-12 md:my-12">{{ membershipHeader }}</h1>
-      {% if membershipAnnouncement != "" %}
-        <div class="bg-greenLight text-greenDark py-3 px-5 mb-6">
-          <h2 class="text-greenDark mb-1">Announcement</h2>
-          {{ membershipAnnouncement | markdownify }}
-        </div>
-      {% endif %}
-      <div class="membership-content">
-        {{ content | markdownify }}
+  <div class="container 2xl:max-w-[100%]" style="padding-bottom: 16rem;">
+    <div class="p-4 lg:p-8 lg:max-w-[100%]" style="position: absolute; background: #FAFAFF;">
+      <div class="membership-content" style="width:50%; padding: 2rem; background: #FAFAFF;">
+        {{ memberIntro.content | markdownify }}
+        <a
+          class="text-white"
+          style="background: #F25267;"
+          href="https://www.surveymonkey.com/r/QRZSWSY"
+          target="_blank">
+          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+            Apply to Join
+          </button>
+        </a>
       </div>
     </div>
   </div>
 </section>
+<section class="background: bg-white;">
+  <div class="container p-4 md:p-12 lg:mx-auto 2xl:max-w-[100%]">
+    <div class="md:max-w-[50%] lg:max-w-[90%];" style=" display: inline-flex; flex-direction: column;">
+      <div class="membership-content" style="margin-top: 8rem;">
+        {{ memberBenefits.content | markdownify }}
+      </div>
+    </div>
+  </div>
+  <div class="container md:p-12 lg:mx-auto 2xl:max-w-[100%]">
+    <div class="md:max-w-[100%] lg:max-w-[90%];">
+      <div class="membership-content">
+        {% include "components/membership-item.liquid" %}
+      </div>
+      </div>
 
-<div class="w-full h-[15.625rem] pb-16 mt-6 desktop:pb-0  flex items-center justify-center">
-  <img
-    src="/assets/img/bg-rectangle-purple.png"
-    alt=""
-    class="w-full h-full object-cover object-top">
-</div>
+    </div>
+    </div>
+  </div>
+</section>
+<section style="background:#FAFAFF;">
+  <div class="container md:p-12 lg:mx-auto 2xl:max-w-[100%]" style="z-index: 2;">
+    <div class="md:max-w-[%] lg:max-w-[90%]">
+      <div style="background: #FAFAFF;">
+        <div class="membership-content">
+          {{ joinSection.content | markdownify }}
+        </div>
+        <div class="membership-content">
+          {{ eligibilityCriteria.content | markdownify }}
+        </div>
+        <div class="membership-content">
+          {{ membershipCriteria.content | markdownify }}
+        </div>
+        <br>
+
+        <a
+          class="text-white"
+          style="background: #F25267;"
+          href="https://www.surveymonkey.com/r/QRZSWSY"
+          target="_blank">
+          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+            Apply to Join
+          </button>
+        </a>
+      </div>
+      <br>
+    </div>
+  </div>
+</section>
+<section style="background: bg-white;">
+  <div class="container p-4 md:p-12 lg:mx-auto 2xl:max-w-[100%]" style="z-index: 2;">
+    <div class="p-4 lg:p-12 md:max-w-[%] lg:max-w-[90%]">
+      <div class="membership-content">
+        {% include "components/resources.liquid" %}
+      </div>
+
+    </div>
+
+  </div>
+</section>

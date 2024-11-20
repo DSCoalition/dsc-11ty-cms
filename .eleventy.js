@@ -33,6 +33,12 @@ module.exports = function(eleventyConfig) {
       .sort((a, b) => a.data.organizationName.localeCompare(b.data.organizationName));
   });
 
+  eleventyConfig.addCollection("membershipItems", collection => {
+    return collection
+      .getFilteredByGlob("src/pages/membership/*.md")
+      .sort((a, b) => a.data.title.localeCompare(b.data.title));
+  });
+
   // Markdown Filters and Libraries
   const markdownItOptions = {
     html: true,
@@ -46,6 +52,25 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("markdownify", markdownString =>
     markdownLib.render(markdownString)
   );
+
+  eleventyConfig.addShortcode("membershipItem", function(content, title) {
+    return `<div class="membership-item-container" onclick="this.children[1].style.display === 'none' ? this.children[1].style.display = 'block' : this.children[1].style.display = 'none'">
+    <div class="membership-item-title">${markdownLib.render(title)}</div>
+    <div class="membership-item-content">${markdownLib.render(content)}</div>
+    </div>`
+});
+
+eleventyConfig.addShortcode("getIcon", (item) => {
+  const icons = new Map([
+    ['businessCenterRounded', '<img style="background: #5569B0; border-radius: 100%; width: 48px; height: 48px;" src="/assets/icons/membership/BusinessCenterRounded.png" alt="business buddy" />'],
+    ['campaignRounded', '<img style="background: #5569B0; border-radius: 100%; width: 48px; height: 48px;" src="/assets/icons/membership/CampaignRounded.png" alt="business buddy" />'],
+    ['menuBookRounded', '<img style="background: #5569B0; border-radius: 100%; width: 48px; height: 48px;" src="/assets/icons/membership/MenuBookRounded.png" alt="business buddy" />'],
+    ['peopleAltRounded', '<img style="background: #5569B0; border-radius: 100%; width: 48px; height: 48px;" src="src/assets/icons/membership/PeopleAltRounded.png" alt="business buddy" />'],
+    ['savingsRounded', '<img style="background: #5569B0; border-radius: 100%; width: 48px; height: 48px;" src="/src/assets/icons/membership/SavingsRounded.png" alt="business buddy" />']
+  ]);
+
+  return markdownLib.render(icons[item.data.icon]);
+})
 
   // Date Filters
   eleventyConfig.addFilter("htmlDateString", dateObj =>
