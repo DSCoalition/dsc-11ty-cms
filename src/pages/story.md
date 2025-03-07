@@ -13,5 +13,6 @@ seo_data:
   img: /assets/img/dsc-logo.png
   img_alt: Digital Services Coalition Logo
 ---
-It started with the Digital Services Playbook, which outlines 13 key “plays” to help the government build more successful digital services. Robert Rasmussen, the CEO of Agile Six, saw this as an opportunity to improve how government contractors could deliver these services by nurturing a sense of community, rather than rivalry.</br>
-He approached other like-minded companies to create the Digital Services Coalition as a place to share knowledge, find teaming partners for government proposals, and mentor firms who want to get involved in rethinking how the government delivers digital services. By creating this community, we can all bring our best talents to the table and learn from each other’s successes and failures.
+**The Digital Services Coalition (DSC) is a 501(c)(6) trade association dedicated to advancing digital services in government by fostering collaboration between the public sector and the private market.** Originally formed in 2017 as the Agile Contracting Community of Practice, DSC was established in 2019 to share best practices, address common challenges, and improve government adoption of modern technology solutions.</br>
+
+Today, DSC supports, educates, and represents its member companies, ensuring they have the resources and strategic guidance needed to drive meaningful change. More than just a trade group, DSC is committed to common values and high-quality delivery to promote better outcomes through more effective, user-centered government services.
