@@ -7,7 +7,8 @@ eleventyNavigation:
   order: 2
 seo_data:
   title: Digital Services Coalition - Mission
-  desc: We’re focused on the long game of changing government through digital transformation.
+  desc: We’re focused on the long game of changing government through digital
+    transformation.
   url: https://digitalservicescoalition.org/mission/
   img: /assets/img/dsc-logo.png
   img_alt: Digital Services Coalition Logo
@@ -18,14 +19,22 @@ missionHero:
   heroTitle: We’re focused on the long game of changing government through digital
     transformation.
   heroContent: >-
-    There are organizations inside the government (USDS, 18F, Presidential
-    Innovation Fellows) that are already spearheading efforts to improve how
-    government delivers services to the American public. But they need support
-    from commercial tech firms to make sweeping changes to how things are done.
-    Nimble, forward-thinking firms are the ones who can make this a
-    reality.</br>
+    ## Our Purpose
 
-    By working together, we can accelerate the government’s ability to implement services that focus on good usability, reliable technology, and accessibility for all—while also benefiting the individuals and firms that are part of the community
+
+    We envision a society where government improves the lives of the people it serves and their human experience is valued.
+
+
+    ## Our Mission
+
+
+    Our mission is to be trusted partners of the government by providing the technical knowledge and thought leadership necessary to continuously mature the delivery of digital services that are accessible, functional, and work seamlessly to support the full range of customer experiences.
+
+
+    ## Our Vision
+
+
+    By elevating companies brought together by shared values, the DSC strives to guide the government and the digital service market through digital transformations to fundamentally improve the technologies, data, processes, and organizational changes necessary to successfully deliver world-class outcomes.
   dateText: Mar 12
   linkText: Read our 2022-2025 Strategic Plan (PDF, 2.5 MB, 22 pages)
   linkFile: /assets/pdf/DSCStrategicPlan.pdf
