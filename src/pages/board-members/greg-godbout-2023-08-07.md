@@ -1,8 +1,8 @@
 ---
-memberName: Steph von Rueden
-memberOrganization: Skyward
-memberRole: Board Member
-memberImage: /assets/img_6294.jpeg
-memberImageAlt: Steph von Rueden
+memberName: Nico Ojeda
+memberOrganization: Element Solutions
+memberRole: President of the Board
+memberImage: /assets/nico.jpg
+memberImageAlt: Nico Ojeda
 order: 6
 ---
