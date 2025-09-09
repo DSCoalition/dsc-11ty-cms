@@ -1,8 +1,8 @@
 ---
-memberName: Kalid Tarapolsi
-memberOrganization: Aquia
+memberName: Doug Stephon
+memberOrganization: "540"
 memberRole: Board Member
-memberImage: /assets/headshot.jpeg
-memberImageAlt: Kalid Tarapolsi
+memberImage: /assets/dougstephon.png
+memberImageAlt: Doug Stephon
 order: 8
 ---
