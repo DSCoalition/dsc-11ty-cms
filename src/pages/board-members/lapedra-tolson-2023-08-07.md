@@ -1,8 +1,8 @@
 ---
-memberName: Jennilee Bertrand
-memberOrganization: Flexion
+memberName: Drew Hynes
+memberOrganization: Skyward IT Solutions
 memberRole: Board Member
-memberImage: /assets/image_6487327.jpg
-memberImageAlt: Jennilee Bertrand
+memberImage: /assets/drewhynes.png
+memberImageAlt: Drew Hynes
 order: 4
 ---
