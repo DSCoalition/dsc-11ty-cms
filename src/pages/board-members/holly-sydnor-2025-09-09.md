@@ -4,5 +4,5 @@ memberOrganization: AWL
 memberRole: Board Member
 memberImage: /assets/hollysydnor.jpeg
 memberImageAlt: Holly Sydnor
-order: 3
+order: 7
 ---
