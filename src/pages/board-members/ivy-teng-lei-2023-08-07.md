@@ -4,5 +4,5 @@ memberOrganization: "540"
 memberRole: Board Member
 memberImage: /assets/dougstephon.png
 memberImageAlt: Doug Stephon
-order: 8
+order: 4
 ---
