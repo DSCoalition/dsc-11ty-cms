@@ -1,8 +1,8 @@
 ---
-memberName: Porta Antiporta
-memberOrganization: MO
+memberName: Elise Salvatore
+memberOrganization: Capital Technology Group (CTG)
 memberRole: Board Member
-memberImage: /assets/website_20221130_mo0980_tc-flat.jpg
-memberImageAlt: Porta Antiporta
+memberImage: /assets/elise.jpg
+memberImageAlt: Elise Salvatore
 order: 3
 ---
