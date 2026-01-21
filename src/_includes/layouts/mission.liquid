@@ -14,18 +14,14 @@ layout: layouts/base.liquid
           {{ missionHero.heroContent | markdownify }}
         </div>
       </div>
-      <a href="{{ missionHero.linkFile }}" download>
-        <div class="my-5 date-link bg-grayLightest tablet:w-[640px] desktop:w-[47.5rem]">
-          <div
-            class="date-box"
-            aria-label="March 12"
-            role="text">
-            <div class="date-box-inner">
-              <span class="date" aria-hidden="true">{{ missionHero.dateText }}</span>
-            </div>
-          </div>
-          <div class="link-box">
-            <span class="link">{{ missionHero.linkText }}</span>
+        <a
+          class="text-white"
+          style="background: #F25267;"
+          href="{{ missionHero.linkFile }}"
+          target="_blank">
+          <button class="text-white left-auto" style="background: #F25267; border-radius: 12px; padding: 0.5rem;">
+            Read the Plan
+          </button>
           </div>
         </div>
       </a>
