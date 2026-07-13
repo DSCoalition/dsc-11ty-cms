@@ -35,7 +35,7 @@ missionHero:
 
 
     By elevating companies brought together by shared values, the DSC strives to guide the government and the digital service market through digital transformations to fundamentally improve the technologies, data, processes, and organizational changes necessary to successfully deliver world-class outcomes. <br><br>
-  dateText: July 13
+  dateText: "2026"
   linkText: Read our 2026-2029 Strategic Plan (PDF, 1.5 MB, 11 pages)
   linkFile: https://drive.google.com/file/d/1JfWn9PavROiOP9jVy6S3KLcknjTLF4XF/view?usp=share_link
 ---
