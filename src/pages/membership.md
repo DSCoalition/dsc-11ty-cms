@@ -45,7 +45,7 @@ eligibilityCriteria:
 
     </br>
     </br>
-    <span style="color:red"><i>Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.</i></span> 
+    <span style="color:#92268E"><i>Confirmation of size standard will be conducted in on-boarding activities. Firms must provide proof in the form of: tax returns, tax audits, small business size standard certification from SBA, or other means. This information will be kept confidential.</i></span> 
     </br>
     </br>
     
@@ -72,10 +72,10 @@ membershipCriteria:
     * Sponsorship from a current DSC member.
     <br>
 
-    <span style="color:red">For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #F25267;">__2024 DSC Member Policies__.</a></span>'
+    <span>For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #1F3D8F; text-decoration: underline;">__2024 DSC Member Policies__.</a></span>'
   
 ---
-### Who can join
+## Who can join
 
 Small-sized or mid-tier businesses who perform digital service or digital transformation work for the public sector or have a desire to do work in the public sector. Large firms may be considered at a future date to be determined.</br> {.list-items}
 
@@ -95,7 +95,7 @@ Academic institutions that align with the values and mission of the DSC.</br>{.l
 
 Firms who are committed to following the DSC’s documented Community Standards and Organizational Bylaws.</br>{.list-items}
 
-### Membership benefits
+## Membership benefits
 
 This organization is committed to the growth and development of the digital service industry. Members in the DSC have access to business resources, mentorship from companies and individuals with similar experiences, exclusive and impactful networking, education, and advocacy opportunities, and business development resources.</br>
 
@@ -141,11 +141,11 @@ Through business relationships with other groups and organizations:
 
 Builds in discounts or no charges for any DSC-led activity.</br>{.membership-list-last}
 
-### How to join
+## How to join
 
 Each existing charter member firm can evaluate and agree to sponsor one prospective new member firm per year. The charter member firm is responsible for mentoring and guiding the sponsored firm in the mission and values of the coalition. Sponsored firms must provide at least two references and pass a review by the coalition onboarding panel.</br>
 
-### Criteria for membership
+## Criteria for membership
 
 * Completed application, including two digital services case studies where work was performed within the last three years, with customer references for each. [2023 Case Study Instructions](/assets/pdf/Appendix-A-Case-Study-Instructions-2023.pdf){target="_blank" rel="noopener"} {#membership-list-item}
 * Must actively support two initiatives as a member firm that map into the current DSC yearly priorities.{#membership-list-item}
