@@ -8,4 +8,4 @@ icon: 'PeopleAltRounded'
 * Fun events — such as DSC hikes, picnics, and holiday parties.
 * Virtual happy hours and events to ensure the distributed members have the ability to connect and network.
 
-<span style="color:red; margin-left: -1rem; margin-top: 1.5rem;">*Soon to come: DSC Summits & larger events!*</span>
+<span style="color:#92268E; margin-left: -1rem; margin-top: 1.5rem;">*Soon to come: DSC Summits & larger events!*</span>
