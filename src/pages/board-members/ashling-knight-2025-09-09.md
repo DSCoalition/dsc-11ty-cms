@@ -1,8 +1,8 @@
 ---
-memberName: Ashling Knight
-memberOrganization: Aquia
+memberName: Andrew Keeney
+memberOrganization: Mighty Acorn
 memberRole: Board Member
-memberImage: /assets/ashling-knight.jpeg
-memberImageAlt: Ashling Knight
+memberImage: /assets/andrew.jpg
+memberImageAlt: Andrew Keeney
 order: 3
 ---
