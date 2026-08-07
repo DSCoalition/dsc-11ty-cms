@@ -1,8 +1,8 @@
 ---
-memberName: Holly Sydnor
-memberOrganization: AWL
+memberName: " Mike Endale"
+memberOrganization: Blen
 memberRole: Board Member
-memberImage: /assets/hollysydnor.jpeg
-memberImageAlt: Holly Sydnor
+memberImage: /assets/mike-endale-headshot-2025.png
+memberImageAlt: Mike Endale
 order: 7
 ---
