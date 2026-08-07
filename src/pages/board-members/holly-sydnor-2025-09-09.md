@@ -1,6 +1,6 @@
 ---
 memberName: " Mike Endale"
-memberOrganization: Blen
+memberOrganization: BLEN
 memberRole: Board Member
 memberImage: /assets/mike-endale-headshot-2025.png
 memberImageAlt: Mike Endale
