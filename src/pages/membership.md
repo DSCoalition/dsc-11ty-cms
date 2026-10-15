@@ -72,7 +72,7 @@ membershipCriteria:
     * Sponsorship from a current DSC member.
     <br>
 
-    <span>For more information on the full membership criteria and qualifications, please review our <a href="https://drive.google.com/file/d/1aJT8z0y_PjXS8alm30Llldh8Y6smmx6L/view" style="color: #1F3D8F; text-decoration: underline;">__2024 DSC Member Policies__.</a></span>'
+    <span>For more information on the full membership criteria and qualifications, please review our <a href="https://tinyurl.com/dsc26membership" style="color: #1F3D8F; text-decoration: underline;">__2024 DSC Member Policies__.</a></span>'
   
 ---
 ## Who can join
